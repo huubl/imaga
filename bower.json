@@ -1,0 +1,13 @@
+{
+  "name": "imaga",
+  "homepage": "https://odil.io/",
+  "authors": [
+    "Odilio Witteveen <hallo@odil.io>"
+  ],
+  "license": "GPL",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-beta",
+    "popper.js": "^1.12.3"
+  }
+}
