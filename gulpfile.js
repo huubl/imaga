@@ -337,7 +337,7 @@ gulp.task('version', function() {
     '',
     'Author: '+ pkg.author,
     'Author URI: '+ pkg.homepage,
-    'Text Domain: sage',
+    'Text Domain: imaga',
     '',
     'License: '+ pkg.licenses[0].type,
     'License URI: '+ pkg.licenses[0].url,
