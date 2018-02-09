@@ -1,15 +1,13 @@
 <?php
-/**
- * Sage includes
- *
- * The $sage_includes array determines the code library included in your theme.
- * Add or remove files to the array as needed. Supports child theme overrides.
- *
- * Please note that missing files will produce a fatal error.
- *
- * @link https://github.com/roots/sage/pull/1042
- */
-$sage_includes = [
+
+// Define Google Fonts
+define("GOOGLE_FONTS", "Open Sans");
+
+// Define Google Maps API key
+// https://developers.google.com/maps/documentation/javascript/get-api-key
+define("GOOGLE_MAPS_API", "AIzaSyB5QTXactMQKDZThuga9XwRtr5r1TC3fTs");
+
+$files = [
   'lib/assets.php',    // Scripts and stylesheets
   'lib/extras.php',    // Custom functions
   'lib/setup.php',     // Theme setup
@@ -18,11 +16,16 @@ $sage_includes = [
   'lib/customizer.php' // Theme customizer
 ];
 
-foreach ($sage_includes as $file) {
-  if (!$filepath = locate_template($file)) {
+foreach ($files as $file):
+
+  if (!$filepath = locate_template($file)):
+
     trigger_error(sprintf(__('Error locating %s for inclusion', 'imaga'), $file), E_USER_ERROR);
-  }
+
+  endif;
 
   require_once $filepath;
-}
+
+endforeach;
+
 unset($file, $filepath);
