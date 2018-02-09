@@ -19,6 +19,12 @@ var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
+var loadplugins  = require('gulp-load-plugins');
+var OSHome       = require('os').homedir();
+var bump         = require('gulp-bump');
+var fs           = require('fs');
+var semver       = require('semver');
+var removeCode   = require('gulp-remove-code');
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -73,16 +79,12 @@ var onError = function(err) {
   this.emit('end');
 };
 
-// ## Reusable Pipelines
-// See https://github.com/OverZealous/lazypipe
+// Get package.json
+var getPackageJSON = function() {
+  return JSON.parse(fs.readFileSync('./package.json', 'utf8'));
+};
 
-// ### CSS processing pipeline
-// Example
-// ```
-// gulp.src(cssFiles)
-//   .pipe(cssTasks('main.css')
-//   .pipe(gulp.dest(path.dist + 'styles'))
-// ```
+// CSS processing pipeline
 var cssTasks = function(filename) {
   return lazypipe()
     .pipe(function() {
@@ -123,13 +125,7 @@ var cssTasks = function(filename) {
     })();
 };
 
-// ### JS processing pipeline
-// Example
-// ```
-// gulp.src(jsFiles)
-//   .pipe(jsTasks('main.js')
-//   .pipe(gulp.dest(path.dist + 'scripts'))
-// ```
+// JS processing pipeline
 var jsTasks = function(filename) {
   return lazypipe()
     .pipe(function() {
@@ -152,8 +148,6 @@ var jsTasks = function(filename) {
 };
 
 // ### Write to rev manifest
-// If there are any revved files then write them to the rev manifest.
-// See https://github.com/sindresorhus/gulp-rev
 var writeToManifest = function(directory) {
   return lazypipe()
     .pipe(gulp.dest, path.dist + directory)
@@ -165,10 +159,7 @@ var writeToManifest = function(directory) {
     .pipe(gulp.dest, path.dist)();
 };
 
-// ## Gulp tasks
-// Run `gulp -T` for a task summary
-
-// ### Styles
+// Styles
 // `gulp styles` - Compiles, combines, and optimizes Bower CSS and project CSS.
 // By default this task will only log a warning if a precompiler error is
 // raised. If the `--production` flag is set: this task will fail outright.
@@ -249,9 +240,7 @@ gulp.task('clean', require('del').bind(null, [path.dist]));
 
 // ### Watch
 // `gulp watch` - Use BrowserSync to proxy your dev server and synchronize code
-// changes across devices. Specify the hostname of your dev server at
-// `manifest.config.devUrl`. When a modification is made to an asset, run the
-// build step for that asset and inject the changes into the page.
+// changes across devices.
 // See: http://www.browsersync.io
 gulp.task('watch', function() {
   browserSync.init({
@@ -273,10 +262,23 @@ gulp.task('watch', function() {
 // `gulp build` - Run all the build tasks but don't clean up beforehand.
 // Generally you should be running `gulp` instead of `gulp build`.
 gulp.task('build', function(callback) {
-  runSequence('styles',
-              'scripts',
-              ['fonts', 'images'],
-              callback);
+
+  var tasks = [
+    'styles',
+    'scripts',
+    ['fonts', 'images']
+  ];
+
+  if (argv.production) {
+    // only add zip to task list if `--production`
+    tasks.push('version');
+    tasks.push('zip');
+  }
+
+  runSequence.apply(
+    this,
+    tasks.concat([callback])
+  );
 });
 
 // ### Wiredep
@@ -296,4 +298,60 @@ gulp.task('wiredep', function() {
 // `gulp` - Run a complete build. To compile for production run `gulp --production`.
 gulp.task('default', ['clean'], function() {
   gulp.start('build');
+});
+
+// ### Zip
+//`gulp zip` - Zip up a distribution of the compiled WordPress theme.
+gulp.task('zip', function(callback) {
+  var pkg = getPackageJSON();
+
+  return gulp.src([
+    'dist/**/*',
+    'templates/**/*',
+    'vendor/**/*',
+    'lang/*',
+    'lib/**/*',
+    '*.css',
+    '*.md',
+    '*.php',
+    '*.txt',
+    '*.png',
+  ], {
+   base: '.'
+  })
+  .pipe(removeCode({ production: true }))
+  .pipe(loadplugins.zip(pkg.name +'.zip'))
+  .pipe(gulp.dest( OSHome + '/Documents/Releases'));
+});
+
+
+// ### Versioning
+//`gulp version` - bump version in package.json and style.css
+gulp.task('version', function() {
+  var pkg = getPackageJSON();
+  var newversion = semver.inc(pkg.version, argv.production);
+  var banner = ['/*',
+    'Theme Name: ' + pkg.theme,
+    'Theme URI: '+ pkg.homepage,
+    'Version: '+ newversion,
+    '',
+    'Author: '+ pkg.author,
+    'Author URI: '+ pkg.homepage,
+    'Text Domain: sage',
+    '',
+    'License: '+ pkg.licenses[0].type,
+    'License URI: '+ pkg.licenses[0].url,
+    '*/',
+    ''].join('\n');
+
+  gulp.src('./package.json')
+    .pipe(bump({version: newversion}))
+    .pipe(gulp.dest('./'));
+
+  fs.writeFile('./style.css', banner, (err) => {
+    if (err){
+      console.error(err.message);
+      this.emit('end');
+    }
+  });
 });
