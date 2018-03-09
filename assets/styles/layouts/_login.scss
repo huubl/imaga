@@ -1,0 +1,54 @@
+body.login {
+  background-color: rgb(245, 245, 245);
+}
+
+body.login div#login {}
+body.login div#login h1 {}
+body.login div#login h1 a {
+  background-image:url('../images/logo-mini.jpg');
+}
+body.login div#login form#loginform {
+  background-color: rgb(245, 245, 245);
+  box-shadow: none;
+  padding: 0;
+}
+body.login div#login form#loginform p {
+  @extend .form-group;
+}
+body.login div#login form#loginform p label {
+  width: 100%;
+}
+body.login div#login form#loginform input {
+
+}
+body.login div#login form#loginform input#user_login {
+  margin: 0;
+  @extend .form-control;
+}
+body.login div#login form#loginform input#user_pass {
+  margin: 0;
+  @extend .form-control;
+}
+body.login div#login form#loginform p.forgetmenot {
+  display: none;
+}
+body.login div#login form#loginform p.submit {
+  float: none;
+  display: block;
+}
+body.login div#login form#loginform p.submit input#wp-submit {
+  height: auto;
+  float: none;
+
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-block;
+}
+body.login div#login p#nav {
+  display: none;
+}
+body.login div#login p#nav a {}
+body.login div#login p#backtoblog {
+  display: none;
+}
+body.login div#login p#backtoblog a {}
