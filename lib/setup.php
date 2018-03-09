@@ -94,30 +94,26 @@ add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
 /*
  * ACF Google Maps API Key
  */
-function acf_google_maps_key() {
+function add_acf_google_maps_key() {
 
   if( ! defined( 'GOOGLE_MAPS_API' ) ) return;
 
   acf_update_setting('google_api_key', GOOGLE_MAPS_API );
 
 }
-add_action('acf/init', __NAMESPACE__ . '\\acf_google_maps_key');
+add_action('acf/init', __NAMESPACE__ . '\\add_acf_google_maps_key');
 
-/**
- * Manage google fonts of load_google_font()
- * set GOOGLE_FONTS constant in functions.php
- */
-function load_google_fonts() {
+// Add Google Fonts
+function add_google_fonts() {
 
+  // Defined in functions.php
   if( ! defined( 'GOOGLE_FONTS' ) ) return;
     wp_register_style('imaga/google-fonts', 'http://fonts.googleapis.com/css?family=' . GOOGLE_FONTS );
     wp_enqueue_style( 'imaga/google-fonts');
 }
-add_action( 'wp_head', __NAMESPACE__ . '\\load_google_fonts' , 1);
+add_action( 'wp_head', __NAMESPACE__ . '\\add_google_fonts' , 1);
 
-/*
- * Add bootstrap .form-group to Gravity Forms
- */
+// Add Bootstrap styles to Gravityforms
 function add_bootstrap_container_class( $field_container, $field, $form, $css_class, $style, $field_content ) {
 	$id = $field->id;
   $field_id = is_admin() || empty( $form ) ? "field_{$id}" : 'field_' . $form['id'] . "_$id";
@@ -125,7 +121,12 @@ function add_bootstrap_container_class( $field_container, $field, $form, $css_cl
 }
 add_filter( 'gform_field_container', __NAMESPACE__ . '\\add_bootstrap_container_class', 10, 6 );
 
-/*
- * Remove acf-post2post nag
- */
+// Remove acf-post2post nag
 add_filter('remove_hube2_nag', '__return_true');
+
+// Add custom logim stylesheet
+function add_login_stylesheet() {
+  wp_register_style('imaga/login', Assets\asset_path('styles/login.css') );
+  wp_enqueue_style( 'imaga/login');
+}
+add_action( 'login_enqueue_scripts', __NAMESPACE__ . '\\add_login_stylesheet' );
