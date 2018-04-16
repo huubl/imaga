@@ -14,6 +14,8 @@ $files = [
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
   'lib/customizer.php' // Theme customizer
+  'lib/tgmpa.php',      // TGM Plugin Activation
+  'lib/plugins.php',    // Required plugins
 ];
 
 foreach ($files as $file):

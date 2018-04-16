@@ -2,16 +2,13 @@
 /**
  * Theme Plugins
  */
-namespace Roots\Sage\Plugins;
 
 add_action( 'after_setup_theme', function() {
 
     $plugins = array(
       array(
-        'name'               => 'Advanced Custom Fields Pro',
-        'slug'               => 'advanced-custom-fields-pro',
-        'source'             => '/advanced-custom-fields-pro.zip',
-        'external_url'       => 'https://advancedcustomfields.com/',
+        'name'               => 'Advanced Custom Fields',
+        'slug'               => 'advanced-custom-fields',
         'required'           => true,
         'force_activation'   => true,
         'force_deactivation' => true,
@@ -24,22 +21,6 @@ add_action( 'after_setup_theme', function() {
       'force_deactivation' => true,
       ),
       array(
-      'name'               => 'Advanced Custom Fields: Gravityforms Add-on',
-      'slug'               => 'acf-gravityforms-add-on',
-      'required'           => true,
-      'force_activation'   => true,
-      'force_deactivation' => true,
-      ),
-      array(
-        'name'               => 'Gravity Forms',
-        'slug'               => 'gravityforms',
-        'source'             => '/gravityforms.zip',
-        'external_url'       => 'https://gravityforms.com/',
-        'required'           => true,
-        'force_activation'   => true,
-        'force_deactivation' => true,
-      ),
-      array(
         'name'               => 'Yoast SEO',
         'slug'               => 'wordpress-seo',
         'required'           => false,
@@ -50,10 +31,30 @@ add_action( 'after_setup_theme', function() {
         'name'               => 'Post Types Order',
         'slug'               => 'post-types-order',
       ),
+      array(
+        'name'               => 'Duplicate Post',
+        'slug'               => 'duplicate-post',
+      ),
+      array(
+        'name'               => 'Smush Image Compression and Optimization',
+        'slug'               => 'wp-smushit',
+      ),
+      array(
+        'name'               => 'Regenerate Thumbnails',
+        'slug'               => 'regenerate-thumbnails',
+      ),
+      array(
+        'name'               => 'WP Fastest Cache',
+        'slug'               => 'wp-fastest-cache',
+      ),
+      array(
+        'name'               => 'WordPress Backup & Security Plugin – BlogVault',
+        'slug'               => 'blogvault-real-time-backup',
+      ),
     );
 
     $config = array(
-        'id'           => 'sage',
+        'id'           => 'imaga',
         'default_path' => get_template_directory() . '/lib/plugins',
         'menu'         => 'tgmpa-install-plugins',
         'parent_slug'  => 'themes.php',
