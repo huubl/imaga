@@ -18,17 +18,6 @@
   "require": {
     "php": ">=7.1.0",
     "composer/installers": "~1.0",
-    "tgmpa/tgm-plugin-activation": "^2.6",
-    "wp-bootstrap/wp-bootstrap-navwalker": "v4.x-dev"
-  },
-  "extra": {
-       "installer-paths": {
-       "vendor/wp-bootstrap-navwalker": ["wp-bootstrap/wp-bootstrap-navwalker"]
-      }
-    },
-    "autoload": {
-    "files": [
-      "vendor/wp-bootstrap-navwalker/class-wp-bootstrap-navwalker.php"
-    ]
+    "tgmpa/tgm-plugin-activation": "^2.6"
   }
 }

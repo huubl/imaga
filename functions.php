@@ -8,14 +8,15 @@ define("GOOGLE_FONTS", "Open Sans");
 define("GOOGLE_MAPS_API", "AIzaSyB5QTXactMQKDZThuga9XwRtr5r1TC3fTs");
 
 $files = [
-  'lib/assets.php',    // Scripts and stylesheets
-  'lib/extras.php',    // Custom functions
-  'lib/setup.php',     // Theme setup
-  'lib/titles.php',    // Page titles
-  'lib/wrapper.php',   // Theme wrapper class
-  'lib/customizer.php' // Theme customizer
+  'lib/navigation.php', // Bootstrap Navigation Walker
   'lib/tgmpa.php',      // TGM Plugin Activation
   'lib/plugins.php',    // Required plugins
+  'lib/assets.php',     // Scripts and stylesheets
+  'lib/extras.php',     // Custom functions
+  'lib/setup.php',      // Theme setup
+  'lib/titles.php',     // Page titles
+  'lib/wrapper.php',    // Theme wrapper class
+  'lib/customizer.php'  // Theme customizer
 ];
 
 foreach ($files as $file):
