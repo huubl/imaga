@@ -63,21 +63,6 @@ function widgets_init() {
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
 
 /**
- * Determine which pages should NOT display the sidebar
- */
-function display_sidebar() {
-  static $display;
-
-  isset($display) || $display = !in_array(true, [
-    // The sidebar will NOT be displayed if ANY of the following return true
-    is_page(),
-    is_front_page(),
-  ]);
-
-  return apply_filters('imaga/display_sidebar', $display);
-}
-
-/**
  * Theme assets
  */
 function assets() {
