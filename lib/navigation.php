@@ -574,7 +574,7 @@ function navigation( $theme_location = "primary_navigation", $container_id = "pr
       'container'         => 'div',
       'container_class'   => 'collapse navbar-collapse',
       'container_id'      => $container_id,
-      'menu_class'        => 'nav navbar-nav',
+      'menu_class'        => 'ml-auto nav navbar-nav',
       'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
       'walker'            => new WP_Bootstrap_Navwalker()
     )

@@ -18,7 +18,13 @@
     // All pages
     'common': {
       init: function() {
-        
+
+        AOS.init({
+           offset: 220,
+           startEvent: 'load',
+           once: 'true',
+        });
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

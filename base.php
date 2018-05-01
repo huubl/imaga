@@ -8,7 +8,7 @@ use Roots\Sage\Wrapper;
 <!doctype html>
 <html <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
-  <body <?php body_class(); ?>>
+  <body <?php body_class(); ?> data-aos="fade-zoom-in">
 
     <!--[if IE]>
       <div class="alert alert-warning">
