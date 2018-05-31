@@ -558,6 +558,15 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 		}
 	}
 }
+function brand( $image_url ){
+
+  $html = '<a class="navbar-brand" href="' .esc_url( home_url('/') ) .'">';
+  $html .= '<img src="' . $image_url . '" width="180" class="d-inline-block align-top" alt="' . get_bloginfo('name') . '">';
+  $html .= '</a>';
+
+  return $html;
+}
+
 function toggler( $theme_location = 'primary_navigation' ){
 
   $html = '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#' . $theme_location . '" aria-controls="' . $theme_location . '" aria-expanded="false" aria-label="' . __('Toggle navigation','imaga') . '">';
@@ -566,6 +575,7 @@ function toggler( $theme_location = 'primary_navigation' ){
 
   return $html;
 }
+
 function navigation( $theme_location = "primary_navigation", $container_id = "primary_navigation" ){
   return wp_nav_menu(
     array(
