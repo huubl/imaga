@@ -17,8 +17,8 @@
   <div class="bg-gradient-new-life">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-5">
-          <a href="#i-want-to-improve" class="btn btn-primary btn-block btn-lg btn-iwti">I want to improve my (clients) website</a>
+        <div class="col-6">
+          <a href="#i-want-to-improve" class="btn btn-orange btn-block btn-lg btn-iwti"><h3>I want to improve my (clients) website</h3></a>
         </div>
       </div>
       <div class="row justify-content-center py-6">
@@ -28,14 +28,13 @@
               <p class="lead">Or maybe you’ve got a great idea and need a website?</p>
             </div>
             <div class="col-7">
-              <a href="#i-need-a-new-website" class="btn btn-secondary btn-block btn-lg">I need a new website</a>
+              <a href="#i-need-a-new-website" class="btn btn-teal btn-block btn-lg">I need a new website</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 </section>
 
 <section>
