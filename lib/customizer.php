@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Customizer;
+namespace IMAGA\Theme\Customizer;
 
-use Roots\Sage\Assets;
+use IMAGA\Theme\Assets;
 
 /**
  * Add postMessage support

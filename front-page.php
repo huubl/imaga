@@ -1,4 +1,4 @@
-<?php use Roots\Sage\Assets; ?>
+<?php use IMAGA\Theme\Assets; ?>
 
 
 <?php get_template_part('templates/header-banner'); ?>
@@ -67,7 +67,7 @@
 </section>
 
 <section class="bg-gradient-mountain-rock">
-  <div class="container py-5">
+  <div class="container py-5 overflow-hidden">
 
     <div class="row">
       <div class="col-12 text-center text-white pb-5">
@@ -77,17 +77,25 @@
     </div>
 
     <div class="row text-center">
-      <div class="col-3">
-        <img class="img-fluid img-circle mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-research-2.svg');?>" alt="Conversion Research">
+      <div class="col-3 conversion-arrow">
+        <a href="/conversion-optimization/conversion-research">
+          <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-research-2.svg');?>" alt="Conversion Research">
+        </a>
       </div>
       <div class="col-3">
-        <img class="img-fluid img-circle mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-strategy-2.svg');?>" alt="Conversion Strategy">
+        <a href="/conversion-optimization/conversion-strategy">
+          <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-strategy-2.svg');?>" alt="Conversion Strategy">
+        </a>
       </div>
       <div class="col-3">
-        <img class="img-fluid img-circle mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-development-2.svg');?>" alt="Conversion Build">
+        <a href="/conversion-optimization/conversion-design">
+          <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-design-2.svg');?>" alt="Conversion Design">
+        </a>
       </div>
       <div class="col-3">
-        <img class="img-fluid img-circle mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-design-2.svg');?>" alt="Conversion Design">
+        <a href="/conversion-optimization/conversion-build">
+          <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-build-2.svg');?>" alt="Conversion Build">
+        </a>
       </div>
     </div>
   </div>
@@ -141,54 +149,7 @@
 </section>
 
 <section>
-  <div class="container">
-    <div class="row py-5">
-      <div class="col-12 text-center">
-        <h4 class="lead">You’re in good company. We do or have done Conversion Research<br>for agencies and smart companies such as:</h4>
-      </div>
-    </div>
-    <div class="row justify-content-center pb-5">
-      <div class="col-8">
-
-        <div class="row">
-          <div class="col p-2">
-            <img class="img-fluid img-circle" src="https://placehold.it/128" alt="Company Name">
-          </div>
-          <div class="col p-2">
-            <img class="img-fluid img-circle" src="https://placehold.it/128" alt="Company Name">
-          </div>
-          <div class="col p-2">
-            <img class="img-fluid img-circle" src="https://placehold.it/128" alt="Company Name">
-          </div>
-          <div class="col p-2">
-            <img class="img-fluid img-circle" src="https://placehold.it/128" alt="Company Name">
-          </div>
-          <div class="col p-2">
-            <img class="img-fluid img-circle" src="https://placehold.it/128" alt="Company Name">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col p-2">
-            <img class="img-fluid img-circle" src="https://placehold.it/128" alt="Company Name">
-          </div>
-          <div class="col p-2">
-            <img class="img-fluid img-circle" src="https://placehold.it/128" alt="Company Name">
-          </div>
-          <div class="col p-2">
-            <img class="img-fluid img-circle" src="https://placehold.it/128" alt="Company Name">
-          </div>
-          <div class="col p-2">
-            <img class="img-fluid img-circle" src="https://placehold.it/128" alt="Company Name">
-          </div>
-          <div class="col p-2">
-            <img class="img-fluid img-circle" src="https://placehold.it/128" alt="Company Name">
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
+  <?php get_template_part('templates/sections/brands','banner'); ?>
 </section>
 
 <section class="bg-gradient-dense-water">

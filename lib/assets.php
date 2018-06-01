@@ -1,6 +1,6 @@
 <?php
 
-namespace Roots\Sage\Assets;
+namespace IMAGA\Theme\Assets;
 
 /**
  * Get paths for assets

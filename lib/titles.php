@@ -1,6 +1,6 @@
 <?php
 
-namespace Roots\Sage\Titles;
+namespace IMAGA\Theme\Titles;
 
 /**
  * Page titles

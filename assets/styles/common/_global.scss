@@ -8,35 +8,87 @@
   font-weight: $display6-weight;
   line-height: $display-line-height;
 }
+.display-7 {
+  font-size: $display7-size;
+  font-weight: $display7-weight;
+  line-height: $display-line-height;
+}
 
 .bg-gradient{
   &-winter-neva{
+    // Blueish
     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%) !important;
   }
   &-tempting-azure{
+    // Greenish to Blueish
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%) !important;
   }
   &-clean-mirror{
+    // Greyish blue to White-ish
     background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%) !important;
   }
   &-mountain-rock{
+    // Somewhat dark Grey
     background-image: linear-gradient(to right, #868f96 0%, #596164 100%) !important;
   }
   &-new-life{
+    // Bright greenish to bright turquoise-ish
     background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%) !important;
   }
   &-vicious-stance{
+    // Darker then mountain rock
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   }
   &-above-clouds{
+    // Light grey-ish
     background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%) !important;
     background-blend-mode: normal, lighten, soft-light !important;
   }
   &-dense-water{
+    // Sort of turquoise if you see it to purple-ish
     background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%) !important;
+  }
+  &-mole-hall{
+    background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+  }
+  &-millenium-pine{
+    background-image: linear-gradient(to top, #50cc7f 0%, #f5d100 100%);
+  }
+  &-african-field{
+    background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
   }
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.conversion-arrow:after{
+  position: absolute;
+  content: '';
+  height:0;
+  width:0;
+  border-top: 0 solid transparent;
+  border-right: 80px solid transparent;
+  border-left: 80px solid transparent;
+  border-bottom: 80px solid $white;
+  bottom: -80px;
+  left: calc(50% - 80px);
+}
+
+.conversion-summary,
+.conversion-research,
+.conversion-strategy,
+.conversion-design,
+.conversion-build{
+  .conversion-arrow:after{
+    bottom: -100px;
+  }
+}
+
+.box-shadow{
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1),0 2px 2px 0 rgba(0,0,0,.1);
+}
 
 
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Roots\Sage\Posts;
+namespace IMAGA\Theme\Posts;
 
 /**
  * Custom Post Types

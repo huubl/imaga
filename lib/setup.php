@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Setup;
+namespace IMAGA\Theme\Setup;
 
-use Roots\Sage\Assets;
+use IMAGA\Theme\Assets;
 
 /**
  * Theme setup
@@ -19,7 +19,7 @@ function setup() {
   // Register wp_nav_menu() menus
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
-    'primary_navigation' => __('Primary Navigation', 'imaga')
+    'primary_navigation' => __('Primary Navigation', 'imaga'),
   ]);
 
   // Enable post thumbnails
@@ -115,3 +115,14 @@ function add_login_stylesheet() {
   wp_enqueue_style( 'imaga/login');
 }
 add_action( 'login_enqueue_scripts', __NAMESPACE__ . '\\add_login_stylesheet' );
+
+// Remove 'page-template' from body class on pages with custom templates
+function prefix_remove_body_class($wp_classes) {
+    if ( is_page_template() ):
+      foreach ($wp_classes as $key => $value) {
+        $wp_classes[$key] = str_replace('page-template-template-', '', $value);
+      }
+    endif;
+    return $wp_classes;
+}
+add_filter('body_class', __NAMESPACE__ . '\\prefix_remove_body_class', 20, 2);

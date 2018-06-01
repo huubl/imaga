@@ -1,8 +1,8 @@
 <?php
 
-namespace Roots\Sage\Extras;
+namespace IMAGA\Theme\Extras;
 
-use Roots\Sage\Setup;
+use IMAGA\Theme\Setup;
 
 /**
  * Add <body> classes

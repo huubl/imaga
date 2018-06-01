@@ -2,7 +2,7 @@
 /**
  * Advanced Custom Fields
  */
-namespace Roots\Sage\Fields;
+namespace IMAGA\Theme\Fields;
 
 $layouts = [
 	'lib/fields/cards.php',

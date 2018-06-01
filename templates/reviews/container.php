@@ -1,4 +1,4 @@
-<?php use Roots\Sage\Assets; ?>
+<?php use IMAGA\Theme\Assets; ?>
 
 <section class="reviews">
   <div class="container">
