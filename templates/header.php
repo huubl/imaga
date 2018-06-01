@@ -16,7 +16,7 @@
     </div>
   </nav>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-gray-100">
+  <nav class="navbar navbar-expand-lg navbar-light bg-gray-100 p-0">
     <div class="container">
       <?php echo Navigation\navigation( 'primary_navigation', 'secondary_navigation', 1, 0, "mr-auto nav navbar-nav"); ?>
     </div>
