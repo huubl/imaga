@@ -920,14 +920,14 @@ function toggler( $theme_location = 'primary_navigation' ){
   return $html;
 }
 
-function navigation( $theme_location = "primary_navigation", $container_id = "primary_navigation", $start_depth = 0, $depth = 2, $menu_class = "ml-auto nav navbar-nav" ){
+function navigation( $theme_location = "primary_navigation", $container_id = "primary_navigation", $start_depth = 0, $depth = 2, $menu_class = "ml-auto nav navbar-nav", $container_class = "collapse navbar-collapse navbar-toggle" ){
   return wp_nav_menu(
     array(
       'theme_location'    => $theme_location,
       'start_depth'       => $start_depth,
       'depth'             => $depth,
       'container'         => 'div',
-      'container_class'   => 'collapse navbar-collapse navbar-toggle',
+      'container_class'   => $container_class,
       'container_id'      => $container_id,
       'menu_class'        => $menu_class,
       'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',

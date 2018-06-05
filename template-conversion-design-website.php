@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Conversion - Research
+ * Template Name: Conversion - Design: Website
  */
 
 use IMAGA\Theme\Assets;
@@ -8,7 +8,7 @@ use IMAGA\Theme\Assets;
 
 <?php while (have_posts()) : the_post(); ?>
 
-  <?php get_template_part('templates/header', 'conversion-research'); ?>
+  <?php get_template_part('templates/header', 'conversion-design-website'); ?>
 
   <section>
     <div class="container py-5">

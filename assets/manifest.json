@@ -17,6 +17,13 @@
         "scripts/customizer.js"
       ]
     },
+    "devices.js": {
+      "files": [
+        "scripts/AnticipateEase.min.js",
+        "scripts/TweenMax.min.js",
+        "scripts/AllDevices.js"
+      ]
+    },
     "jquery.js": {
       "bower": ["jquery"]
     }

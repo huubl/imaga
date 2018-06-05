@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Conversion Design
+ * Template Name: Conversion - Design
  */
 
 use IMAGA\Theme\Assets;

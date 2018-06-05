@@ -29,11 +29,11 @@
   }
   &-mountain-rock{
     // Somewhat dark Grey
-    background-image: linear-gradient(to right, #868f96 0%, #596164 100%) !important;
+    background-image: linear-gradient(-40deg, #868f96 0%, #596164 100%) !important;
   }
   &-new-life{
     // Bright greenish to bright turquoise-ish
-    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%) !important;
+    background-image: linear-gradient(40deg, #43e97b 0%, #38f9d7 100%) !important;
   }
   &-vicious-stance{
     // Darker then mountain rock
@@ -57,6 +57,33 @@
   &-warm-flame{
     background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
   }
+}
+
+.jumbotron{
+  position: relative;
+}
+.bg-narrowcasting{
+  position: absolute;
+  top:0;
+  bottom:0;
+  left: 50%;
+  right:0;
+  background-image: url('../images/promo/narrowcasting.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-presentation{
+  position: absolute;
+  top:0;
+  bottom:0;
+  left: percentage(7 / 12);
+  right:0;
+  background-image: url('../images/promo/presentation.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .overflow-hidden{

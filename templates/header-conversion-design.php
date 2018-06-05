@@ -1,6 +1,6 @@
 <?php use IMAGA\Theme\Assets; ?>
 
-<div class="jumbotron jumbotron-fluid bg-gradient-warm-flame overflow-hidden mb-0">
+<div class="jumbotron jumbotron-fluid bg-teal overflow-hidden mb-0">
   <div class="container text-center text-white">
 
     <div class="row">

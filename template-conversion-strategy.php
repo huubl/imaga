@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Conversion Strategy
+ * Template Name: Conversion - Strategy
  */
 
 use IMAGA\Theme\Assets;

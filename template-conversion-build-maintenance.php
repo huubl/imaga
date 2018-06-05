@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Conversion - Build
+ * Template Name: Conversion - Build: Maintenance
  */
 
 use IMAGA\Theme\Assets;
@@ -8,7 +8,7 @@ use IMAGA\Theme\Assets;
 
 <?php while (have_posts()) : the_post(); ?>
 
-  <?php get_template_part('templates/header', 'conversion-build'); ?>
+  <?php get_template_part('templates/header', 'conversion-build-maintenance'); ?>
 
   <section>
     <div class="container py-5">

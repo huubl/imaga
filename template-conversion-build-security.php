@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Conversion - Build
+ * Template Name: Conversion - Build: Security
  */
 
 use IMAGA\Theme\Assets;
@@ -8,14 +8,14 @@ use IMAGA\Theme\Assets;
 
 <?php while (have_posts()) : the_post(); ?>
 
-  <?php get_template_part('templates/header', 'conversion-build'); ?>
+  <?php get_template_part('templates/header', 'conversion-build-security'); ?>
 
   <section>
     <div class="container py-5">
       <div class="row justify-content-center">
         <div class="col-8 text-center">
-          <h1 class="display-6 mb-4">WordPress: Custom Build or Template Based</h1>
-          <p class="lead">We can deliver both fully custom build WordPress websites as well as template-based websites. We take both options to the max and focus on serving your business needs and your clients objectives. Read more to find out what WordPress build suits your project best.</p>
+          <h1 class="display-6 mb-4">WordPress: Security</h1>
+          <p class="lead">Feel save knowing your website is protected against attacks, malware and even human error</p>
         </div>
       </div>
     </div>
