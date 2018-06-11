@@ -14,76 +14,8 @@
   line-height: $display-line-height;
 }
 
-.bg-gradient{
-  &-winter-neva{
-    // Blueish
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%) !important;
-  }
-  &-tempting-azure{
-    // Greenish to Blueish
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%) !important;
-  }
-  &-clean-mirror{
-    // Greyish blue to White-ish
-    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%) !important;
-  }
-  &-mountain-rock{
-    // Somewhat dark Grey
-    background-image: linear-gradient(-40deg, #868f96 0%, #596164 100%) !important;
-  }
-  &-new-life{
-    // Bright greenish to bright turquoise-ish
-    background-image: linear-gradient(40deg, #43e97b 0%, #38f9d7 100%) !important;
-  }
-  &-vicious-stance{
-    // Darker then mountain rock
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  }
-  &-above-clouds{
-    // Light grey-ish
-    background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%) !important;
-    background-blend-mode: normal, lighten, soft-light !important;
-  }
-  &-dense-water{
-    // Sort of turquoise if you see it to purple-ish
-    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%) !important;
-  }
-  &-mole-hall{
-    background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
-  }
-  &-african-field{
-    background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
-  }
-  &-warm-flame{
-    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-  }
-}
-
 .jumbotron{
   position: relative;
-}
-.bg-narrowcasting{
-  position: absolute;
-  top:0;
-  bottom:0;
-  left: 50%;
-  right:0;
-  background-image: url('../images/promo/narrowcasting.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.bg-presentation{
-  position: absolute;
-  top:0;
-  bottom:0;
-  left: percentage(7 / 12);
-  right:0;
-  background-image: url('../images/promo/presentation.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .overflow-hidden{
@@ -98,7 +30,7 @@
   border-top: 0 solid transparent;
   border-right: 80px solid transparent;
   border-left: 80px solid transparent;
-  border-bottom: 80px solid $white;
+  border-bottom: 80px solid theme-color('light');
   bottom: -80px;
   left: calc(50% - 80px);
 }
@@ -119,12 +51,27 @@
 
 
 
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
 
-.bg-bucket{
-  background-image:url('../images/bucket.png');
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: contain;
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
 }
 
 .img-circle{

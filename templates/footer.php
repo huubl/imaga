@@ -1,7 +1,7 @@
 <?php use IMAGA\Theme\Navigation; ?>
 <?php use IMAGA\Theme\Assets; ?>
 
-<footer class="bg-gray-900 text-gray-500">
+<footer class="bg-gray-800 text-gray-500">
   <div class="container py-5">
     <div class="row pb-3">
       <div class="col-12">

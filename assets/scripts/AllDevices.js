@@ -170,7 +170,8 @@
 		scale: 0,
 		ease: Back.easeOut
 	}, 0.1).to(r, 2, {
-		y: 80,
+    scale: 2,
+    alpha: 0,
 		delay: 2,
 		ease: Back.easeIn.config(2)
 	});

@@ -2,7 +2,7 @@
 <?php use IMAGA\Theme\Assets; ?>
 <?php use IMAGA\Theme\Navigation; ?>
 
-<header class="navigation">
+<header class="navigation box-shadow">
 
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
@@ -27,6 +27,5 @@
       <?php echo Navigation\navigation( 'primary_navigation', 'tertiary_navigation', 2, 0, "mr-auto nav navbar-nav"); ?>
     </div>
   </nav>
-
 
 </header>

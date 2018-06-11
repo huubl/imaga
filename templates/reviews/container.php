@@ -1,11 +1,11 @@
 <?php use IMAGA\Theme\Assets; ?>
 
-<section class="reviews">
+<section class="reviews py-5">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center py-4">
-        <h2 class="display-6">Don’t just take our word for it. Here’s what our great clients are saying:</h2>
-        <p class="lead text-muted">View all reviews</p>
+        <h2 class="display-7">Don’t just take our word for it. Here’s what our great clients are saying:</h2>
+        <a class="lead text-muted" href="#all-reviews">View all reviews <small><i class="fa fa-arrow-circle-right"></i></small></a>
       </div>
     </div>
   </div>

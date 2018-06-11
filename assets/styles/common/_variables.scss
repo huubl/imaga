@@ -33,10 +33,11 @@ $purple:  #6f42c1;
 $pink:    #e83e8c;
 $red:     #FF3D00;
 $orange:  #f4701f;
-$yellow:  #FFD600;
+$yellow:  #ffbc00;
 $green:   #00C853;
 $teal:    #466baa;
-$cyan:    #6FC3DF;
+$turquoise: #00bfa5;
+$cyan:    #00b0ff;
 
 $colors: (
   blue: $blue,
@@ -48,6 +49,7 @@ $colors: (
   yellow: $yellow,
   green: $green,
   teal: $teal,
+  turquoise: $turquoise,
   cyan: $cyan,
   white: $white,
   gray: $gray-600,
@@ -72,6 +74,7 @@ $theme-colors: (
   yellow: $yellow,
   green: $green,
   teal: $teal,
+  turquoise: $turquoise,
   cyan: $cyan,
   white: $white,
   black: $black,
@@ -102,9 +105,9 @@ $spacers: (
 
 
 $body-bg:       $white;
-$body-color:    $gray-900;
+$body-color:    $gray-800;
 
-$link-color:            $orange;
+$link-color:            $teal;
 $link-decoration:       none;
 $link-hover-color:      darken($link-color, 15%);
 $link-hover-decoration: underline;
