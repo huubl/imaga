@@ -64,7 +64,7 @@
           </li>
           <li class="list-item py-1">
             <a href="#article" class="text-gray-500">
-              Fuck you, pay me!
+              How to get your ratings up
             </a>
           </li>
           <li class="list-item py-1">
