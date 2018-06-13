@@ -26,22 +26,22 @@ use IMAGA\Theme\Assets;
       <div class="row text-center">
         <div class="col-3">
           <a href="/conversion-optimization/conversion-research">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-research-2.svg');?>" alt="Conversion Research">
+            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-research-light.svg');?>" alt="Conversion Research">
           </a>
         </div>
         <div class="col-3">
           <a href="/conversion-optimization/conversion-strategy">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-strategy-2.svg');?>" alt="Conversion Strategy">
+            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-strategy-light.svg');?>" alt="Conversion Strategy">
           </a>
         </div>
         <div class="col-3">
           <a href="/conversion-optimization/conversion-design">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-design-2.svg');?>" alt="Conversion Design">
+            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-design-light.svg');?>" alt="Conversion Design">
           </a>
         </div>
         <div class="col-3">
           <a href="/conversion-optimization/conversion-build">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-build-2.svg');?>" alt="Conversion Build">
+            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-build-light.svg');?>" alt="Conversion Build">
           </a>
         </div>
       </div>

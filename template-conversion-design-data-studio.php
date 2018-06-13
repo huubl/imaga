@@ -17,13 +17,13 @@ use IMAGA\Theme\Assets;
           <p class="lead">Monitor eveything that happen on your site with our custom dashboards</p>
         </div>
         <div class="col-6 text-center">
-          <img src="<?php echo Assets\asset_path('images/promo/data-studio.png'); ?>" alt="Smartphone">
+          <img class="mt-6" src="<?php echo Assets\asset_path('images/promo/data-studio.png'); ?>" alt="Smartphone">
         </div>
       </div>
 
     </div>
   </div>
-  
+
   <section>
     <div class="container py-5">
 
@@ -49,8 +49,8 @@ use IMAGA\Theme\Assets;
     </div>
   </section>
 
-  <section class="bg-gradient-dense-water">
-    <div class="container text-center text-white py-5">
+  <section class="bg-light">
+    <div class="container text-center py-5">
       <div class="row">
         <div class="col-12">
           <h1 class="display-6 mb-4">When do you need what kind of data?</h1>

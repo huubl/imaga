@@ -26,22 +26,22 @@ use IMAGA\Theme\Assets;
       <div class="row text-center">
         <div class="col-3 conversion-arrow">
           <a href="/conversion-optimization/conversion-research">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-research-2.svg');?>" alt="Conversion Research">
+            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-research-light.svg');?>" alt="Conversion Research">
           </a>
         </div>
         <div class="col-3">
           <a href="/conversion-optimization/conversion-strategy">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-strategy-2.svg');?>" alt="Conversion Strategy">
+            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-strategy-light.svg');?>" alt="Conversion Strategy">
           </a>
         </div>
         <div class="col-3">
           <a href="/conversion-optimization/conversion-design">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-design-2.svg');?>" alt="Conversion Build">
+            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-design-light.svg');?>" alt="Conversion Build">
           </a>
         </div>
         <div class="col-3">
           <a href="/conversion-optimization/conversion-build">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-build-2.svg');?>" alt="Conversion Design">
+            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-build-light.svg');?>" alt="Conversion Design">
           </a>
         </div>
       </div>
@@ -49,7 +49,7 @@ use IMAGA\Theme\Assets;
     </div>
   </div>
 
-  <section>
+  <section class="bg-light">
     <div class="container py-5">
 
       <div class="row justify-content-center">
@@ -74,8 +74,8 @@ use IMAGA\Theme\Assets;
     </div>
   </section>
 
-  <section class="bg-gradient-dense-water">
-    <div class="container text-center text-white py-5">
+  <section>
+    <div class="container text-center py-5">
       <div class="row">
         <div class="col-12">
           <h1 class="display-6 mb-4">When do you need what kind of data?</h1>
@@ -94,7 +94,7 @@ use IMAGA\Theme\Assets;
     </div>
   </section>
 
-  <section>
+  <section class="bg-light">
     <?php get_template_part('templates/sections/brands','banner'); ?>
   </section>
 
