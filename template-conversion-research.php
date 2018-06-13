@@ -8,7 +8,7 @@ use IMAGA\Theme\Assets;
 
 <?php while (have_posts()) : the_post(); ?>
 
-  <div class="jumbotron jumbotron-fluid bg-green overflow-hidden mb-0">
+  <div class="jumbotron jumbotron-fluid bg-malachite overflow-hidden mb-0">
     <div class="container text-center text-white">
 
       <div class="row">

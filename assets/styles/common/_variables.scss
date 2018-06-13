@@ -27,27 +27,47 @@ $grays: (
   900: $gray-900
 );
 
-$blue:    #5980ec;
-$indigo:  #651FFF;
-$purple:  #6f42c1;
-$pink:    #e83e8c;
-$red:     #FF3D00;
-$orange:  #f4701f;
-$yellow:  #ffbc00;
-$green:   #00C853;
-$teal:    #466baa;
-$turquoise: #00bfa5;
-$cyan:    #00b0ff;
+$blue:          #5980ec;
+$indigo:        #651FFF;
+$purple:        #6f42c1;
+$pink:          #e83e8c;
+
+$red:           #FF3D00;
+$ruby:          #E0115F;
+$rusty-red:     #DA2C43;
+$imperial-red:  #ED2939;
+$flamingo:      #EF4836;
+
+$orange:        #f4701f;
+$yellow:        #ffbc00;
+
+$green:         #00C853;
+$light-green:   #00c853;
+$emerald:       #50C878;
+$malachite:     #0BDA51;
+$teal:          #466baa;
+
+$turquoise:     #00bfa5;
+$cyan:          #00b0ff;
 
 $colors: (
   blue: $blue,
   indigo: $indigo,
   purple: $purple,
   pink: $pink,
+
   red: $red,
+  ruby: $ruby,
+  rusty-red: $rusty-red,
+  imperial-red: $imperial-red,
+  flamingo: $flamingo,
+
   orange: $orange,
   yellow: $yellow,
   green: $green,
+  light-green: $light-green,
+  emerald: $emerald,
+  malachite: $malachite,
   teal: $teal,
   turquoise: $turquoise,
   cyan: $cyan,
@@ -69,11 +89,22 @@ $theme-colors: (
   indigo: $indigo,
   purple: $purple,
   pink: $pink,
+
   red: $red,
+  ruby: $ruby,
+  rusty-red: $rusty-red,
+  imperial-red: $imperial-red,
+  flamingo: $flamingo,
+
   orange: $orange,
   yellow: $yellow,
+
   green: $green,
+  light-green: $light-green,
+  emerald: $emerald,
+  malachite: $malachite,
   teal: $teal,
+
   turquoise: $turquoise,
   cyan: $cyan,
   white: $white,
