@@ -50,7 +50,7 @@ use IMAGA\Theme\Assets;
   </div>
 
   <section class="bg-light">
-    <div class="container py-5">
+    <div class="container">
 
       <div class="row justify-content-center">
         <div class="col-8 text-center">

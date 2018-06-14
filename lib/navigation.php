@@ -4,6 +4,42 @@ namespace IMAGA\Theme\Navigation;
 
 use Walker_Nav_Menu;
 
+
+function brand( $image_url, $width = 180 ){
+
+  $html = '<a class="navbar-brand" href="' .esc_url( home_url('/') ) .'">';
+  $html .= '<img src="' . $image_url . '" width="' . $width . '" class="d-inline-block align-top" alt="' . get_bloginfo('name') . '">';
+  $html .= '</a>';
+
+  return $html;
+}
+
+function toggler( $theme_location = 'primary_navigation' ){
+
+  $html = '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="' . $theme_location . '" aria-controls="' . $theme_location . '" aria-expanded="false" aria-label="' . __('Toggle navigation','imaga') . '">';
+  $html .= '<span class="navbar-toggler-icon"></span>';
+  $html .= '</button>';
+
+  return $html;
+}
+
+function navigation( $theme_location = "primary_navigation", $container_id = "primary_navigation", $start_depth = 0, $depth = 2, $menu_class = "ml-auto nav navbar-nav", $container_class = "collapse navbar-collapse navbar-toggle" ){
+  return wp_nav_menu(
+    array(
+      'theme_location'    => $theme_location,
+      'start_depth'       => $start_depth,
+      'depth'             => $depth,
+      'container'         => 'div',
+      'container_class'   => $container_class,
+      'container_id'      => $container_id,
+      'menu_class'        => $menu_class,
+      'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+      'walker'            => new WP_Bootstrap_Navwalker()
+    )
+  );
+}
+
+
 /**
  * WP Bootstrap Navwalker
  *
@@ -900,38 +936,3 @@ class WP_Nav_Plus_Start_Depth
 }
 
 add_action( 'wp', array( new WP_Nav_Plus_Start_Depth, 'init' ) );
-
-
-function brand( $image_url ){
-
-  $html = '<a class="navbar-brand" href="' .esc_url( home_url('/') ) .'">';
-  $html .= '<img src="' . $image_url . '" width="180" class="d-inline-block align-top" alt="' . get_bloginfo('name') . '">';
-  $html .= '</a>';
-
-  return $html;
-}
-
-function toggler( $theme_location = 'primary_navigation' ){
-
-  $html = '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="' . $theme_location . '" aria-controls="' . $theme_location . '" aria-expanded="false" aria-label="' . __('Toggle navigation','imaga') . '">';
-  $html .= '<span class="navbar-toggler-icon"></span>';
-  $html .= '</button>';
-
-  return $html;
-}
-
-function navigation( $theme_location = "primary_navigation", $container_id = "primary_navigation", $start_depth = 0, $depth = 2, $menu_class = "ml-auto nav navbar-nav", $container_class = "collapse navbar-collapse navbar-toggle" ){
-  return wp_nav_menu(
-    array(
-      'theme_location'    => $theme_location,
-      'start_depth'       => $start_depth,
-      'depth'             => $depth,
-      'container'         => 'div',
-      'container_class'   => $container_class,
-      'container_id'      => $container_id,
-      'menu_class'        => $menu_class,
-      'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-      'walker'            => new WP_Bootstrap_Navwalker()
-    )
-  );
-}

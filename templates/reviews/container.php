@@ -1,6 +1,6 @@
 <?php use IMAGA\Theme\Assets; ?>
 
-<section class="reviews py-5">
+<section class="reviews">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center py-4">

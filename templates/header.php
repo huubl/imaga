@@ -2,7 +2,7 @@
 <?php use IMAGA\Theme\Assets; ?>
 <?php use IMAGA\Theme\Navigation; ?>
 
-<header class="navigation box-shadow">
+<header class="box-shadow bg-white fixed-top">
 
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
@@ -11,7 +11,7 @@
 
       <?php echo Navigation\toggler( '.navbar-toggle' ); ?>
 
-      <?php echo Navigation\navigation( 'primary_navigation', 'primary_navigation' , 0, 1); ?>
+      <?php echo Navigation\navigation( 'primary_navigation', 'primary_navigation' , 0, 1, "mr-auto nav navbar-nav"); ?>
 
     </div>
   </nav>
@@ -29,3 +29,4 @@
   </nav>
 
 </header>
+<div class="mb-lg-5"><!-- splaceholder --></div>

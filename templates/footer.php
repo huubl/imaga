@@ -2,7 +2,7 @@
 <?php use IMAGA\Theme\Assets; ?>
 
 <footer class="bg-gray-800 text-gray-500">
-  <div class="container py-5">
+  <div class="container">
     <div class="row pb-3">
       <div class="col-12">
         <span class="mr-4">Follow us on:</span>

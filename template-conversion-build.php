@@ -50,7 +50,7 @@ use IMAGA\Theme\Assets;
   </div>
 
   <section class="bg-light">
-    <div class="container py-5">
+    <div class="container">
       <div class="row justify-content-center">
         <div class="col-8 text-center">
           <h1 class="display-6 mb-4">WordPress: Custom Build or Template Based</h1>
@@ -76,7 +76,7 @@ use IMAGA\Theme\Assets;
   </section>
 
   <section class="bg-light">
-    <div class="container py-5">
+    <div class="container">
       <div class="row justify-content-center">
         <div class="col-8">
           <ul class="list-unstyled">
@@ -163,7 +163,7 @@ use IMAGA\Theme\Assets;
   </section>
 
   <section class="bg-light">
-    <div class="container py-5">
+    <div class="container">
       <div class="row justify-content-center">
         <div class="col-8">
           <ul class="list-unstyled">
@@ -235,7 +235,7 @@ use IMAGA\Theme\Assets;
   </section>
 
   <section>
-    <div class="container py-5">
+    <div class="container">
       <div class="row">
         <div class="col-8">
           <p class="lead">We are very experienced in both custom and theme based WordPress development and consistently deliver secure, standards compliant code that powers beautiful mobile responsive designs crafted to drive engagement, increase conversions, and express your brand and vision.</p>
@@ -255,7 +255,7 @@ use IMAGA\Theme\Assets;
   </section>
 
   <section>
-    <div class="container py-5">
+    <div class="container">
       <div class="row">
         <div class="col-5">
           <img class="img-fluid img-thumbnail box-shadow" src="<?php echo Assets\asset_path('images/trello-screenshot.png'); ?>" alt="">
@@ -268,7 +268,7 @@ use IMAGA\Theme\Assets;
   </section>
 
   <section class="bg-light text-center">
-    <div class="container py-5">
+    <div class="container">
       <div class="row">
         <div class="col-12">
           <h2 class="display-5 mb-4">WordPress Maintenance, backup, security & protection</h2>

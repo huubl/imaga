@@ -11,6 +11,22 @@
       }
     }
   }
+  #secondary_navigation{
+    .nav-item{
+      .nav-link{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+      }
+    }
+  }
+  #tertiary_navigation{
+    .nav-item{
+      .nav-link{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+      }
+    }
+  }
   .nav-item{
     &.active{
       border-bottom:2px solid $teal;

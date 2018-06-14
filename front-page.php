@@ -25,7 +25,7 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-6">
-          <a href="#i-want-to-improve" class="btn btn-orange btn-block btn-lg"><h4 class="m-0">I want to improve my (client's) website <i class="fa fa-arrow-circle-right"></i></h4></a>
+          <a href="#i-want-to-improve" class="btn btn-light-green btn-block btn-lg"><h4 class="m-0">I want to improve my (client's) website <i class="fa fa-arrow-circle-right"></i></h4></a>
         </div>
       </div>
       <div class="row justify-content-center py-6">
@@ -69,7 +69,7 @@
 </section>
 
 <section>
-  <div class="container py-5 overflow-hidden">
+  <div class="container overflow-hidden">
 
     <div class="row">
       <div class="col-12 text-center pb-5">
@@ -108,7 +108,7 @@
 </section>
 
 <section class="bg-light">
-  <div class="container py-5">
+  <div class="container">
     <div class="row">
       <div class="col-12 text-center">
         <h2 class="display-5">Your data is a strategic resource</h2>
@@ -135,7 +135,7 @@
 </section>
 
 <section>
-  <div class="container py-5">
+  <div class="container">
     <div class="row">
       <div class="col-12 text-center">
         <h3 class="lead mb-4">Discover the best possible understanding of your customers with our wide<br>range of different qualitative and quantitative methodes. Learn valuable<br>insights about your specific customers:</h3>
@@ -155,7 +155,7 @@
 </section>
 
 <section class="bg-light">
-  <div class="container py-5">
+  <div class="container">
     <div class="row align-items-center text-center">
       <div class="col-3">
         <h2 class="lead">Or select any of the other steps of our conversion process</h2>
@@ -170,7 +170,7 @@
           </div>
           <div class="col-4">
             <a href="/conversion-optimization/conversion-design">
-              <img class="img-fluid mb-3" src="<?php echo Assets\asset_path('images/icons/conversion-design-dark.svg');?>" alt="Conversion Design">
+              <img class="img-fluid mb-3" src="<?php echo Assets\asset_path('images/icons/pencil-dark.svg');?>" alt="Conversion Design">
               <h4 class="text-dark">Conversion<br>Design</h4>
             </a>
           </div>
