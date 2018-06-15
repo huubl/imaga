@@ -9,7 +9,7 @@ use IMAGA\Theme\Assets;
 <?php while (have_posts()) : the_post(); ?>
 
   <div class="jumbotron jumbotron-fluid bg-cyan overflow-hidden mb-0">
-    <div class="container text-center text-white">
+    <div class="container text-center text-white py-0">
 
       <div class="row">
         <div class="col-12">
@@ -61,7 +61,7 @@ use IMAGA\Theme\Assets;
   </section>
 
   <section>
-    <div class="container text-center py-5">
+    <div class="container text-center">
       <div class="row">
         <div class="col-12">
           <h1 class="display-6 mb-4">When do you need a custom Build WordPress website?</h1>
@@ -148,7 +148,7 @@ use IMAGA\Theme\Assets;
   </section>
 
   <section>
-    <div class="container text-center py-5">
+    <div class="container text-center">
       <div class="row">
         <div class="col-12">
           <h1 class="display-6 mb-4">What about Template Based WordPress websites?</h1>

@@ -25,7 +25,9 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-6">
-          <a href="#i-want-to-improve" class="btn btn-light-green btn-block btn-lg"><h4 class="m-0">I want to improve my (client's) website <i class="fa fa-arrow-circle-right"></i></h4></a>
+          <a href="#i-want-to-improve" class="btn btn-green btn-block btn-lg">
+            <h4 class="m-0">I want to improve my (client's) website<i class="ml-3 fa fa-chevron-circle-right"></i></h4>
+          </a>
         </div>
       </div>
       <div class="row justify-content-center py-6">
@@ -35,7 +37,9 @@
               <p class="lead">Or maybe you’ve got a great idea and need a website?</p>
             </div>
             <div class="col-7">
-              <a href="#i-need-a-new-website" class="btn btn-link btn-block btn-lg">I need a new website <i class="fa fa-arrow-circle-right "></i></a>
+              <a href="#i-need-a-new-website" class="btn btn-outline-green btn-block btn-lg">
+                I need a new website<i class="ml-3 fa fa-chevron-circle-right"></i>
+              </a>
             </div>
           </div>
         </div>

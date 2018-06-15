@@ -9,7 +9,7 @@ use IMAGA\Theme\Assets;
 <?php while (have_posts()) : the_post(); ?>
 
   <div class="jumbotron jumbotron-fluid bg-green overflow-hidden mb-0 pb-0">
-    <div class="container text-white">
+    <div class="container text-white py-0">
 
       <div class="row">
         <div class="col-6 py-7">
@@ -50,7 +50,7 @@ use IMAGA\Theme\Assets;
   </section>
 
   <section class="bg-light">
-    <div class="container text-center py-5">
+    <div class="container text-center">
       <div class="row">
         <div class="col-12">
           <h1 class="display-6 mb-4">When do you need what kind of data?</h1>

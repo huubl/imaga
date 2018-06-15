@@ -25,7 +25,7 @@ use IMAGA\Theme\Assets;
     </div>
   </div>
 
-  <section class="bg-malachite text-white">
+  <section class="bg-green text-white">
     <div class="container">
 
       <div class="row justify-content-center">
@@ -118,7 +118,7 @@ use IMAGA\Theme\Assets;
       <div class="row">
         <div class="col-12 text-center">
           <h2 class="display-5 mb-4">How can we help you and your team?</h2>
-          <a href="#i-want-to-improve" class="btn btn-malachite btn-lg px-5">I want to implrove my (clients) website</a>
+          <a href="#i-want-to-improve" class="btn btn-green btn-lg px-5">I want to implrove my (clients) website</a>
         </div>
       </div>
     </div>
