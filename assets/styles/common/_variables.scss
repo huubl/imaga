@@ -37,6 +37,7 @@ $ruby:          #E0115F;
 $rusty-red:     #DA2C43;
 $imperial-red:  #ED2939;
 $flamingo:      #EF4836;
+$flat-red:      #ff5252;
 
 $orange:        #f4701f;
 $yellow:        #ffbc00;
@@ -59,6 +60,7 @@ $colors: (
   rusty-red: $rusty-red,
   imperial-red: $imperial-red,
   flamingo: $flamingo,
+  flat-red: $flat-red,
 
   orange: $orange,
   yellow: $yellow,
@@ -89,10 +91,8 @@ $theme-colors: (
   pink: $pink,
 
   red: $red,
-  ruby: $ruby,
-  rusty-red: $rusty-red,
-  imperial-red: $imperial-red,
   flamingo: $flamingo,
+  flat-red: $flat-red,
 
   orange: $orange,
   yellow: $yellow,

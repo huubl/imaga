@@ -4,7 +4,7 @@
   <div class="container">
 
     <div class="row py-6">
-      <div class="col-7">
+      <div class="col-6">
         <h1 class="display-5 mb-4">Is your website leaking money?</h1>
         <p class="lead">You can improve your website, convert more of your visitors to customers and reach your goals better, even with the same traffic.</p>
         <p class="lead">Team up with us and receive access to the latest conversion optimization and persuasion techniques to help your website perform better. You’ll be part of our team as we work with you. Everything we do starts with you and your customers.</p>
@@ -12,7 +12,7 @@
     </div>
 
   </div>
-  <div class="bg-bucket bg-yellow">
+  <div class="bg-devices bg-green">
   </div>
 </div>
 

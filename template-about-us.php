@@ -169,7 +169,7 @@ use IMAGA\Theme\Assets;
   <?php get_template_part('templates/reviews/container'); ?>
 </section>
 
-<section class="bg-flamingo text-white">
+<section class="bg-flat-red text-white">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 text-center">

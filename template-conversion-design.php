@@ -86,11 +86,11 @@ use IMAGA\Theme\Assets;
     </div>
   </section>
 
-  <section class="bg-light">
+  <section class="bg-flat-red">
     <div class="container">
 
       <div class="row">
-        <div class="col-6">
+        <div class="col-6 text-white">
           <h2 class="display-6 mb-4">Clarity Above All</h2>
           <p class="lead">We want your new designs to be very specific. The same goes for your buttons, your Call-To-Actions, photo’s and other elements. Because we know: A strong visual appearance combined with a low visual complexity matters to your customers</p>
         </div>
