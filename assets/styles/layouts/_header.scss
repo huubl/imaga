@@ -2,6 +2,9 @@
   position: relative;
   z-index: 999;
 }
+.collapsing{
+  transition: height .2s ease;
+}
 .navbar{
   #primary_navigation{
     .nav-item{
@@ -12,6 +15,13 @@
     }
   }
   #secondary_navigation{
+
+    &.collapsing{
+      transition-delay: .2s;
+    }
+    &.collapse.show{
+      transition-delay: .0s;
+    }
     .nav-item{
       .nav-link{
         padding-top: .5rem;
@@ -20,6 +30,13 @@
     }
   }
   #tertiary_navigation{
+
+    &.collapsing{
+      transition-delay: .4s;
+    }
+    &.collapse.show{
+      transition-delay: .0s;
+    }
     .nav-item{
       .nav-link{
         padding-top: .5rem;

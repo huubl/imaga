@@ -9,16 +9,16 @@ use IMAGA\Theme\Assets;
 <?php while (have_posts()) : the_post(); ?>
 
   <div class="jumbotron jumbotron-fluid bg-green overflow-hidden mb-0">
-    <div class="container text-center text-white py-0">
+    <div class="container text-white py-0">
 
-      <div class="row">
-        <div class="col-12">
+      <div class="row justify-content-center">
+        <div class="col-10">
           <h1 class="display-5 mt-6 mb-5">Discover insights that matters to your bottom line<br>with our Conversion Optimization Process</h1>
         </div>
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-9">
+        <div class="col-10">
           <p class="lead mb-5">Find out exactly where and when your visitors are experiencing difficulty and work towards a total 360° optimal experience for all your customers</p>
         </div>
       </div>

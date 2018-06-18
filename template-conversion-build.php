@@ -9,16 +9,16 @@ use IMAGA\Theme\Assets;
 <?php while (have_posts()) : the_post(); ?>
 
   <div class="jumbotron jumbotron-fluid bg-cyan overflow-hidden mb-0">
-    <div class="container text-center text-white py-0">
+    <div class="container text-white py-0">
 
-      <div class="row">
-        <div class="col-12">
+      <div class="row justify-content-center">
+        <div class="col-10">
           <h1 class="display-5 mt-6 mb-5">WordPress and HTML5 based websites, and landing<br>pages optimized for your audience and brand</h1>
         </div>
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-9">
+        <div class="col-10">
           <p class="lead mb-5">What if I just need development? We do that as well.</p>
         </div>
       </div>
