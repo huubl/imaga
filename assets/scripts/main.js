@@ -25,6 +25,8 @@
            once: 'true',
         });
 
+        $(".navbar-spacing").height( $(".navbar-container").height() );
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

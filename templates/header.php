@@ -2,7 +2,7 @@
 <?php use IMAGA\Theme\Assets; ?>
 <?php use IMAGA\Theme\Navigation; ?>
 
-<header class="box-shadow bg-white fixed-top">
+<header class="box-shadow bg-white fixed-top navbar-container">
 
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
@@ -29,4 +29,4 @@
   </nav>
 
 </header>
-<div class="mb-lg-5"><!-- splaceholder --></div>
+<div class="navbar-spacing"><!-- splaceholder --></div>

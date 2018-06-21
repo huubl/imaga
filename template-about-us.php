@@ -108,7 +108,7 @@ use IMAGA\Theme\Assets;
     <div class="row">
 
       <div class="col-6 pt-lg-8">
-        <p>At IMAGA I make beautifully designed concepts, to blazingly fast websites with little to no comprimises. Together with Marco Kramer Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.</p>
+        <p>At IMAGA I create fast websites with open concepts. In my minimal customized Atom editor I work out new concepts, explore different solutions and write clean code. Besides write code I work closely together with Marco Kramer and together we create the Conversion Optimized websites.</p>
       </div>
 
       <div class="col-6">
@@ -137,12 +137,14 @@ use IMAGA\Theme\Assets;
     <div class="row justify-content-center pt-6">
       <div class="col-8">
 
-        <h1 class="display-5"><code>&lt;code&gt;</code> of conduct</h1>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
-        <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. </p>
+        <h1 class="display-5">Getting your site at 1.8s</h1>
+        <p>By using proven web standards and insights provided by Marco Kramer's UX expertise, I make fast sites even faster by optimizing critical parts of the website.</p>
+        <p>Most websites use only a fraction of optimization which overall mean less conversion. By optimizing websites to their fullest potential the clients' of IMAGA get higher position at a Google search and in turn get more Conversion on their site.</p>
 
-        <h1 class="display-5">Desires and Goals</h1>
-        <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+
+        <h1 class="display-5">I <code>&lt;code&gt;</code> with <code><i class="fa fa-heart"></i></code></h1>
+        <p>Odilio is my name, and Open Source is my game. I believe strongly that Open Source is <i>the</i> future of coding and by using Open Source components the project itself stays more transparant.</p>
+        <p>Besides writing optimized websites, I assist Marco Kramer in bla bla bla hier zou iets kunnen komen wat Marco en ik samen brengt en waarin we elkaar aanvullen ofzo.</p>
 
       </div>
     </div>
