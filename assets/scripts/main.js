@@ -25,7 +25,7 @@
            once: 'true',
         });
 
-        $(".navbar-spacing").height( $(".navbar-container").height() );
+        jQuery(".navbar-spacing").height( jQuery(".navbar-container").height() );
 
       },
       finalize: function() {

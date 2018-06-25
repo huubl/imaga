@@ -84,11 +84,11 @@ use IMAGA\Theme\Assets;
       <div class="row justify-content-center">
         <div class="col-4">
           <p class="lead">Qualitative<br>Conversion data</p>
-          <a href="/conversion-optimization/conversion-research/qualitative" class="btn btn-link btn-lg">READ MORE<i class="ml-3 fa fa-chevron-circle-right"></i></a>
+          <a href="/conversion-optimization/conversion-research/qualitative" class="lead link">Read more<i class="ml-3 fa fa-chevron-circle-right"></i></a>
         </div>
         <div class="col-4">
           <p class="lead">Quantitative<br>Conversion data</p>
-          <a href="/conversion-optimization/conversion-research/quantitative" class="btn btn-link btn-lg">LEARN MORE<i class="ml-3 fa fa-chevron-circle-right"></i></a>
+          <a href="/conversion-optimization/conversion-research/quantitative" class="lead link">Learn more<i class="ml-3 fa fa-chevron-circle-right"></i></a>
         </div>
       </div>
     </div>

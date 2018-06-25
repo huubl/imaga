@@ -114,7 +114,7 @@ use IMAGA\Theme\Assets;
           <p class="lead">Your customers aren’t looking to be wowed for the sake of being wowed. On their PC, tablet but especially on their mobile they have a task to complete. We’ll make sure your website communicates back just what they are looking for.</p>
           <p class="lead">We create web-designs (but also help agencies create persuasive designs) with a familiar layout and a clear hierarchy so moving through the website feels natural and becomes easy.</p>
           <p class="lead"><a href="#prices-and-options" class="btn btn-green">Persuasive Design prices and options<i class="fa fa-chevron-circle-right ml-3"></i></a></p>
-          <p><a href="#simply-work-into-mordor">Or simply tell us about your goals<i class="fa fa-chevron-circle-right ml-3"></i></a> </p>
+          <p><a href="#simply-work-into-mordor" class="link">Or simply tell us about your goals<i class="ml-2 fa fa-chevron-circle-right"></i></a> </p>
         </div>
       </div>
 

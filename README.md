@@ -10,4 +10,5 @@ Op basis van Sage 8.5.3.
  * PHP 7 of hoger
  * WordPress 4.9 of hoger
 
-#### Thema
+#### Bower Packages
+ * Slick Carrousel

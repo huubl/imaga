@@ -8,15 +8,9 @@
 <?php endif; ?>
 
 <section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <?php while (have_posts()) : the_post(); ?>
-          <?php get_template_part('templates/content', get_post_type() ); ?>
-        <?php endwhile; ?>
-      </div>
-    </div>
-  </div>
+  <?php while (have_posts()) : the_post(); ?>
+    <?php get_template_part('templates/content', get_post_type() ); ?>
+  <?php endwhile; ?>
 </section>
 
 <?php the_posts_navigation(); ?>

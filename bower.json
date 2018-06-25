@@ -12,7 +12,8 @@
     "aos": "^2.2.0",
     "smooth-scroll.js": "^12.1.5",
     "font-awesome": "^4.7.0",
-    "typed.js": "^2.0.5"
+    "typed.js": "^2.0.5",
+    "slick-carousel": "~1.7.1"
   },
   "overrides": {
     "font-awesome": {

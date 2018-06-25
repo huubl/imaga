@@ -17,10 +17,10 @@
 </div>
 
 <section class="how-we-can-help bg-light">
-    <div class="container">
+    <div class="container text-center">
       <div class="row">
         <div class="col-12 py-5">
-          <h2 class="display-5 text-center">How can we help you and your team?</h2>
+          <h2 class="display-5">How can we help you and your team?</h2>
         </div>
       </div>
       <div class="row justify-content-center">
@@ -30,22 +30,16 @@
           </a>
         </div>
       </div>
-      <div class="row justify-content-center py-6">
-        <div class="col-8">
-          <div class="row">
-            <div class="col-5 text-center">
-              <p class="lead">Or maybe you’ve got a great idea and need a website?</p>
-            </div>
-            <div class="col-7">
-              <a href="#i-need-a-new-website" class="btn btn-outline-green btn-block btn-lg">
-                I need a new website<i class="ml-3 fa fa-chevron-circle-right"></i>
-              </a>
-            </div>
-          </div>
+
+      <div class="row">
+        <div class="col-12 py-5">
+          <p class="lead">Or maybe you’ve got a great idea and need a website?</p>
+          <a href="#i-need-a-new-website" class="lead btn btn-outline-green">
+            I need a new website<i class="ml-3 fa fa-chevron-circle-right"></i>
+          </a>
         </div>
       </div>
     </div>
-
 </section>
 
 <section>
@@ -57,7 +51,8 @@
           We help agencies and companies<br>transform more of their visitors to real customers
           <small class="text-muted lead">(and will teach you exactly how we do it)</small>
         </h2>
-        <h3 class="lead">Find out more or request a <a href="#free-touch-and-go">free Touch & Go</a> for your website…</h3>
+        <h3 class="lead">Find out more or request a free Touch & Go for your website</h3>
+        <a href="#free-touch-and-go" class="lead link">Request a Touch & Go<i class="ml-2 fa fa-chevron-circle-right"></i></a>
       </div>
       <div class="col-6 text-center">
         <img class="img-fluid my-5" src="<?php echo Assets\asset_path('images/icons/happy-browser-window-dark.svg'); ?>"  width="280" alt="We help agencies and companies transform more of their visitors to real customers">
@@ -121,8 +116,8 @@
     </div>
     <div class="row">
       <div class="col-12 text-center py-4">
-        <a href="#research-deliverables" class="btn btn-primary btn-lg mb-2">See our Conversion Research Deliverables</a>
-        <p><u>Submit your goals</u> and let us contact you</p>
+        <a href="#research-deliverables" class="btn btn-primary btn-lg mb-2">See our Conversion Research Deliverables<i class="ml-2 fa fa-chevron-circle-right"></i></a>
+        <p><a href="#submit-goals" class="link">Submit your goals</a> and let us contact you</p>
       </div>
     </div>
     <div class="row justify-content-center">
@@ -147,7 +142,7 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-12 text-center">
-        <a href="#request-touch-and-go" class="btn btn-primary btn-lg px-7 mb-2">Request a free ‘Touch & Go’ for your website</a>
+        <a href="#request-touch-and-go" class="btn btn-primary btn-lg px-7 mb-2">Request a free ‘Touch & Go’ for your website<i class="ml-2 fa fa-chevron-circle-right"></i></a>
         <p>Result and a remote video-presentation within 3 days</p>
       </div>
     </div>
