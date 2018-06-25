@@ -3,7 +3,7 @@
 <div class="container">
   <div class="row py-5">
     <div class="col-12 text-center">
-      <h4 class="lead">You’re in good company. We do or have done Conversion Research<br>for agencies and smart companies such as:</h4>
+      <h4 class="lead">You’re in good company. We've done Conversion Research<br>for agencies and smart companies such as:</h4>
     </div>
   </div>
   <div class="row justify-content-center pb-5">

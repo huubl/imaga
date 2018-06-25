@@ -69,7 +69,7 @@ a{
   border-top: 0 solid transparent;
   border-right: 80px solid transparent;
   border-left: 80px solid transparent;
-  border-bottom: 80px solid theme-color('light');
+  border-bottom: 80px solid $gray-200;
   bottom: -80px;
   left: calc(50% - 80px);
 }

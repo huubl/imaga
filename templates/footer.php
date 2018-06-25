@@ -51,27 +51,25 @@
       <div class="col-5">
         <h5 class="lead text-light mb-3">Articles</h5>
         <ul class="list-unstyled m-0">
-          <li class="list-item py-1">
-            <a href="#article" class="text-gray-500">
-              The big impact of minified files
-            </a>
-            <span class="badge badge-info">NEW</span>
-          </li>
-          <li class="list-item py-1">
-            <a href="#article" class="text-gray-500">
-              How to handle clients you don't want
-            </a>
-          </li>
-          <li class="list-item py-1">
-            <a href="#article" class="text-gray-500">
-              How to get your ratings up
-            </a>
-          </li>
-          <li class="list-item py-1">
-            <a href="#article" class="text-gray-500">
-              WordPress Trick #17: Menu Nesting
-            </a>
-          </li>
+          <?php $args = array('post_type' => 'post', 'posts_per_page' => 4); ?>
+          <?php $query = new wp_query( $args ); ?>
+          <?php if($query->have_posts()): ?>
+            <?php while( $query->have_posts() ) : ?>
+              <?php $query->the_post(); ?>
+              <?php $seconds = strtotime("now") - strtotime(get_the_date("Y/m/d")); ?>
+
+              <li class="list-item py-1">
+                <a href="#article" class="text-gray-500">
+                  <?php the_title(); ?>
+                </a>
+                <?php if( $seconds < 172800 ): ?>
+                  <span class="badge badge-info">NEW</span>
+                <?php endif; ?>
+              </li>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+            <?php wp_reset_query(); ?>
+          <?php endif; ?>
         </ul>
       </div>
     </div>

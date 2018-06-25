@@ -3,7 +3,7 @@
 <div class="jumbotron jumbotron-fluid bg-white overflow-hidden mb-0">
   <div class="container">
 
-    <div class="row py-6">
+    <div class="row py-2">
       <div class="col-6">
         <h1 class="display-5 mb-4">Is your website leaking money?</h1>
         <p class="lead">You can improve your website, convert more of your visitors to customers and reach your goals better, even with the same traffic.</p>
@@ -16,10 +16,10 @@
   </div>
 </div>
 
-<section class="how-we-can-help bg-light">
+<section class="how-we-can-help bg-gray-200">
     <div class="container text-center">
       <div class="row">
-        <div class="col-12 py-5">
+        <div class="col-12 py-3">
           <h2 class="display-5">How can we help you and your team?</h2>
         </div>
       </div>
@@ -32,39 +32,14 @@
       </div>
 
       <div class="row">
-        <div class="col-12 py-5">
+        <div class="col-12 pt-5">
           <p class="lead">Or maybe you’ve got a great idea and need a website?</p>
-          <a href="#i-need-a-new-website" class="lead btn btn-outline-green">
+          <a href="#i-need-a-new-website" class="lead btn btn-outline-dark">
             I need a new website<i class="ml-3 fa fa-chevron-circle-right"></i>
           </a>
         </div>
       </div>
     </div>
-</section>
-
-<section>
-  <div class="container">
-
-    <div class="row align-items-center">
-      <div class="col-6 py-5">
-        <h2 class="display-6 mb-4">
-          We help agencies and companies<br>transform more of their visitors to real customers
-          <small class="text-muted lead">(and will teach you exactly how we do it)</small>
-        </h2>
-        <h3 class="lead">Find out more or request a free Touch & Go for your website</h3>
-        <a href="#free-touch-and-go" class="lead link">Request a Touch & Go<i class="ml-2 fa fa-chevron-circle-right"></i></a>
-      </div>
-      <div class="col-6 text-center">
-        <img class="img-fluid my-5" src="<?php echo Assets\asset_path('images/icons/happy-browser-window-dark.svg'); ?>"  width="280" alt="We help agencies and companies transform more of their visitors to real customers">
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<section class="bg-light">
-  <?php get_template_part('templates/reviews/container'); ?>
 </section>
 
 <section>
@@ -106,7 +81,7 @@
   </div>
 </section>
 
-<section class="bg-light">
+<section class="bg-gray-200">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -114,14 +89,8 @@
         <h3 class="lead">We find relevant data for your business and use it to help build better<br>experiences for your customers. But data is only valuable if we can organize<br>and understand it. That’s what our CRO process does:</h3>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12 text-center py-4">
-        <a href="#research-deliverables" class="btn btn-primary btn-lg mb-2">See our Conversion Research Deliverables<i class="ml-2 fa fa-chevron-circle-right"></i></a>
-        <p><a href="#submit-goals" class="link">Submit your goals</a> and let us contact you</p>
-      </div>
-    </div>
     <div class="row justify-content-center">
-      <div class="col-8">
+      <div class="col-8 py-4">
         <ul class="list-unstyled">
           <li><h4 class="display-6"><i class="fa fa-check"></i> Who is your customer?</h4></li>
           <li><h4 class="display-6"><i class="fa fa-check"></i> What motivates them?</h4></li>
@@ -130,22 +99,38 @@
         </ul>
       </div>
     </div>
+    <div class="row">
+      <div class="col-12 text-center py-4">
+        <a href="#research-deliverables" class="btn btn-primary btn-lg mb-2">See our Conversion Research Deliverables<i class="ml-2 fa fa-chevron-circle-right"></i></a>
+        <p><a href="#submit-goals" class="link">Submit your goals</a> and let us contact you</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <section>
+  <?php get_template_part('templates/reviews/container'); ?>
+</section>
+
+<section class="bg-gray-200">
   <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h3 class="lead mb-4">Discover the best possible understanding of your customers with our wide<br>range of different qualitative and quantitative methodes. Learn valuable<br>insights about your specific customers:</h3>
+
+    <div class="row align-items-center">
+      <div class="col-6 py-5">
+        <h2 class="display-6 mb-4">
+          We help agencies and companies<br>transform more of their visitors to real customers
+          <small class="text-muted lead">(and will teach you exactly how we do it)</small>
+        </h2>
+        <h3 class="lead">Can your (clients) website be improved?</h3>
+        <h3 class="lead mb-4">Discover the best possible understanding of your customers with our wide range of different qualitative and quantitative conversion optimized methodes. Learn valuable insights about your specific customers:</h3>
+        <a href="#free-touch-and-go" class="lead link">Request a free Touch & Go<i class="ml-2 fa fa-chevron-circle-right"></i></a>
+        <p><small>Results and a remote video-presentation within 3 days</small></p>
+      </div>
+      <div class="col-6 text-center">
+        <img class="img-fluid my-5" src="<?php echo Assets\asset_path('images/icons/happy-browser-window-dark.svg'); ?>"  width="280" alt="We help agencies and companies transform more of their visitors to real customers">
       </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-12 text-center">
-        <a href="#request-touch-and-go" class="btn btn-primary btn-lg px-7 mb-2">Request a free ‘Touch & Go’ for your website<i class="ml-2 fa fa-chevron-circle-right"></i></a>
-        <p>Result and a remote video-presentation within 3 days</p>
-      </div>
-    </div>
+
   </div>
 </section>
 
