@@ -29,6 +29,23 @@ a{
     font-size: $h5-font-size !important;
   }
 }
+.scroll-arrow{
+  position: absolute;
+  left: calc(50% - 25px);
+  width:50px;
+  height:50px;
+  margin-bottom: 25px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50px;
+
+  .fa{
+    color: #FFFFFF;
+    &:hover{
+      color: #FFFFFF;
+    }
+  }
+}
 
 .container{
   padding-top: 3rem;
@@ -53,6 +70,12 @@ a{
   line-height: $display-line-height;
 }
 
+.display-8 {
+  font-size: $display8-size;
+  font-weight: $display8-weight;
+  line-height: $display-line-height;
+}
+
 .jumbotron,section{
   position: relative;
 }
@@ -69,7 +92,7 @@ a{
   border-top: 0 solid transparent;
   border-right: 80px solid transparent;
   border-left: 80px solid transparent;
-  border-bottom: 80px solid $gray-200;
+  border-bottom: 80px solid theme-color('light');
   bottom: -80px;
   left: calc(50% - 80px);
 }
@@ -157,5 +180,34 @@ a{
 .list-group-flush{
   .list-group-item:first-child {
     border-top: 0;
+  }
+}
+
+.logged-in{
+  .navbar-container{
+    margin-top: 32px;
+  }
+}
+
+.card{
+  border-radius: 0px;
+  border: 0px;
+  transition: box-shadow .15s ease-in-out;
+
+  &:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+  }
+  a.text-body{
+    text-decoration: none !important;
+  }
+}
+
+.text-body{
+  color: $body-color;
+}
+
+@each $color, $value in $theme-colors {
+  .underline-#{$color}{
+    border-bottom: 2px solid $value;
   }
 }

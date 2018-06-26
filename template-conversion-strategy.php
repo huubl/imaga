@@ -8,52 +8,62 @@ use IMAGA\Theme\Assets;
 
 <?php while (have_posts()) : the_post(); ?>
 
-  <div class="jumbotron jumbotron-fluid bg-orange overflow-hidden mb-0">
-    <div class="container text-white py-0">
+  <div class="jumbotron jumbotron-fluid bg-white overflow-hidden mb-0">
+    <div class="container py-0">
 
-      <div class="row justify-content-center">
-        <div class="col-10">
-          <h1 class="display-5 mt-6 mb-5">Discover insights that matters to your bottom line<br>with our Conversion Optimization Process</h1>
+      <div class="row">
+        <div class="col-6">
+
         </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-10">
+        <div class="col-6 pt-6 pl-5">
+          <h1 class="display-5 mb-4">Discover insights that matters to your bottom line with our Conversion Optimization Process</h1>
           <p class="lead mb-5">We’ll let the insights and data guide us when we start working on fixing what matters most to your customers</p>
         </div>
       </div>
 
-      <div class="row text-center">
-        <div class="col-3">
-          <a href="/conversion-optimization/conversion-research">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-research-light.svg');?>" alt="Conversion Research">
-          </a>
-        </div>
-        <div class="col-3 conversion-arrow">
-          <a href="/conversion-optimization/conversion-strategy">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-strategy-light.svg');?>" alt="Conversion Strategy">
-          </a>
-        </div>
-        <div class="col-3">
-          <a href="/conversion-optimization/conversion-design">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-design-light.svg');?>" alt="Conversion Build">
-          </a>
-        </div>
-        <div class="col-3">
-          <a href="/conversion-optimization/conversion-build">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-build-light.svg');?>" alt="Conversion Design">
-          </a>
-        </div>
-      </div>
+    </div>
+    <div class="bg-conversion-strategy"></div>
+    <a class="scroll-arrow bg-green" href="#wordpress"><i class="fa fa-chevron-down"></i></a>
+  </div>
 
+<section class="bg-yellow">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-3">
+        <a href="/conversion-optimization/conversion-research">
+          <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-research-light.svg');?>" alt="Conversion Research">
+          <h4 class="text-white">Conversion<br>Research</h4>
+        </a>
+      </div>
+      <div class="col-3 conversion-arrow">
+        <a href="/conversion-optimization/conversion-strategy">
+          <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-strategy-light.svg');?>" alt="Conversion Strategy">
+          <h4 class="text-white">Conversion<br>Strategy</h4>
+        </a>
+      </div>
+      <div class="col-3">
+        <a href="/conversion-optimization/conversion-design">
+          <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-design-light.svg');?>" alt="Conversion Design">
+          <h4 class="text-white">Conversion<br>Design</h4>
+        </a>
+      </div>
+      <div class="col-3">
+        <a href="/conversion-optimization/conversion-build">
+          <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-build-light.svg');?>" alt="Conversion Build">
+          <h4 class="text-white">Conversion<br>Build</h4>
+        </a>
+      </div>
     </div>
   </div>
+</section>
+
+
 
   <section class="bg-light">
     <div class="container">
 
       <div class="row justify-content-center">
-        <div class="col-8 text-center">
+        <div class="col-8">
           <h1 class="display-6 mb-4">We’ll discover the right conversion optimization data and insights for your customers</h1>
           <p class="lead mb-4">Conversion Optimization Research and good, clean data is key to getting the valuable insights, making the right business decisions and moving your company forward</p>
           <p class="lead">Conversion optimization is a process. Amateurs follow best practices and don't know where to begin. Experts follow frameworks and processes. This free course will teach you the process of optimization.</p>
@@ -67,7 +77,7 @@ use IMAGA\Theme\Assets;
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-8 text-center">
+        <div class="col-8">
           <p class="lead mb-3">Conversion Optimization Research and good, clean data is key to getting the valuable insights, making the right business decisions and moving your company forward.</p>
           <p class="lead">We view Conversion optimization work as a process. We don’t just assume what might be wrong and we certainly don’t just start ‘fixing’ and changing your website without doing the research first.</p>
         </div>

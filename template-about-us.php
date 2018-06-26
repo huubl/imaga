@@ -12,9 +12,9 @@ use IMAGA\Theme\Assets;
     <div class="container">
 
       <div class="row">
-        <div class="col-6 py-6">
-          <h1 class="display-6">We help agencies and companies transform more of their visitors to real customers</h1>
-          <h2 class="lead">(and will teach you exactly how we do it)</h2>
+        <div class="col-6 pt-6 pr-5">
+          <h1 class="display-6 mb-4">We help agencies and companies transform more of their visitors to real customers</h1>
+          <h2 class="lead mb-5">(and will teach you exactly how we do it)</h2>
         </div>
       </div>
       <div class="bg-about-us">
@@ -23,7 +23,7 @@ use IMAGA\Theme\Assets;
     </div>
   </div>
 
-  <section class="bg-cyan text-white">
+  <section class="bg-blue text-white">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 text-center">
@@ -93,7 +93,7 @@ use IMAGA\Theme\Assets;
           <img class="img-fluid" src="<?php echo Assets\asset_path('images/logos/google-adwords-certified-dark.png'); ?>" alt="Google Analytics Certified">
         </div>
         <div class="col">
-          <img class="img-fluid" src="<?php echo Assets\asset_path('images/logos/qredits-dark.png'); ?>" alt="Qredits Coach Certified">
+          <img class="img-fluid" src="<?php echo Assets\asset_path('images/logos/qredits-color.png'); ?>" alt="Qredits Coach Certified">
         </div>
       </div>
 
@@ -144,7 +144,7 @@ use IMAGA\Theme\Assets;
 
         <h1 class="display-5">I <code>&lt;code&gt;</code> with <code><i class="fa fa-heart"></i></code></h1>
         <p>Odilio is my name, and Open Source is my game. I believe strongly that Open Source is <i>the</i> future of coding and by using Open Source components the project itself stays more transparant.</p>
-        <p>Besides writing optimized websites, I assist Marco Kramer in bla bla bla hier zou iets kunnen komen wat Marco en ik samen brengt en waarin we elkaar aanvullen ofzo.</p>
+        <p>Besides writing optimized websites, I work with Marco Kramer for Conversion Research, Design and Build projects.</p>
 
       </div>
     </div>

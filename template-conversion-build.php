@@ -8,51 +8,59 @@ use IMAGA\Theme\Assets;
 
 <?php while (have_posts()) : the_post(); ?>
 
-  <div class="jumbotron jumbotron-fluid bg-cyan overflow-hidden mb-0">
-    <div class="container text-white py-0">
+  <div class="jumbotron jumbotron-fluid bg-white overflow-hidden mb-0">
+    <div class="container py-0">
 
-      <div class="row justify-content-center">
-        <div class="col-10">
-          <h1 class="display-5 mt-6 mb-5">WordPress and HTML5 based websites, and landing<br>pages optimized for your audience and brand</h1>
+      <div class="row">
+        <div class="col-6">
+
         </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-10">
+        <div class="col-6 pt-6 pl-5">
+          <h1 class="display-5 mb-4">WordPress and HTML5 based websites, and landing pages optimized for your audience and brand</h1>
           <p class="lead mb-5">What if I just need development? We do that as well.</p>
         </div>
       </div>
 
+    </div>
+    <div class="bg-conversion-build"></div>
+    <a class="scroll-arrow bg-yellow" href="#wordpress"><i class="fa fa-chevron-down"></i></a>
+  </div>
+
+  <section class="bg-indigo">
+    <div class="container">
       <div class="row text-center">
         <div class="col-3">
           <a href="/conversion-optimization/conversion-research">
             <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-research-light.svg');?>" alt="Conversion Research">
+            <h4 class="text-white">Conversion<br>Research</h4>
           </a>
         </div>
         <div class="col-3">
           <a href="/conversion-optimization/conversion-strategy">
             <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-strategy-light.svg');?>" alt="Conversion Strategy">
+            <h4 class="text-white">Conversion<br>Strategy</h4>
           </a>
         </div>
         <div class="col-3">
           <a href="/conversion-optimization/conversion-design">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-design-light.svg');?>" alt="Conversion Build">
+            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-design-light.svg');?>" alt="Conversion Design">
+            <h4 class="text-white">Conversion<br>Design</h4>
           </a>
         </div>
         <div class="col-3 conversion-arrow">
           <a href="/conversion-optimization/conversion-build">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-build-light.svg');?>" alt="Conversion Design">
+            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-build-light.svg');?>" alt="Conversion Build">
+            <h4 class="text-white">Conversion<br>Build</h4>
           </a>
         </div>
       </div>
-
     </div>
-  </div>
+  </section>
 
-  <section class="bg-light">
+  <section id="wordpress" class="bg-light">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-8 text-center">
+        <div class="col-8">
           <h1 class="display-6 mb-4">WordPress: Custom Build or Template Based</h1>
           <p class="lead">We can deliver both fully custom build WordPress websites as well as template-based websites. We take both options to the max and focus on serving your business needs and your clients objectives. Read more to find out what WordPress build suits your project best.</p>
         </div>
@@ -61,9 +69,9 @@ use IMAGA\Theme\Assets;
   </section>
 
   <section>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-12">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8">
           <h1 class="display-6 mb-4">When do you need a custom Build WordPress website?</h1>
         </div>
       </div>
@@ -139,7 +147,7 @@ use IMAGA\Theme\Assets;
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-10 text-center">
+        <div class="col-8">
           <a href="#pricing" class="btn btn-teal btn-md">See our Custom Build WordPress Options & Pricing</a>
           <p>No idea what you need? Set Up a remote video meeting and we’ll help you</p>
         </div>
@@ -148,14 +156,10 @@ use IMAGA\Theme\Assets;
   </section>
 
   <section>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="display-6 mb-4">What about Template Based WordPress websites?</h1>
-        </div>
-      </div>
+    <div class="container">
       <div class="row justify-content-center">
         <div class="col-8">
+          <h1 class="display-6 mb-4">What about Template Based WordPress websites?</h1>
           <p class="lead">Templates based WordPress websites are only as good as the template they are based on. It goes without saying not all templates are created equal. We work solely with one of the most popular WordPress Themes of all time. A Theme that is so divers it’s actually more of a framework: The internationally awarded and best-selling X-Theme that holds 4 styles and 20 different designs.</p>
         </div>
       </div>
@@ -267,11 +271,11 @@ use IMAGA\Theme\Assets;
     </div>
   </section>
 
-  <section class="bg-light text-center">
+  <section class="bg-light">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="display-5 mb-4">WordPress Maintenance, backup, security & protection</h2>
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <h2 class="display-6 mb-4">WordPress Maintenance, backup, security & protection</h2>
           <p class="lead">WordPress is the most popular content management system in the world. As such it is often under attack by hackers. Our WordPress projects are fitted with daily (remote) backups and protected by strict firewall and malware defense systems. A one-year license is included in each proposal. <a href="#Read-more">Read More</a></p>
         </div>
       </div>

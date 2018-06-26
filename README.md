@@ -12,3 +12,4 @@ Op basis van Sage 8.5.3.
 
 #### Bower Packages
  * Slick Carrousel
+ * [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)

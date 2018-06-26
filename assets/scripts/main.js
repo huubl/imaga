@@ -19,10 +19,17 @@
     'common': {
       init: function() {
 
+        // init Animate On Scroll
         AOS.init({
            offset: 220,
            startEvent: 'load',
            once: 'true',
+        });
+
+        // init Smooth Scroll
+        var scroll = new SmoothScroll('a[href*="#"]', {
+          updateURL: false,
+          offset: jQuery(".navbar-container").height()
         });
 
         jQuery(".navbar-spacing").height( jQuery(".navbar-container").height() );

@@ -5,16 +5,15 @@
   <?php get_search_form(); ?>
 <?php endif; ?>
 
-<section>
+<section class="bg-gray-100">
   <div class="container">
     <div class="row">
 
-  <?php $i = 0; ?>
-  <?php while (have_posts()) : the_post(); $i++ ?>
-    <?php if($i % 3 == 0): ?>
-    <?php endif; ?>
-      <?php get_template_part('templates/content', get_post_type() ); ?>
-  <?php endwhile; ?>
-</div>
-</div>
+      <?php while (have_posts()) : the_post(); ?>
+
+        <?php get_template_part('templates/content', get_post_type() ); ?>
+
+      <?php endwhile; ?>
+    </div>
+  </div>
 </section>

@@ -5,18 +5,20 @@ $sidebar-sm-columns:    4;
 // Color system
 $white:  #fff;
 $gray-100: #f6f6f6;
+$gray-150: #efefef;
 $gray-200: #e7e7e7;
 $gray-300: #E0E0E0;
 $gray-400: #BDBDBD;
 $gray-500: #9E9E9E;
 $gray-600: #757575;
 $gray-700: #616161;
-$gray-800: #424242;
-$gray-900: #212121;
+$gray-800: #123340; //#424242;
+$gray-900: #0B1E26; //#212121;
 $black:  #000;
 
 $grays: (
   100: $gray-100,
+  150: $gray-150,
   200: $gray-200,
   300: $gray-300,
   400: $gray-400,
@@ -27,15 +29,13 @@ $grays: (
   900: $gray-900
 );
 
-$blue:          #5980ec;
-$indigo:        #651FFF;
+$blue:          #00b0ff; //#5980ec;
+$indigo:        #00A0D2; //#651FFF;
+
 $purple:        #6f42c1;
 $pink:          #e83e8c;
 
-$red:           #FF3D00;
-$ruby:          #E0115F;
-$rusty-red:     #DA2C43;
-$imperial-red:  #ED2939;
+$red:           #EF4836;
 $flamingo:      #EF4836;
 $flat-red:      #ff5252;
 
@@ -43,11 +43,10 @@ $orange:        #f4701f;
 $yellow:        #ffbc00;
 
 $green:         #0BDA51;
-$emerald:       #50C878;
 
 $teal:          #466baa;
 $turquoise:     #00bfa5;
-$cyan:          #00b0ff;
+$cyan:          #57E3F2; //#00b0ff;
 
 $colors: (
   blue: $blue,
@@ -56,9 +55,6 @@ $colors: (
   pink: $pink,
 
   red: $red,
-  ruby: $ruby,
-  rusty-red: $rusty-red,
-  imperial-red: $imperial-red,
   flamingo: $flamingo,
   flat-red: $flat-red,
 
@@ -66,7 +62,6 @@ $colors: (
   yellow: $yellow,
 
   green: $green,
-  emerald: $emerald,
 
   teal: $teal,
   turquoise: $turquoise,
@@ -83,7 +78,7 @@ $theme-colors: (
   info: $cyan,
   warning: $yellow,
   danger: $red,
-  light: $gray-100,
+  light: $gray-150,
   dark: $gray-800,
   blue: $blue,
   indigo: $indigo,
@@ -98,7 +93,6 @@ $theme-colors: (
   yellow: $yellow,
 
   green: $green,
-  emerald: $emerald,
 
   teal: $teal,
   turquoise: $turquoise,
@@ -132,9 +126,9 @@ $spacers: (
 
 
 $body-bg:       $white;
-$body-color:    $gray-800;
+$body-color:    #123340;
 
-$link-color:            $teal;
+$link-color:            #3BBCD9;
 $link-decoration:       none;
 $link-hover-color:      darken($link-color, 15%);
 $link-hover-decoration: underline;
@@ -147,10 +141,12 @@ $headings-line-height:   1.3;
 $display5-size:         2.5rem;
 $display6-size:         2rem;
 $display7-size:         1.8rem;
+$display8-size:         1.4rem;
 
 $display5-weight:       300;
 $display6-weight:       300;
 $display7-weight:       300;
+$display8-weight:       100;
 
 $lead-font-size:        1.3rem;//1.25rem
 
