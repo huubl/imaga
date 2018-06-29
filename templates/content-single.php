@@ -1,3 +1,4 @@
+<?php use IMAGA\Theme\Extras; ?>
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
 
@@ -31,61 +32,13 @@
       </div>
     </section>
 
-    <section class="facts bg-blue">
-      <div class="container">
-        <div class="row text-white text-center">
-          <div class="col-4">
-            <h2 class="display-4">+60%</h2>
-            <p class="lead">Increase in page visits</p>
-          </div>
-          <div class="col-4">
-            <h2 class="display-4">+2300</h2>
-            <p class="lead">More search queries</p>
-          </div>
-          <div class="col-4">
-            <h2 class="display-4">-0.8%</h2>
-            <p class="lead">Lower bounce rate</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <?php if( have_rows('sections') ): ?>
+      <?php while( have_rows('sections') ): the_row(); ?>
 
-    <section>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-8 py-6">
-            <p class="lead">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <?php Extras\switch_row_layout( get_row_layout() ); ?>
 
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-
-          </div>
-          <div class="col-6 pl-5">
-            <p class="lead"> Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.</p>
-          </div>
-        </div>
-      </div>
-      <div class="bg-left" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
-
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-8 py-6">
-            <p class="lead">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
+      <?php endwhile; ?>
+    <?php endif; ?>
 
   </article>
 <?php endwhile; ?>

@@ -20,6 +20,7 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
     'primary_navigation' => __('Primary Navigation', 'imaga'),
+    'footer_navigation' => __('Footer Navigation', 'imaga'),
   ]);
 
   // Enable post thumbnails

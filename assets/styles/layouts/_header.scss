@@ -57,3 +57,23 @@
     border-color: $value !important;
   }
 }
+
+.nav-inline{
+  display: inline-block;
+  list-style: none;
+  vertical-align: text-bottom;
+
+  @extend .p-0;
+  @extend .m-0;
+
+  .nav-item{
+    float:left;
+
+    .nav-link{
+      @extend small;
+      @extend .p-0;
+      @extend .text-light;
+      @extend .mr-2;
+    }
+  }
+}

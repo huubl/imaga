@@ -7,16 +7,21 @@ define("GOOGLE_FONTS", "Open Sans");
 // https://developers.google.com/maps/documentation/javascript/get-api-key
 define("GOOGLE_MAPS_API", "AIzaSyB5QTXactMQKDZThuga9XwRtr5r1TC3fTs");
 
+// Activate ACF 5 beta
+define('ACF_EARLY_ACCESS', '5');
+
 $files = [
-  'lib/setup.php',      // Theme setup
-  'lib/navigation.php', // Bootstrap Navigation Walker
-  'lib/tgmpa.php',      // TGM Plugin Activation
-  'lib/plugins.php',    // Required plugins
-  'lib/assets.php',     // Scripts and stylesheets
-  'lib/extras.php',     // Custom functions
-  'lib/titles.php',     // Page titles
-  'lib/wrapper.php',    // Theme wrapper class
-  'lib/customizer.php'  // Theme customizer
+  'lib/setup.php',                        // Theme setup
+  'lib/navigation.php',                   // Navigation Functions
+  'lib/navigation/bootstrap_walker.php',  // Navigation Bootstrap Walker
+  'lib/navigation/start_depth.php',       // Navigation Start Depth
+  'lib/tgmpa.php',                        // TGM Plugin Activation
+  'lib/plugins.php',                      // Required plugins
+  'lib/assets.php',                       // Scripts and stylesheets
+  'lib/extras.php',                       // Custom functions
+  'lib/titles.php',                       // Page titles
+  'lib/wrapper.php',                      // Theme wrapper class
+  'lib/customizer.php'                    // Theme customizer
 ];
 
 foreach ($files as $file):
