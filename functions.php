@@ -21,7 +21,8 @@ $files = [
   'lib/extras.php',                       // Custom functions
   'lib/titles.php',                       // Page titles
   'lib/wrapper.php',                      // Theme wrapper class
-  'lib/customizer.php'                    // Theme customizer
+  'lib/customizer.php',                   // Theme customizer
+  'lib/posts.php'                         // Custom Post Types
 ];
 
 foreach ($files as $file):

@@ -7,23 +7,22 @@ use IMAGA\Theme\Assets;
 ?>
 
 <?php while (have_posts()) : the_post(); ?>
-
   <div class="jumbotron jumbotron-fluid bg-white overflow-hidden mb-0">
-    <div class="container">
+    <div class="container py-0">
 
       <div class="row">
-        <div class="col-6 ml-auto py-lg-5 pl-5">
+        <div class="col-6 pt-6 pr-5">
           <h1 class="display-6 mb-4">Directions to Imaga HQ and parking</h1>
           <h1 class="display-7 mb-4">We’re located at Zuiderplein 4-6, 8911 AJ Leeuwarden, the Netherlands</h1>
           <p><a href="https://www.google.com/maps/dir/Current+Location/Zuiderplein+4,+8911+AJ+Leeuwarden" target="_blank">NAVIGATE TO IMAGA <i class="fa fa-external-link"></i></a></p>
         </div>
       </div>
-      <div class="bg-contact-parking">
-      </div>
+      <div class="bg-right" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
+      <a class="scroll-arrow bg-yellow" href="#about-the-building"><i class="fa fa-chevron-down"></i></a>
     </div>
   </div>
 
-  <section class="bg-cyan">
+  <section id="about-the-building" class="bg-green">
     <div class="container">
       <div class="row text-white">
         <div class="col-6 text-right">

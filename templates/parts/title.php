@@ -1,3 +1,5 @@
+<?php use IMAGA\Theme\Extras; ?>
+
 <?php if( get_sub_field('title') or get_sub_field('lead') ): ?>
 
   <div class="row">
@@ -6,15 +8,13 @@
 
       <?php if( get_sub_field('title') ): ?>
 
-        <h1>
-          <?php the_sub_field('title'); ?>
-        </h1>
+        <?php echo Extras\heading_based_on_length( get_sub_field('title') ); ?>
 
       <?php endif; ?>
 
       <?php if( get_sub_field('lead') ): ?>
 
-        <p class="lead">
+        <p class="lead text-muted">
           <?php the_sub_field('lead'); ?>
         </p>
 

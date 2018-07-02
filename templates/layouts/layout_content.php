@@ -8,7 +8,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-8 py-6 lead <?php the_sub_field('text_alignment'); ?> <?php the_sub_field('text_color'); ?>">
-          <?php the_sub_field('title'); ?>
+          <?php get_template_part('templates/parts/title'); ?>
           <?php the_sub_field('content'); ?>
         </div>
       </div>

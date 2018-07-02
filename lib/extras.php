@@ -52,53 +52,116 @@ function heading_based_on_length( $string , $wrapper = "h2"){
 
 }
 
-function switch_row_layout( $row_layout ){
-  switch ($row_layout) {
-    case 'layout_content':
-    get_template_part('templates/globals/content');
-    break;
-
-    case 'layout_facts':
-    get_template_part('templates/parts/facts');
-    break;
-
-    default:
+function get_layout( $row_layout ){
+  if( locate_template( array('templates/layouts/'. $row_layout .'.php') ) ):
+    get_template_part('templates/layouts/'. $row_layout );
+  else:
     echo '<div class="alert alert-danger">De layout "'.$row_layout.'" wordt niet ondersteund.</div>';
-    break;
-  }
+  endif;
 }
 
 function recent_posts( $post_per_page = 4 ){
-
-
   $args = array('post_type' => 'post', 'posts_per_page' => $post_per_page);
-
   $query = new wp_query( $args );
 
   if($query->have_posts()):
 
-  while( $query->have_posts() ) :
+    while( $query->have_posts() ) :
+      $query->the_post();
+      $seconds = strtotime("now") - strtotime(get_the_date("Y/m/d"));
+      ?>
 
-  $query->the_post();
-  $seconds = strtotime("now") - strtotime(get_the_date("Y/m/d"));
-  ?>
+      <li class="list-item py-1">
 
-  <li class="list-item py-1">
+        <a href="#article" class="text-gray-500">
+          <?php the_title(); ?>
+        </a>
 
-    <a href="#article" class="text-gray-500">
-      <?php the_title(); ?>
-    </a>
+        <?php if( $seconds < 172800 ): ?>
+          <span class="badge badge-info">NEW</span>
+        <?php endif; ?>
 
-    <?php if( $seconds < 172800 ): ?>
-      <span class="badge badge-info">NEW</span>
-    <?php endif; ?>
+      </li>
 
-  </li>
+      <?php
+    endwhile;
+    wp_reset_postdata();
+    wp_reset_query();
+  endif;
+}
 
-  <?php
-  endwhile;
-  wp_reset_postdata();
-  wp_reset_query();
+function the_employees(){
+  $args = array('post_type' => 'employees','orderby' => 'post_date','order' => 'ASC');
+  $query = new wp_query( $args );
+  $modulus = 0;
+
+  if($query->have_posts()):
+    while( $query->have_posts() ) :
+      $modulus++;
+      $query->the_post();
+      $terms = get_field('skills');
+      if($modulus % 2 == 0):
+        $switch_class = 'order-2';
+        $switch_bg = 'bg-light';
+      else:
+        $switch_class = '';
+        $switch_bg = '';
+      endif;
+      ?>
+      <section id="<?php echo strtolower( str_replace(' ','', get_the_title() ) ); ?>" class="pt-6 <?php echo $switch_bg; ?>">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 <?php echo $switch_class; ?>">
+              <div class="row">
+                <div class="col-3">
+                  <img class="img-fluid img-circle box-shadow" src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+                </div>
+                <div class="col-9">
+                  <h1 class="display-4"><?php the_title(); ?></h1>
+                  <?php if( $terms ): ?>
+                    <ul class="list-group list-group-flush">
+                      <?php foreach( $terms as $term ): ?>
+                        <li class="list-group-item <?php echo $switch_bg; ?>"><?php echo $term->name; ?></li>
+                      <?php endforeach; ?>
+                    </ul>
+                  <?php endif; ?>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 pt-lg-8">
+              <?php the_content(); ?>
+            </div>
+          </div>
+          <div class="row justify-content-center pt-6">
+            <div class="col-8">
+              <?php if( have_rows('content') ): ?>
+                <?php while( have_rows('content') ): the_row(); ?>
+                  <h1 class="display-5"><?php the_sub_field('title'); ?></h1>
+                  <div class="mb-4">
+                    <?php the_sub_field('content'); ?>
+                  </div>
+                <?php endwhile; ?>
+              <?php endif; ?>
+            </div>
+          </div>
+          <div class="row text-center py-4">
+            <?php if( have_rows('badges') ): ?>
+              <?php while( have_rows('badges') ): the_row(); ?>
+                <?php $image = get_sub_field('image'); ?>
+                <?php if( !empty($image) ): ?>
+                  <div class="col">
+                    <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php the_sub_field('title'); ?>">
+                  </div>
+                <?php endif; ?>
+              <?php endwhile; ?>
+            <?php endif; ?>
+          </div>
+        </div>
+      </section>
+      <?php
+    endwhile;
+    wp_reset_postdata();
+    wp_reset_query();
   endif;
 }
 

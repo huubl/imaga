@@ -16,8 +16,7 @@
           </div>
 
         </div>
-        <div class="bg-right bg-blue" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
-        </div>
+        <div class="bg-right" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
         <a class="scroll-arrow bg-yellow" href="#post-content"><i class="fa fa-chevron-down"></i></a>
       </div>
     </header>
@@ -32,10 +31,10 @@
       </div>
     </section>
 
-    <?php if( have_rows('sections') ): ?>
-      <?php while( have_rows('sections') ): the_row(); ?>
+    <?php if( have_rows('layouts') ): ?>
+      <?php while( have_rows('layouts') ): the_row(); ?>
 
-        <?php Extras\switch_row_layout( get_row_layout() ); ?>
+        <?php Extras\get_layout( get_row_layout() ); ?>
 
       <?php endwhile; ?>
     <?php endif; ?>
