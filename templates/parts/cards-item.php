@@ -2,23 +2,23 @@
 
   <div class="card-body">
 
-    <?php if( get_sub_field('title') ): ?>
+    <? if( get_sub_field('title') ): ?>
       <h5 class="card-title">
-        <?php the_sub_field('title'); ?>
+        <? the_sub_field('title'); ?>
       </h5>
-    <?php endif; ?>
+    <? endif; ?>
 
-    <?php if( get_sub_field('lead') ): ?>
+    <? if( get_sub_field('lead') ): ?>
       <h6 class="card-subtitle text-muted">
-        <?php the_sub_field('lead'); ?>
+        <? the_sub_field('lead'); ?>
       </h6>
-    <?php endif; ?>
+    <? endif; ?>
 
-    <?php if( get_sub_field('content') ): ?>
+    <? if( get_sub_field('content') ): ?>
       <div class="card-text">
-        <?php the_sub_field('content'); ?>
+        <? the_sub_field('content'); ?>
       </div>
-    <?php endif; ?>
+    <? endif; ?>
 
   </div>
 

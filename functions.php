@@ -1,4 +1,4 @@
-<?php
+<?
 
 // Define Google Fonts
 define("GOOGLE_FONTS", "Open Sans");

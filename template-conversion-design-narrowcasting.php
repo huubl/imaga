@@ -1,4 +1,4 @@
-<?php
+<?
 /**
  * Template Name: Conversion - Design: Narrow Casting
  */
@@ -6,7 +6,7 @@
 use IMAGA\Theme\Assets;
 ?>
 
-<?php while (have_posts()) : the_post(); ?>
+<? while (have_posts()) : the_post(); ?>
 
   <div class="jumbotron jumbotron-fluid bg-orange overflow-hidden mb-0">
     <div class="container text-white py-0">
@@ -36,7 +36,7 @@ use IMAGA\Theme\Assets;
 
       <div class="row">
         <div class="col-12 text-center py-5">
-          <img class="img-fluid" src="<?php echo Assets\asset_path('images/insights-diagram.png'); ?>" alt="Insights">
+          <img class="img-fluid" src="<?= Assets\asset_path('images/insights-diagram.png'); ?>" alt="Insights">
         </div>
       </div>
 
@@ -70,7 +70,7 @@ use IMAGA\Theme\Assets;
   </section>
 
   <section>
-    <?php get_template_part('templates/sections/brands','banner'); ?>
+    <? get_template_part('templates/sections/brands','banner'); ?>
   </section>
 
-<?php endwhile; ?>
+<? endwhile; ?>

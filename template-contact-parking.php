@@ -1,4 +1,4 @@
-<?php
+<?
 /**
 * Template Name: Contact - Parking
 */
@@ -6,7 +6,7 @@
 use IMAGA\Theme\Assets;
 ?>
 
-<?php while (have_posts()) : the_post(); ?>
+<? while (have_posts()) : the_post(); ?>
   <div class="jumbotron jumbotron-fluid bg-white overflow-hidden mb-0">
     <div class="container py-0">
 
@@ -17,7 +17,7 @@ use IMAGA\Theme\Assets;
           <p><a href="https://www.google.com/maps/dir/Current+Location/Zuiderplein+4,+8911+AJ+Leeuwarden" target="_blank">NAVIGATE TO IMAGA <i class="fa fa-external-link"></i></a></p>
         </div>
       </div>
-      <div class="bg-right" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
+      <div class="bg-right" style="background-image: url('<? the_post_thumbnail_url(); ?>');"></div>
       <a class="scroll-arrow bg-yellow" href="#about-the-building"><i class="fa fa-chevron-down"></i></a>
     </div>
   </div>
@@ -111,4 +111,4 @@ use IMAGA\Theme\Assets;
 
     </div>
   </section>
-<?php endwhile; ?>
+<? endwhile; ?>

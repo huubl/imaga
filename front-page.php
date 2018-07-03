@@ -1,4 +1,4 @@
-<?php use IMAGA\Theme\Assets; ?>
+<? use IMAGA\Theme\Assets; ?>
 
 <div class="jumbotron jumbotron-fluid bg-white overflow-hidden mb-0">
   <div class="container">
@@ -56,25 +56,25 @@
     <div class="row text-center">
       <div class="col-3 conversion-arrow">
         <a href="/conversion-optimization/conversion-research">
-          <img class="img-fluid mb-3" src="<?php echo Assets\asset_path('images/icons/conversion-research-dark.svg');?>" alt="Conversion Research">
+          <img class="img-fluid mb-3" src="<?= Assets\asset_path('images/icons/conversion-research-dark.svg');?>" alt="Conversion Research">
           <h4 class="text-dark">Conversion<br>Research</h4>
         </a>
       </div>
       <div class="col-3">
         <a href="/conversion-optimization/conversion-strategy">
-          <img class="img-fluid mb-3" src="<?php echo Assets\asset_path('images/icons/conversion-strategy-dark.svg');?>" alt="Conversion Strategy">
+          <img class="img-fluid mb-3" src="<?= Assets\asset_path('images/icons/conversion-strategy-dark.svg');?>" alt="Conversion Strategy">
           <h4 class="text-dark">Conversion<br>Strategy</h4>
         </a>
       </div>
       <div class="col-3">
         <a href="/conversion-optimization/conversion-design">
-          <img class="img-fluid mb-3" src="<?php echo Assets\asset_path('images/icons/conversion-design-dark.svg');?>" alt="Conversion Design">
+          <img class="img-fluid mb-3" src="<?= Assets\asset_path('images/icons/conversion-design-dark.svg');?>" alt="Conversion Design">
           <h4 class="text-dark">Conversion<br>Design</h4>
         </a>
       </div>
       <div class="col-3">
         <a href="/conversion-optimization/conversion-build">
-          <img class="img-fluid mb-3" src="<?php echo Assets\asset_path('images/icons/conversion-build-dark.svg');?>" alt="Conversion Build">
+          <img class="img-fluid mb-3" src="<?= Assets\asset_path('images/icons/conversion-build-dark.svg');?>" alt="Conversion Build">
           <h4 class="text-dark">Conversion<br>Build</h4>
         </a>
       </div>
@@ -110,7 +110,7 @@
 </section>
 
 <section>
-  <?php get_template_part('templates/reviews/container'); ?>
+  <? get_template_part('templates/reviews/container'); ?>
 </section>
 
 <section class="bg-red text-white">
@@ -119,7 +119,7 @@
     <div class="row align-items-center">
       <div class="col-6 py-5">
         <div class="mb-2">
-          <img class="img-fluid" src="<?php echo Assets\asset_path('images/icons/happy-browser-window-light.svg'); ?>"  width="36" alt="We help agencies and companies transform more of their visitors to real customers">
+          <img class="img-fluid" src="<?= Assets\asset_path('images/icons/happy-browser-window-light.svg'); ?>"  width="36" alt="We help agencies and companies transform more of their visitors to real customers">
         </div>
         <h2 class="display-6 mb-4">
           We help agencies and companies<br>transform more of their visitors to real customers
@@ -131,7 +131,7 @@
         <p><small>Results and a remote video-presentation within 3 days</small></p>
       </div>
       <!-- <div class="col-6 text-center">
-        <img class="img-fluid my-5" src="<?php echo Assets\asset_path('images/icons/happy-browser-window-blue.svg'); ?>"  width="280" alt="We help agencies and companies transform more of their visitors to real customers">
+        <img class="img-fluid my-5" src="<?= Assets\asset_path('images/icons/happy-browser-window-blue.svg'); ?>"  width="280" alt="We help agencies and companies transform more of their visitors to real customers">
       </div> -->
     </div>
 
@@ -141,7 +141,7 @@
 </section>
 
 <section>
-  <?php get_template_part('templates/sections/brands','banner'); ?>
+  <? get_template_part('templates/sections/brands','banner'); ?>
 </section>
 
 <section class="bg-light">
@@ -154,19 +154,19 @@
         <div class="row text-center">
           <div class="col-4">
             <a href="/conversion-optimization/conversion-strategy">
-              <img class="img-fluid mb-3" src="<?php echo Assets\asset_path('images/icons/conversion-strategy-dark.svg');?>" alt="Conversion Strategy">
+              <img class="img-fluid mb-3" src="<?= Assets\asset_path('images/icons/conversion-strategy-dark.svg');?>" alt="Conversion Strategy">
               <h4 class="text-dark">Conversion<br>Strategy</h4>
             </a>
           </div>
           <div class="col-4">
             <a href="/conversion-optimization/conversion-design">
-              <img class="img-fluid mb-3" src="<?php echo Assets\asset_path('images/icons/pencil-dark.svg');?>" alt="Conversion Design">
+              <img class="img-fluid mb-3" src="<?= Assets\asset_path('images/icons/pencil-dark.svg');?>" alt="Conversion Design">
               <h4 class="text-dark">Conversion<br>Design</h4>
             </a>
           </div>
           <div class="col-4">
             <a href="/conversion-optimization/conversion-build">
-              <img class="img-fluid mb-3" src="<?php echo Assets\asset_path('images/icons/conversion-build-dark.svg');?>" alt="Conversion Build">
+              <img class="img-fluid mb-3" src="<?= Assets\asset_path('images/icons/conversion-build-dark.svg');?>" alt="Conversion Build">
               <h4 class="text-dark">Conversion<br>Build</h4>
             </a>
           </div>
@@ -180,16 +180,16 @@
   <div class="container py-7">
     <div class="row align-items-center text-center">
       <div class="col-3">
-        <img class="img-fluid w-50" src="<?php echo Assets\asset_path('images/conversionxl-certified-dark.png'); ?>" alt="ConversionXL Certified">
+        <img class="img-fluid w-50" src="<?= Assets\asset_path('images/conversionxl-certified-dark.png'); ?>" alt="ConversionXL Certified">
       </div>
       <div class="col-3">
-        <img class="img-fluid w-75" src="<?php echo Assets\asset_path('images/google-analytics-certified-dark.png'); ?>" alt="Google Analytics Certified">
+        <img class="img-fluid w-75" src="<?= Assets\asset_path('images/google-analytics-certified-dark.png'); ?>" alt="Google Analytics Certified">
       </div>
       <div class="col-3">
-        <img class="img-fluid w-75" src="<?php echo Assets\asset_path('images/google-adwords-certified-dark.png'); ?>" alt="Google Adwords Certified">
+        <img class="img-fluid w-75" src="<?= Assets\asset_path('images/google-adwords-certified-dark.png'); ?>" alt="Google Adwords Certified">
       </div>
       <div class="col-3">
-        <img class="img-fluid w-75" src="<?php echo Assets\asset_path('images/google-optimize-dark.png'); ?>" alt="We Use Google Optimize">
+        <img class="img-fluid w-75" src="<?= Assets\asset_path('images/google-optimize-dark.png'); ?>" alt="We Use Google Optimize">
       </div>
     </div>
   </div>

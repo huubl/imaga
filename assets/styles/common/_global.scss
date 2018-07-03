@@ -84,18 +84,6 @@ a{
   overflow: hidden;
 }
 
-.conversion-arrow:after{
-  position: absolute;
-  content: '';
-  height:0;
-  width:0;
-  border-top: 0 solid transparent;
-  border-right: 80px solid transparent;
-  border-left: 80px solid transparent;
-  border-bottom: 80px solid theme-color('light');
-  bottom: -80px;
-  left: calc(50% - 80px);
-}
 
 .conversion-summary,
 .conversion-research,
@@ -197,8 +185,12 @@ a{
   &:hover{
     box-shadow: 0 5px 10px rgba(0,0,0,.3);
   }
+
   a.text-body{
     text-decoration: none !important;
+  }
+  .card-img-top{
+    border-radius: 0px;
   }
 }
 
@@ -209,5 +201,31 @@ a{
 @each $color, $value in $theme-colors {
   .underline-#{$color}{
     border-bottom: 2px solid $value;
+  }
+}
+.conversion-arrow-none:after{
+  position: absolute;
+  content: '';
+  height:0;
+  width:0;
+  border-top: 0 solid transparent;
+  border-right: 80px solid transparent;
+  border-left: 80px solid transparent;
+  border-bottom: 80px solid $white;
+  bottom: -80px;
+  left: calc(50% - 80px);
+}
+@each $color, $value in $theme-colors {
+  .conversion-arrow-#{$color}:after{
+    position: absolute;
+    content: '';
+    height:0;
+    width:0;
+    border-top: 0 solid transparent;
+    border-right: 80px solid transparent;
+    border-left: 80px solid transparent;
+    border-bottom: 80px solid $value;
+    bottom: -80px;
+    left: calc(50% - 80px);
   }
 }

@@ -1,6 +1,6 @@
-<?php use IMAGA\Theme\Extras; ?>
-<?php while (have_posts()) : the_post(); ?>
-  <article <?php post_class(); ?>>
+<? use IMAGA\Theme\Extras; ?>
+<? while (have_posts()) : the_post(); ?>
+  <article <? post_class(); ?>>
 
     <header>
       <div class="jumbotron jumbotron-fluid bg-white overflow-hidden mb-0">
@@ -8,39 +8,29 @@
 
           <div class="row py-2">
             <div class="col-6 pr-5">
-              <h1 class="display-5 mb-4"><?php the_title(); ?></h1>
+              <h1 class="display-5 mb-4"><? the_title(); ?></h1>
               <div class="lead">
-                <?php the_excerpt(); ?>
+                <? the_field('excerpt'); ?>
               </div>
             </div>
           </div>
 
         </div>
-        <div class="bg-right" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
+        <div class="bg-right" style="background-image: url('<? the_post_thumbnail_url(); ?>');"></div>
         <a class="scroll-arrow bg-yellow" href="#post-content"><i class="fa fa-chevron-down"></i></a>
       </div>
     </header>
 
-    <section id="post-content" class="bg-light">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-8 lead">
-            <?php the_content(); ?>
-          </div>
-        </div>
-      </div>
-    </section>
+    <? if( have_rows('layouts') ): ?>
+      <? while( have_rows('layouts') ): the_row(); ?>
 
-    <?php if( have_rows('layouts') ): ?>
-      <?php while( have_rows('layouts') ): the_row(); ?>
+        <? Extras\get_layout( get_row_layout() ); ?>
 
-        <?php Extras\get_layout( get_row_layout() ); ?>
-
-      <?php endwhile; ?>
-    <?php endif; ?>
+      <? endwhile; ?>
+    <? endif; ?>
 
   </article>
-<?php endwhile; ?>
+<? endwhile; ?>
 
 
 <section>
@@ -51,16 +41,7 @@
       </div>
     </div>
     <div class="row">
-      <?php $args = array('post_type' => 'post','orderby' => 'post_date','order' => 'desc', 'posts_per_page' => 3); ?>
-      <?php $query = new wp_query( $args ); ?>
-      <?php if($query->have_posts()): ?>
-        <?php while( $query->have_posts() ) : ?>
-          <?php $query->the_post(); ?>
-          <?php get_template_part('templates/content', get_post_type() ); ?>
-        <?php endwhile; ?>
-        <?php wp_reset_postdata(); ?>
-        <?php wp_reset_query(); ?>
-      <?php endif; ?>
+      <? get_template_part('templates/parts/related-posts'); ?>
     </div>
   </div>
 </section>

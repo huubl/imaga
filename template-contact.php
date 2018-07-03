@@ -1,4 +1,4 @@
-<?php
+<?
 /**
 * Template Name: Contact
 */
@@ -6,7 +6,7 @@
 use IMAGA\Theme\Assets;
 ?>
 
-<?php while (have_posts()) : the_post(); ?>
+<? while (have_posts()) : the_post(); ?>
   <div class="jumbotron jumbotron-fluid bg-white overflow-hidden mb-0">
     <div class="container py-0">
 
@@ -18,7 +18,7 @@ use IMAGA\Theme\Assets;
           <p class="lead">Or call Marco: <a href="tel:+31652673086" class="text-green"><i class="fa fa-phone"></i> +31 6 52 67 30 86</a></p>
         </div>
       </div>
-      <div class="bg-right" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
+      <div class="bg-right" style="background-image: url('<? the_post_thumbnail_url(); ?>');"></div>
       <a class="scroll-arrow bg-blue" href="#headquarters"><i class="fa fa-chevron-down"></i></a>
     </div>
   </div>
@@ -62,7 +62,7 @@ use IMAGA\Theme\Assets;
   </section>
 
   <section>
-    <?php get_template_part('templates/reviews/container'); ?>
+    <? get_template_part('templates/reviews/container'); ?>
   </section>
 
   <section class="bg-light">
@@ -183,4 +183,4 @@ use IMAGA\Theme\Assets;
   </section>
 
 
-<?php endwhile; ?>
+<? endwhile; ?>

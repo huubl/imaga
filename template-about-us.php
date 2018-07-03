@@ -1,4 +1,4 @@
-<?php
+<?
 /**
 * Template Name: About Us
 */
@@ -7,7 +7,7 @@ use IMAGA\Theme\Assets;
 use IMAGA\Theme\Extras;
 ?>
 
-<?php while (have_posts()) : the_post(); ?>
+<? while (have_posts()) : the_post(); ?>
 
   <div class="jumbotron jumbotron-fluid bg-white overflow-hidden mb-0">
     <div class="container py-0">
@@ -18,7 +18,7 @@ use IMAGA\Theme\Extras;
           <h2 class="lead mb-5">(and will teach you exactly how we do it)</h2>
         </div>
       </div>
-      <div class="bg-right" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
+      <div class="bg-right" style="background-image: url('<? the_post_thumbnail_url(); ?>');"></div>
       <a class="scroll-arrow bg-green" href="#employees"><i class="fa fa-chevron-down"></i></a>
     </div>
   </div>
@@ -35,11 +35,11 @@ use IMAGA\Theme\Extras;
   </section>
 
   <section id="employees">
-    <?php Extras\the_employees(); ?>
+    <? Extras\the_employees(); ?>
   </section>
 
 <section>
-  <?php get_template_part('templates/reviews/container'); ?>
+  <? get_template_part('templates/reviews/container'); ?>
 </section>
 
 <section class="bg-flat-red text-white">
@@ -53,4 +53,4 @@ use IMAGA\Theme\Extras;
   </div>
 </section>
 
-<?php endwhile; ?>
+<? endwhile; ?>

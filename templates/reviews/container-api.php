@@ -10,7 +10,7 @@
   <div class="container-fluid">
     <div class="row pb-6 reviews-container">
 
-      <?php
+      <?
 
       $json = file_get_contents("https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJyRMcl4X-yEcRGNqeN-ka948&key=AIzaSyCpbX1hZA52bwjZE8KTYq7mHgdoMEndlLA");
 
@@ -18,7 +18,7 @@
 
       ?>
 
-      <?php foreach ( $json->result->reviews as $review): ?>
+      <? foreach ( $json->result->reviews as $review): ?>
       <div class="col-4">
         <div class="row">
           <div class="col-3 text-right">
@@ -30,9 +30,9 @@
             <?= $review->author_name; ?>, <?= $review->relative_time_description; ?>
             <p>
               <span class="review-stars text-orange">
-                <?php for($i = 0; $i < $review->rating; $i++ ): ?>
+                <? for($i = 0; $i < $review->rating; $i++ ): ?>
                 <i class="fa fa-star"></i>
-                <?php endfor; ?>
+                <? endfor; ?>
               </span>
               <small>
                 <?= $review->text; ?>
@@ -41,7 +41,7 @@
           </div>
         </div>
       </div>
-      <?php endforeach; ?>
+      <? endforeach; ?>
 
 
     </div>

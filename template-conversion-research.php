@@ -1,4 +1,4 @@
-<?php
+<?
 /**
 * Template Name: Conversion - Research
 */
@@ -6,7 +6,7 @@
 use IMAGA\Theme\Assets;
 ?>
 
-<?php while (have_posts()) : the_post(); ?>
+<? while (have_posts()) : the_post(); ?>
 
   <div class="jumbotron jumbotron-fluid bg-white overflow-hidden mb-0">
     <div class="container py-0">
@@ -28,25 +28,25 @@ use IMAGA\Theme\Assets;
       <div class="row text-center">
         <div class="col-3 conversion-arrow">
           <a href="/conversion-optimization/conversion-research">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-research-light.svg');?>" alt="Conversion Research">
+            <img class="img-fluid mb-2" src="<?= Assets\asset_path('images/icons/conversion-research-light.svg');?>" alt="Conversion Research">
             <h4 class="text-white">Conversion<br>Research</h4>
           </a>
         </div>
         <div class="col-3">
           <a href="/conversion-optimization/conversion-strategy">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-strategy-light.svg');?>" alt="Conversion Strategy">
+            <img class="img-fluid mb-2" src="<?= Assets\asset_path('images/icons/conversion-strategy-light.svg');?>" alt="Conversion Strategy">
             <h4 class="text-white">Conversion<br>Strategy</h4>
           </a>
         </div>
         <div class="col-3">
           <a href="/conversion-optimization/conversion-design">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-design-light.svg');?>" alt="Conversion Design">
+            <img class="img-fluid mb-2" src="<?= Assets\asset_path('images/icons/conversion-design-light.svg');?>" alt="Conversion Design">
             <h4 class="text-white">Conversion<br>Design</h4>
           </a>
         </div>
         <div class="col-3">
           <a href="/conversion-optimization/conversion-build">
-            <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-build-light.svg');?>" alt="Conversion Build">
+            <img class="img-fluid mb-2" src="<?= Assets\asset_path('images/icons/conversion-build-light.svg');?>" alt="Conversion Build">
             <h4 class="text-white">Conversion<br>Build</h4>
           </a>
         </div>
@@ -66,7 +66,7 @@ use IMAGA\Theme\Assets;
 
       <div class="row">
         <div class="col-12 text-center py-5">
-          <img class="img-fluid" src="<?php echo Assets\asset_path('images/insights-diagram.png'); ?>" alt="Insights">
+          <img class="img-fluid" src="<?= Assets\asset_path('images/insights-diagram.png'); ?>" alt="Insights">
         </div>
       </div>
 
@@ -100,7 +100,7 @@ use IMAGA\Theme\Assets;
   </section>
 
   <section class="bg-light">
-    <?php get_template_part('templates/sections/brands','banner'); ?>
+    <? get_template_part('templates/sections/brands','banner'); ?>
   </section>
 
-<?php endwhile; ?>
+<? endwhile; ?>

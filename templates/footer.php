@@ -1,6 +1,6 @@
-<?php use IMAGA\Theme\Navigation; ?>
-<?php use IMAGA\Theme\Assets; ?>
-<?php use IMAGA\Theme\Extras; ?>
+<? use IMAGA\Theme\Navigation; ?>
+<? use IMAGA\Theme\Assets; ?>
+<? use IMAGA\Theme\Extras; ?>
 
 <footer class="bg-gray-800 text-gray-500">
   <div class="container">
@@ -18,7 +18,7 @@
     <hr>
     <div class="row">
       <div class="col-12 col-md-4 py-3">
-        <img class="img-fluid mb-4" src="<?php echo Assets\asset_path('images/brand-full-white.png'); ?>" alt="IMAGA" width="200">
+        <img class="img-fluid mb-4" src="<?= Assets\asset_path('images/brand-full-white.png'); ?>" alt="IMAGA" width="200">
         <ul class="list-unstyled m-0">
           <li class="list-item py-1">About Us</li>
           <li class="list-item py-1">Contact</li>
@@ -52,7 +52,7 @@
       <div class="col-12 col-md-5 py-3">
         <h5 class="lead text-light mb-3">Articles</h5>
         <ul class="list-unstyled m-0">
-          <?php Extras\recent_posts(4); ?>
+          <? Extras\recent_posts(4); ?>
         </ul>
       </div>
     </div>
@@ -62,7 +62,7 @@
         <span class="mr-4">
           <small>&copy; IMAGA 2018, All rights reserverd.</small>
         </span>
-        <?php echo Navigation\navigation_inline( "footer_navigation", "footer_navigation" ); ?>
+        <?= Navigation\navigation_inline( "footer_navigation", "footer_navigation" ); ?>
       </div>
     </div>
   </div>

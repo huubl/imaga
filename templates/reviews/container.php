@@ -1,4 +1,4 @@
-<?php use IMAGA\Theme\Assets; ?>
+<? use IMAGA\Theme\Assets; ?>
 
 <section class="reviews">
   <div class="container">
@@ -15,7 +15,7 @@
       <div class="col-4">
         <div class="row">
           <div class="col-3 text-right">
-            <img class="img-fluid img-circle" src="<?php echo Assets\asset_path('images/davidtravis.jpg'); ?>" alt="Avatar">
+            <img class="img-fluid img-circle" src="<?= Assets\asset_path('images/davidtravis.jpg'); ?>" alt="Avatar">
           </div>
           <div class="col-9">
             David travis, UserFocus London, UK
@@ -38,7 +38,7 @@
       <div class="col-4" >
         <div class="row">
           <div class="col-3 text-right">
-            <img class="img-fluid img-circle" src="<?php echo Assets\asset_path('images/georgemastro.jpg'); ?>" alt="Avatar">
+            <img class="img-fluid img-circle" src="<?= Assets\asset_path('images/georgemastro.jpg'); ?>" alt="Avatar">
           </div>
           <div class="col-9">
             George Mastros, NetStudio Athenes, GR
@@ -62,7 +62,7 @@
       <div class="col-4" >
         <div class="row">
           <div class="col-3 text-right">
-            <img class="img-fluid img-circle" src="<?php echo Assets\asset_path('images/theresahoogland.jpg'); ?>" alt="Avatar">
+            <img class="img-fluid img-circle" src="<?= Assets\asset_path('images/theresahoogland.jpg'); ?>" alt="Avatar">
           </div>
           <div class="col-9">
             Theresa Hoogland, TheResales, Groningen

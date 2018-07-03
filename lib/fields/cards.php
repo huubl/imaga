@@ -1,4 +1,4 @@
-<?php
+<?
 /*
 * Title:           Cards layout
 * Description:     Displays up to 4 columns of content in the form of cards

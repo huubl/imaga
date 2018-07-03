@@ -1,27 +1,27 @@
-<?php use IMAGA\Theme\Extras; ?>
+<? use IMAGA\Theme\Extras; ?>
 
-<?php if( get_sub_field('title') or get_sub_field('lead') ): ?>
+<? if( get_sub_field('title') or get_sub_field('lead') ): ?>
 
   <div class="row">
 
     <div class="col-12">
 
-      <?php if( get_sub_field('title') ): ?>
+      <? if( get_sub_field('title') ): ?>
 
-        <?php echo Extras\heading_based_on_length( get_sub_field('title') ); ?>
+        <?= Extras\heading_based_on_length( get_sub_field('title') ); ?>
 
-      <?php endif; ?>
+      <? endif; ?>
 
-      <?php if( get_sub_field('lead') ): ?>
+      <? if( get_sub_field('lead') ): ?>
 
         <p class="lead text-muted">
-          <?php the_sub_field('lead'); ?>
+          <? the_sub_field('lead'); ?>
         </p>
 
-      <?php endif; ?>
+      <? endif; ?>
 
     </div>
 
   </div>
 
-<?php endif; ?>
+<? endif; ?>

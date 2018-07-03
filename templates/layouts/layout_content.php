@@ -1,51 +1,51 @@
-<?php // Dit word een complex document ?>
+<? // Dit word een complex document ?>
 
-<?php use IMAGA\Theme\Extras; ?>
+<? use IMAGA\Theme\Extras; ?>
 
-<?php if( get_sub_field('image_toggle') == FALSE ): ?>
+<? if( get_sub_field('image_toggle') == FALSE ): ?>
 
-  <section class="single-content <?php the_sub_field('background_color'); ?>">
+  <section class="single-content <? the_sub_field('background_color'); ?>">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-8 py-6 lead <?php the_sub_field('text_alignment'); ?> <?php the_sub_field('text_color'); ?>">
-          <?php get_template_part('templates/parts/title'); ?>
-          <?php the_sub_field('content'); ?>
+        <div class="col-8 lead <? the_sub_field('text_alignment'); ?> <? the_sub_field('text_color'); ?>">
+          <? get_template_part('templates/parts/title'); ?>
+          <? the_sub_field('content'); ?>
         </div>
       </div>
     </div>
   </section>
 
-<?php else: ?>
+<? else: ?>
 
-  <?php $image = get_sub_field('image_array'); ?>
-  <?php $image_alignment = get_sub_field('image_alignment'); ?>
+  <? $image = get_sub_field('image_array'); ?>
+  <? $image_alignment = get_sub_field('image_alignment'); ?>
 
-  <section class="single-content <?php the_sub_field('background_color'); ?>">
+  <section class="single-content <? the_sub_field('background_color'); ?>">
     <div class="container">
       <div class="row">
 
-        <?php if( $image_alignment == 'bg-left' ): ?>
+        <? if( $image_alignment == 'bg-left' ): ?>
           <div class="col-6"></div>
-        <?php endif; ?>
-        <?php if( $image_alignment == 'bg-left' ): ?>
-          <?php $padding = "pl-5"; ?>
-        <?php else: ?>
-        <?php $padding = "pr-5"; ?>
-        <?php endif; ?>
+        <? endif; ?>
+        <? if( $image_alignment == 'bg-left' ): ?>
+          <? $padding = "pl-5"; ?>
+        <? else: ?>
+        <? $padding = "pr-5"; ?>
+        <? endif; ?>
 
-        <div class="col-6 <?php echo $padding; ?> lead <?php the_sub_field('text_alignment'); ?> <?php the_sub_field('text_color'); ?>">
-            <?php echo Extras\heading_based_on_length( get_sub_field('title') ); ?>
-            <?php the_sub_field('content'); ?>
+        <div class="col-6 <?= $padding; ?> lead <? the_sub_field('text_alignment'); ?> <? the_sub_field('text_color'); ?>">
+            <?= Extras\heading_based_on_length( get_sub_field('title') ); ?>
+            <? the_sub_field('content'); ?>
           </div>
         </div>
       </div>
 
 
-      <?php if( !empty($image) ): ?>
+      <? if( !empty($image) ): ?>
 
-        <div class="<?php echo $image_alignment; ?>" style="background-image: url('<?php echo $image['url']; ?>');" title="<?php echo $image['alt']; ?>"></div>
+        <div class="<?= $image_alignment; ?>" style="background-image: url('<?= $image['url']; ?>');" title="<?= $image['alt']; ?>"></div>
 
-      <?php endif; ?>
+      <? endif; ?>
 
     </section>
-  <?php endif; ?>
+  <? endif; ?>

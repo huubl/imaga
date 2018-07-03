@@ -1,4 +1,4 @@
-<?php
+<?
 /**
  * Advanced Custom Fields
  */

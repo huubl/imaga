@@ -1,4 +1,4 @@
-<?php
+<?
 $background = function($has_post_thumbnail){
     if($has_post_thumbnail):
         $url = get_the_post_thumbnail_url();
@@ -12,7 +12,7 @@ $jumbotron = get_field('jumbotron');
 
 <section class="jumbotron jumbotron-fluid m-0 p-0 bg-center" <?= $background( has_post_thumbnail() ); ?>>
 
-	<?php if( $jumbotron['title'] or $jumbotron['lead'] or $jumbotron['cta']): ?>
+	<? if( $jumbotron['title'] or $jumbotron['lead'] or $jumbotron['cta']): ?>
 
     <div class="container">
 
@@ -20,39 +20,39 @@ $jumbotron = get_field('jumbotron');
 
   			<div class="col-12 py-5">
 
-  				<?php if( $jumbotron['title'] ): ?>
+  				<? if( $jumbotron['title'] ): ?>
 
   					<h1 class="jumbotron-heading display-3 text-white">
   						<?= $jumbotron['title']; ?>
   					</h1>
 
-  				<?php endif; ?>
+  				<? endif; ?>
 
-  				<?php if( $jumbotron['lead'] ): ?>
+  				<? if( $jumbotron['lead'] ): ?>
 
   					<div class="lead text-white">
   						<?= $jumbotron['lead'];?>
   					</div>
 
-  				<?php endif; ?>
+  				<? endif; ?>
 
-  				<?php if( $jumbotron['cta'] ): ?>
+  				<? if( $jumbotron['cta'] ): ?>
 
   					<div>
-  						<?php foreach($jumbotron["cta"] as $cta ) :?>
+  						<? foreach($jumbotron["cta"] as $cta ) :?>
 
-  							<?php $color = ($cta['color']) ? "btn-" . $cta['color'] : "btn-primary"; ?>
+  							<? $color = ($cta['color']) ? "btn-" . $cta['color'] : "btn-primary"; ?>
 
   							<a href="<?= $cta['url']; ?>" class="btn <?= $color; ?>"><?= $cta['label'] ?></a>
 
-  						<?php endforeach; ?>
+  						<? endforeach; ?>
   					</div>
 
-  				<?php endif; ?>
+  				<? endif; ?>
 
   			</div>
 
-  		<?php endif; ?>
+  		<? endif; ?>
 
   	</div>
 
@@ -70,9 +70,9 @@ $jumbotron = get_field('jumbotron');
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <?php foreach($obj as $item): ?>
-          <?php get_template_part('templates/sections/jumbotron','carousel-item'); ?>
-        <?php endforeach; ?>
+        <? foreach($obj as $item): ?>
+          <? get_template_part('templates/sections/jumbotron','carousel-item'); ?>
+        <? endforeach; ?>
       </div>
     </div>
 

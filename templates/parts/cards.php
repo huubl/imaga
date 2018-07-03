@@ -2,21 +2,21 @@
 
 	<div class="container">
 
-    <?php get_template_part('templates/globals/title'); ?>
+    <? get_template_part('templates/globals/title'); ?>
 
-		<?php if( have_rows('items') ): ?>
+		<? if( have_rows('items') ): ?>
 
 			<div class="row card-deck">
 
-				<?php  while( have_rows('items') ) : the_row(); ?>
+				<?  while( have_rows('items') ) : the_row(); ?>
 
-					<?php get_template_part('templates/parts/cards','item'); ?>
+					<? get_template_part('templates/parts/cards','item'); ?>
 
-				<?php endwhile; ?>
+				<? endwhile; ?>
 
 			</div>
 
-		<?php endif; ?>
+		<? endif; ?>
 
 	</div>
 
