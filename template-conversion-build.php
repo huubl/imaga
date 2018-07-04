@@ -16,7 +16,7 @@ use IMAGA\Theme\Assets;
 
         </div>
         <div class="col-6 pt-6 pl-5">
-          <h1 class="display-5 mb-4">WordPress and HTML5 based websites, and landing pages optimized for your audience and brand</h1>
+          <h1 class="display-1 mb-4">WordPress and HTML5 based websites, and landing pages optimized for your audience and brand</h1>
           <p class="lead mb-5">What if I just need development? We do that as well.</p>
         </div>
       </div>
@@ -61,7 +61,7 @@ use IMAGA\Theme\Assets;
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-8">
-          <h1 class="display-6 mb-4">WordPress: Custom Build or Template Based</h1>
+          <h1 class="display-2 mb-4">WordPress: Custom Build or Template Based</h1>
           <p class="lead">We can deliver both fully custom build WordPress websites as well as template-based websites. We take both options to the max and focus on serving your business needs and your clients objectives. Read more to find out what WordPress build suits your project best.</p>
         </div>
       </div>
@@ -72,7 +72,7 @@ use IMAGA\Theme\Assets;
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-8">
-          <h1 class="display-6 mb-4">When do you need a custom Build WordPress website?</h1>
+          <h1 class="display-2 mb-4">When do you need a custom Build WordPress website?</h1>
         </div>
       </div>
       <div class="row justify-content-center">
@@ -91,10 +91,10 @@ use IMAGA\Theme\Assets;
             <li>
               <div class="row">
                 <div class="col-1">
-                  <h4 class="display-6"><i class="fa fa-check"></i></h4>
+                  <h4 class="display-2"><i class="fa fa-check"></i></h4>
                 </div>
                 <div class="col-11">
-                  <h4 class="display-6">No limitations on graphics and functionality</h4>
+                  <h4 class="display-2">No limitations on graphics and functionality</h4>
                   <p class="lead text-muted">Maximum freedom and total control to realize your vision</p>
                 </div>
               </div>
@@ -102,10 +102,10 @@ use IMAGA\Theme\Assets;
             <li>
               <div class="row">
                 <div class="col-1">
-                  <h4 class="display-6"><i class="fa fa-check"></i></h4>
+                  <h4 class="display-2"><i class="fa fa-check"></i></h4>
                 </div>
                 <div class="col-11">
-                  <h4 class="display-6">Flexible and can grow with you</h4>
+                  <h4 class="display-2">Flexible and can grow with you</h4>
                   <p class="lead text-muted">Updates to the design and functionality can be implemented easier</p>
                 </div>
               </div>
@@ -113,10 +113,10 @@ use IMAGA\Theme\Assets;
             <li>
               <div class="row">
                 <div class="col-1">
-                  <h4 class="display-6"><i class="fa fa-check"></i></h4>
+                  <h4 class="display-2"><i class="fa fa-check"></i></h4>
                 </div>
                 <div class="col-11">
-                  <h4 class="display-6">Easier to update as WordPress is updated</h4>
+                  <h4 class="display-2">Easier to update as WordPress is updated</h4>
                   <p class="lead text-muted">No dependence on the template developers</p>
                 </div>
               </div>
@@ -124,10 +124,10 @@ use IMAGA\Theme\Assets;
             <li>
               <div class="row">
                 <div class="col-1">
-                  <h4 class="display-6"><i class="fa fa-check"></i></h4>
+                  <h4 class="display-2"><i class="fa fa-check"></i></h4>
                 </div>
                 <div class="col-11">
-                  <h4 class="display-6">Better Search engine optimization</h4>
+                  <h4 class="display-2">Better Search engine optimization</h4>
                   <p class="lead text-muted">All data is easily measured and not enclosed inside a page builder</p>
                 </div>
               </div>
@@ -135,10 +135,10 @@ use IMAGA\Theme\Assets;
             <li>
               <div class="row">
                 <div class="col-1">
-                  <h4 class="display-6"><i class="fa fa-check"></i></h4>
+                  <h4 class="display-2"><i class="fa fa-check"></i></h4>
                 </div>
                 <div class="col-11">
-                  <h4 class="display-6">Fast. Speed optimization out-of-the-box</h4>
+                  <h4 class="display-2">Fast. Speed optimization out-of-the-box</h4>
                   <p class="lead text-muted">Less code means a faster website. Templates are ‘one size fits all’</p>
                 </div>
               </div>
@@ -159,7 +159,7 @@ use IMAGA\Theme\Assets;
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-8">
-          <h1 class="display-6 mb-4">What about Template Based WordPress websites?</h1>
+          <h1 class="display-2 mb-4">What about Template Based WordPress websites?</h1>
           <p class="lead">Templates based WordPress websites are only as good as the template they are based on. It goes without saying not all templates are created equal. We work solely with one of the most popular WordPress Themes of all time. A Theme that is so divers it’s actually more of a framework: The internationally awarded and best-selling X-Theme that holds 4 styles and 20 different designs.</p>
         </div>
       </div>
@@ -174,10 +174,10 @@ use IMAGA\Theme\Assets;
             <li>
               <div class="row">
                 <div class="col-1">
-                  <h4 class="display-6"><i class="fa fa-check"></i></h4>
+                  <h4 class="display-2"><i class="fa fa-check"></i></h4>
                 </div>
                 <div class="col-11">
-                  <h4 class="display-6">Less expensive than custom sites</h4>
+                  <h4 class="display-2">Less expensive than custom sites</h4>
                   <p class="lead text-muted">A lot of the design and development options have been made and set</p>
                 </div>
               </div>
@@ -185,10 +185,10 @@ use IMAGA\Theme\Assets;
             <li>
               <div class="row">
                 <div class="col-1">
-                  <h4 class="display-6"><i class="fa fa-check"></i></h4>
+                  <h4 class="display-2"><i class="fa fa-check"></i></h4>
                 </div>
                 <div class="col-11">
-                  <h4 class="display-6">Very fast to build and implement</h4>
+                  <h4 class="display-2">Very fast to build and implement</h4>
                   <p class="lead text-muted">We start each website with one of the four designs inside X-Theme</p>
                 </div>
               </div>
@@ -196,10 +196,10 @@ use IMAGA\Theme\Assets;
             <li>
               <div class="row">
                 <div class="col-1">
-                  <h4 class="display-6"><i class="fa fa-check"></i></h4>
+                  <h4 class="display-2"><i class="fa fa-check"></i></h4>
                 </div>
                 <div class="col-11">
-                  <h4 class="display-6">Well-designed and robust</h4>
+                  <h4 class="display-2">Well-designed and robust</h4>
                   <p class="lead text-muted">And the ability for a reasonable amount of customization</p>
                 </div>
               </div>
@@ -207,10 +207,10 @@ use IMAGA\Theme\Assets;
             <li>
               <div class="row">
                 <div class="col-1">
-                  <h4 class="display-6"><i class="fa fa-check"></i></h4>
+                  <h4 class="display-2"><i class="fa fa-check"></i></h4>
                 </div>
                 <div class="col-11">
-                  <h4 class="display-6">No coding: a visual Builder for pages</h4>
+                  <h4 class="display-2">No coding: a visual Builder for pages</h4>
                   <p class="lead text-muted">Easily change the layout of pages or update photo’s and text yourself</p>
                 </div>
               </div>
@@ -218,10 +218,10 @@ use IMAGA\Theme\Assets;
             <li>
               <div class="row">
                 <div class="col-1">
-                  <h4 class="display-6"><i class="fa fa-check"></i></h4>
+                  <h4 class="display-2"><i class="fa fa-check"></i></h4>
                 </div>
                 <div class="col-11">
-                  <h4 class="display-6">Includes over 20 Extensions (plugins)</h4>
+                  <h4 class="display-2">Includes over 20 Extensions (plugins)</h4>
                   <p class="lead text-muted">Add extra functionality to your website for free</p>
                 </div>
               </div>
@@ -275,7 +275,7 @@ use IMAGA\Theme\Assets;
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-8">
-          <h2 class="display-6 mb-4">WordPress Maintenance, backup, security & protection</h2>
+          <h2 class="display-2 mb-4">WordPress Maintenance, backup, security & protection</h2>
           <p class="lead">WordPress is the most popular content management system in the world. As such it is often under attack by hackers. Our WordPress projects are fitted with daily (remote) backups and protected by strict firewall and malware defense systems. A one-year license is included in each proposal. <a href="#Read-more">Read More</a></p>
         </div>
       </div>

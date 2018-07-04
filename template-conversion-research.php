@@ -13,7 +13,7 @@ use IMAGA\Theme\Assets;
 
       <div class="row">
         <div class="col-6 pt-6 pr-5">
-          <h1 class="display-5 mb-4">Discover insights that matters to your bottom line with our Conversion Optimization Process</h1>
+          <h1 class="display-1 mb-4">Discover insights that matters to your bottom line with our Conversion Optimization Process</h1>
           <p class="lead mb-5">Find out exactly where and when your visitors are experiencing difficulty and work towards a total 360° optimal experience for all your customers</p>
         </div>
       </div>
@@ -59,7 +59,7 @@ use IMAGA\Theme\Assets;
 
       <div class="row justify-content-center">
         <div class="col-8">
-          <h1 class="display-6 mb-4">Our Conversion Optimization Research offers two kinds of data: Qualitative and Quantitative</h1>
+          <h1 class="display-2 mb-4">Our Conversion Optimization Research offers two kinds of data: Qualitative and Quantitative</h1>
           <p class="lead">Looking for experienced and certified Optimizers that follow a rigid and proven process? Marco is Google and ConversionXL certified and uses the CXL-Model to discover what matters most to your users and your bottom line. This Model is one of the best and internationally recognized Conversion Research frameworks and helps guide the Conversion Optimization processes and testing.</p>
         </div>
       </div>
@@ -83,7 +83,7 @@ use IMAGA\Theme\Assets;
     <div class="container text-center">
       <div class="row">
         <div class="col-12">
-          <h1 class="display-6 mb-4">When do you need what kind of data?</h1>
+          <h1 class="display-2 mb-4">When do you need what kind of data?</h1>
         </div>
       </div>
       <div class="row justify-content-center">

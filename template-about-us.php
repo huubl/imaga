@@ -14,7 +14,7 @@ use IMAGA\Theme\Extras;
 
       <div class="row">
         <div class="col-6 pt-6 pr-5">
-          <h1 class="display-6 mb-4">We help agencies and companies transform more of their visitors to real customers</h1>
+          <h1 class="display-2 mb-4">We help agencies and companies transform more of their visitors to real customers</h1>
           <h2 class="lead mb-5">(and will teach you exactly how we do it)</h2>
         </div>
       </div>

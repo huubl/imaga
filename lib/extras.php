@@ -41,10 +41,10 @@ function heading_based_on_length( $string , $wrapper = "h2"){
     case $count < 10: $size = "display-2"; break;
     case $count < 15: $size = "display-3"; break;
     case $count < 30: $size = "display-4"; break;
-    case $count < 40: $size = "display-5"; break;
-    case $count < 50: $size = "display-6"; break;
+    case $count < 40: $size = "display-1"; break;
+    case $count < 50: $size = "display-2"; break;
     default:
-    $size = "display-7";
+    $size = "display-3";
     break;
   endswitch;
 
@@ -136,7 +136,7 @@ function the_employees(){
             <div class="col-8">
               <? if( have_rows('content') ): ?>
                 <? while( have_rows('content') ): the_row(); ?>
-                  <h1 class="display-5"><? the_sub_field('title'); ?></h1>
+                  <h1 class="display-1"><? the_sub_field('title'); ?></h1>
                   <div class="mb-4">
                     <? the_sub_field('content'); ?>
                   </div>

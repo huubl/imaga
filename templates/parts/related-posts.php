@@ -15,7 +15,7 @@
           <div class="card-body">
             <div class="card-title">
               <header>
-                <h1 class="display-8 text-body">
+                <h1 class="display-4 text-body">
                   <? the_title(); ?>
                 </h1>
               </header>

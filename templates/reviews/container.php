@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center py-4">
-        <h2 class="display-7">Don’t just take our word for it. Here’s what our great clients are saying:</h2>
+        <h2 class="display-3">Don’t just take our word for it. Here’s what our great clients are saying:</h2>
         <a class="lead text-muted link" href="#all-reviews">View all reviews <small><i class="fa fa-chevron-circle-right"></i></small></a>
       </div>
     </div>
@@ -12,9 +12,9 @@
   <div class="container-fluid">
     <div class="row pb-6">
 
-      <div class="col-4">
+      <div class="col-12 col-md-4">
         <div class="row">
-          <div class="col-3 text-right">
+          <div class="col-3 pr-0 pr-2 text-right">
             <img class="img-fluid img-circle" src="<?= Assets\asset_path('images/davidtravis.jpg'); ?>" alt="Avatar">
           </div>
           <div class="col-9">
@@ -35,9 +35,9 @@
         </div>
       </div>
 
-      <div class="col-4" >
+      <div class="col-12 col-md-4" >
         <div class="row">
-          <div class="col-3 text-right">
+          <div class="col-3 pr-0 pr-2 text-right">
             <img class="img-fluid img-circle" src="<?= Assets\asset_path('images/georgemastro.jpg'); ?>" alt="Avatar">
           </div>
           <div class="col-9">
@@ -59,9 +59,9 @@
         </div>
       </div>
 
-      <div class="col-4" >
+      <div class="col-12 col-md-4" >
         <div class="row">
-          <div class="col-3 text-right">
+          <div class="col-3 pr-0 pr-2 text-right">
             <img class="img-fluid img-circle" src="<?= Assets\asset_path('images/theresahoogland.jpg'); ?>" alt="Avatar">
           </div>
           <div class="col-9">

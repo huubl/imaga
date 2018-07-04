@@ -8,7 +8,7 @@
 
           <div class="row py-2">
             <div class="col-6 pr-5">
-              <h1 class="display-5 mb-4"><? the_title(); ?></h1>
+              <h1 class="display-1 mb-4"><? the_title(); ?></h1>
               <div class="lead">
                 <? the_field('excerpt'); ?>
               </div>
@@ -37,7 +37,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12">
-        <h3 class="display-5"><span class="underline-green">Related posts</span></h3>
+        <h3 class="display-1"><span class="underline-green">Related posts</span></h3>
       </div>
     </div>
     <div class="row">

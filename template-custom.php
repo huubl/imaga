@@ -23,7 +23,7 @@ use IMAGA\Theme\Extras;
         <? endif; ?>
 
         <div class="col-6 pt-6 <?= $padding; ?>">
-          <h1 class="display-5 mb-4"><? the_field('title'); ?></h1>
+          <h1 class="display-1 mb-4"><? the_field('title'); ?></h1>
           <p class="lead mb-5"><? the_field('lead'); ?></p>
         </div>
       </div>
@@ -80,7 +80,7 @@ use IMAGA\Theme\Extras;
     <div class="container text-center">
       <div class="row">
         <div class="col-12">
-          <h1 class="display-6 mb-4">When do you need what kind of data?</h1>
+          <h1 class="display-2 mb-4">When do you need what kind of data?</h1>
         </div>
       </div>
       <div class="row justify-content-center">

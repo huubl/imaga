@@ -16,7 +16,7 @@ use IMAGA\Theme\Assets;
 
         </div>
         <div class="col-6 pt-6 pl-5">
-          <h1 class="display-5 mb-4">Discover insights that matters to your bottom line with our Conversion Optimization Process</h1>
+          <h1 class="display-1 mb-4">Discover insights that matters to your bottom line with our Conversion Optimization Process</h1>
           <p class="lead mb-5">We’ll let the insights and data guide us when we start working on fixing what matters most to your customers</p>
         </div>
       </div>
@@ -64,7 +64,7 @@ use IMAGA\Theme\Assets;
 
       <div class="row justify-content-center">
         <div class="col-8">
-          <h1 class="display-6 mb-4">We’ll discover the right conversion optimization data and insights for your customers</h1>
+          <h1 class="display-2 mb-4">We’ll discover the right conversion optimization data and insights for your customers</h1>
           <p class="lead mb-4">Conversion Optimization Research and good, clean data is key to getting the valuable insights, making the right business decisions and moving your company forward</p>
           <p class="lead">Conversion optimization is a process. Amateurs follow best practices and don't know where to begin. Experts follow frameworks and processes. This free course will teach you the process of optimization.</p>
         </div>
@@ -89,7 +89,7 @@ use IMAGA\Theme\Assets;
     <div class="container text-center">
       <div class="row">
         <div class="col-12">
-          <h1 class="display-6 mb-4">When do you need what kind of data?</h1>
+          <h1 class="display-2 mb-4">When do you need what kind of data?</h1>
         </div>
       </div>
       <div class="row justify-content-center">
