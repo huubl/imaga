@@ -6,6 +6,13 @@
 add_action( 'after_setup_theme', function() {
 
     $plugins = array(
+      array(
+        'name'               => 'WordPress Version Info',
+        'slug'               => 'version-info',
+         'required'           => true,
+         'force_activation'   => true,
+         'force_deactivation' => true,
+      ),
       // array(
       //   'name'               => 'Advanced Custom Fields',
       //   'slug'               => 'advanced-custom-fields',

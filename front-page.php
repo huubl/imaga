@@ -1,6 +1,6 @@
 <? use IMAGA\Theme\Assets; ?>
 
-<div class="jumbotron jumbotron-fluid bg-white overflow-hidden mb-0 pb-0">
+<div class="jumbotron jumbotron-fluid bg-white overflow-hidden mb-0 py-0">
   <div class="container">
 
     <div class="row py-md-2">

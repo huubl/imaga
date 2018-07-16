@@ -1,4 +1,4 @@
-<section class="facts bg-blue">
+<section class="layout-facts bg-blue">
   <div class="container">
     <div class="row text-white text-center">
       <? if( have_rows('facts') ): ?>

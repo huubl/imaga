@@ -38,13 +38,12 @@ function heading_based_on_length( $string , $wrapper = "h2"){
   $count = mb_strlen( $string );
 
   switch ($count):
-    case $count < 10: $size = "display-2"; break;
-    case $count < 15: $size = "display-3"; break;
-    case $count < 30: $size = "display-4"; break;
-    case $count < 40: $size = "display-1"; break;
-    case $count < 50: $size = "display-2"; break;
+    case $count < 10: $size = "display-4 mb-4"; break;
+    case $count < 15: $size = "display-3 mb-4"; break;
+    case $count < 30: $size = "display-2 mb-4"; break;
+    case $count < 40: $size = "display-1 mb-4"; break;
     default:
-    $size = "display-3";
+    $size = "display-3 mb-4";
     break;
   endswitch;
 
@@ -52,6 +51,9 @@ function heading_based_on_length( $string , $wrapper = "h2"){
 
 }
 
+/**
+ * Get the flexible layout and return template file.
+ */
 function get_layout( $row_layout ){
   if( locate_template( array('templates/layouts/'. $row_layout .'.php') ) ):
     get_template_part('templates/layouts/'. $row_layout );
@@ -60,6 +62,9 @@ function get_layout( $row_layout ){
   endif;
 }
 
+/**
+ * Shows recent posts as Bootstrap 4 list items.
+ */
 function recent_posts( $post_per_page = 4 ){
   $args = array('post_type' => 'post', 'posts_per_page' => $post_per_page);
   $query = new wp_query( $args );
@@ -90,6 +95,10 @@ function recent_posts( $post_per_page = 4 ){
   endif;
 }
 
+/**
+ * Shows all items in post type 'employees'.
+ * Displayed in Bootstrap 4 styling.
+ */
 function the_employees(){
   $args = array('post_type' => 'employees','orderby' => 'post_date','order' => 'ASC');
   $query = new wp_query( $args );
@@ -165,7 +174,9 @@ function the_employees(){
   endif;
 }
 
-// BrowserSync reload on post save
+/**
+ * Fire BrowserSync reload on post save
+ */
 add_action('save_post', function() {
   $args = ['blocking' => false];
   wp_remote_get('http://'.$_SERVER['SERVER_ADDR'].':3000/__browser_sync__?method=reload', $args);

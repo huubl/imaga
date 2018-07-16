@@ -90,7 +90,9 @@ function add_acf_google_maps_key() {
 }
 add_action('acf/init', __NAMESPACE__ . '\\add_acf_google_maps_key');
 
-// Add Google Fonts
+/**
+ * Add Google Fonts
+ */
 function add_google_fonts() {
 
   // Defined in functions.php
@@ -100,7 +102,9 @@ function add_google_fonts() {
 }
 add_action( 'wp_head', __NAMESPACE__ . '\\add_google_fonts' , 1);
 
-// Add Bootstrap styles to Gravityforms
+/**
+ * Add Bootstrap styles to Gravityforms
+ */
 function add_bootstrap_container_class( $field_container, $field, $form, $css_class, $style, $field_content ) {
 	$id = $field->id;
   $field_id = is_admin() || empty( $form ) ? "field_{$id}" : 'field_' . $form['id'] . "_$id";
@@ -108,17 +112,23 @@ function add_bootstrap_container_class( $field_container, $field, $form, $css_cl
 }
 add_filter( 'gform_field_container', __NAMESPACE__ . '\\add_bootstrap_container_class', 10, 6 );
 
-// Remove acf-post2post nag
+/**
+ * Remove acf-post2post nag
+ */
 add_filter('remove_hube2_nag', '__return_true');
 
-// Add custom logim stylesheet
+/**
+ * Register en enqueue custom login stylesheet
+ */
 function add_login_stylesheet() {
   wp_register_style('imaga/login', Assets\asset_path('styles/login.css') );
   wp_enqueue_style( 'imaga/login');
 }
 add_action( 'login_enqueue_scripts', __NAMESPACE__ . '\\add_login_stylesheet' );
 
-// Remove 'page-template' from body class on pages with custom templates
+/**
+ * Remove 'page-template' from body class on pages with custom templates
+ */
 function prefix_remove_body_class($wp_classes) {
     if ( is_page_template() ):
       foreach ($wp_classes as $key => $value) {
@@ -128,3 +138,16 @@ function prefix_remove_body_class($wp_classes) {
     return $wp_classes;
 }
 add_filter('body_class', __NAMESPACE__ . '\\prefix_remove_body_class', 20, 2);
+
+/**
+ * Replace Flex Layout title with content
+ */
+function my_acf_flexible_content_layout_title( $title, $field, $layout, $i ) {
+	if ( $desc = get_sub_field( 'title' ) ) {
+		return $title . " - " . $desc;
+	} else {
+		return $title;
+	}
+	return $title;
+}
+add_filter( 'acf/fields/flexible_content/layout_title', __NAMESPACE__ . '\\my_acf_flexible_content_layout_title', 10, 4 );

@@ -4,7 +4,7 @@
 
 <? if( get_sub_field('image_toggle') == FALSE ): ?>
 
-  <section class="single-content <? the_sub_field('background_color'); ?>">
+  <section class="layout-content <? the_sub_field('background_color'); ?>">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-8 lead <? the_sub_field('text_alignment'); ?> <? the_sub_field('text_color'); ?>">
@@ -34,7 +34,7 @@
         <? endif; ?>
 
         <div class="col-6 <?= $padding; ?> lead <? the_sub_field('text_alignment'); ?> <? the_sub_field('text_color'); ?>">
-            <?= Extras\heading_based_on_length( get_sub_field('title') ); ?>
+            <? get_template_part('templates/parts/title'); ?>
             <? the_sub_field('content'); ?>
           </div>
         </div>

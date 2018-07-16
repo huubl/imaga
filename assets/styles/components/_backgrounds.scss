@@ -229,7 +229,9 @@
   background-repeat: no-repeat;
 }
 .bg-contain{
-  background-size: contain !important;
+}
+.bg-cover{
+  background-size: cover !important;  
 }
 .bg-center{
   background-position: center !important;
