@@ -29,4 +29,3 @@
   </nav>
 
 </header>
-<div class="navbar-spacing"><!-- splaceholder --></div>

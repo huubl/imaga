@@ -1,0 +1,12 @@
+.brands-img{
+  @include filter(grayscale, 100%);
+  transition: all 200ms ease;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  &:hover{
+    transform: scale(1.01);
+    @include filter(grayscale, 0);
+    @extend .box-shadow;
+  }
+}

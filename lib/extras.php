@@ -175,6 +175,40 @@ function the_employees(){
 }
 
 /**
+ * Displays all item in post type 'Brands'
+ */
+function the_brands( $post_objects ){
+  $modulus = 0;
+
+  if( $post_objects ):
+    ?>
+    <div class="row">
+    <?
+    foreach( $post_objects as $post_object):
+      $modulus++;
+      ?>
+      <div class="col-6 col-md-2-4 p-3">
+
+        <? if( get_field('url' ,$post_object->ID) ):?>
+          <a href="<? the_field('url', $post_object->ID); ?>" target="_blank" alt="<? the_title($post_object->ID); ?>">
+        <? endif;?>
+
+            <img class="img-fluid brands-img" src="<?= get_the_post_thumbnail_url($post_object->ID); ?>" title="<? the_title($post_object->ID); ?>"/>
+
+        <? if( get_field('url', $post_object->ID) ):?>
+          </a>
+        <? endif;?>
+
+      </div>
+      <?
+
+    endforeach;
+    ?>
+    </div>
+    <?
+  endif;
+}
+/**
  * Fire BrowserSync reload on post save
  */
 add_action('save_post', function() {

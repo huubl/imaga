@@ -10,7 +10,7 @@ use WP_Term;
 function brand( $image_url, $width = 180 ){
 
   $html = '<a class="navbar-brand" href="' .esc_url( home_url('/') ) .'">';
-  $html .= '<img src="' . $image_url . '" width="' . $width . '" class="d-inline-block align-top" alt="' . get_bloginfo('name') . '">';
+  $html .= '<img src="' . $image_url . '" width="' . $width . '" class="d-inline-block align-top brand-img" alt="' . get_bloginfo('name') . '">';
   $html .= '</a>';
 
   return $html;

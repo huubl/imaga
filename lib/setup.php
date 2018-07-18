@@ -142,12 +142,41 @@ add_filter('body_class', __NAMESPACE__ . '\\prefix_remove_body_class', 20, 2);
 /**
  * Replace Flex Layout title with content
  */
-function my_acf_flexible_content_layout_title( $title, $field, $layout, $i ) {
+function acf_flexible_content_layout_title( $title, $field, $layout, $i ) {
 	if ( $desc = get_sub_field( 'title' ) ) {
+    // Shorten string if longer than 20 characters
+    $desc = (strlen($desc) > 50) ? substr($desc,0,50).'...' : $desc;
 		return $title . " - " . $desc;
-	} else {
-		return $title;
+	} elseif ( $desc = get_sub_field( 'lead' ) ) {
+    $desc = (strlen($desc) > 50) ? substr($desc,0,50).'...' : $desc;
+		return $title . " - " . $desc;
 	}
 	return $title;
 }
-add_filter( 'acf/fields/flexible_content/layout_title', __NAMESPACE__ . '\\my_acf_flexible_content_layout_title', 10, 4 );
+add_filter( 'acf/fields/flexible_content/layout_title', __NAMESPACE__ . '\\acf_flexible_content_layout_title', 10, 4 );
+
+/**
+ * Removes from admin menu
+ */
+function remove_admin_menus() {
+    remove_menu_page( 'edit-comments.php' );
+}
+add_action( 'admin_menu', __NAMESPACE__ . '\\remove_admin_menus' );
+
+/**
+ *Removes from post and pages
+ */
+function remove_comment_support() {
+    remove_post_type_support( 'post', 'comments' );
+    remove_post_type_support( 'page', 'comments' );
+}
+add_action('init', __NAMESPACE__ . '\\remove_comment_support', 100);
+
+/**
+ * Removes from admin bar
+ */
+function admin_bar_render() {
+    global $wp_admin_bar;
+    $wp_admin_bar->remove_menu('comments');
+}
+add_action( 'wp_before_admin_bar_render', __NAMESPACE__ . '\\admin_bar_render' );

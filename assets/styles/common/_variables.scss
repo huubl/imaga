@@ -31,19 +31,12 @@ $grays: (
 
 $blue:          #00b0ff; //#5980ec;
 $indigo:        #00A0D2; //#651FFF;
-
 $purple:        #6f42c1;
 $pink:          #e83e8c;
-
 $red:           #EF4836;
-$flamingo:      #EF4836;
-$flat-red:      #ff5252;
-
 $orange:        #f4701f;
 $yellow:        #ffbc00;
-
 $green:         #0BDA51;
-
 $teal:          #466baa;
 $turquoise:     #00bfa5;
 $cyan:          #57E3F2; //#00b0ff;
@@ -53,16 +46,10 @@ $colors: (
   indigo: $indigo,
   purple: $purple,
   pink: $pink,
-
   red: $red,
-  flamingo: $flamingo,
-  flat-red: $flat-red,
-
   orange: $orange,
   yellow: $yellow,
-
   green: $green,
-
   teal: $teal,
   turquoise: $turquoise,
   cyan: $cyan,
@@ -84,16 +71,10 @@ $theme-colors: (
   indigo: $indigo,
   purple: $purple,
   pink: $pink,
-
   red: $red,
-  flamingo: $flamingo,
-  flat-red: $flat-red,
-
   orange: $orange,
   yellow: $yellow,
-
   green: $green,
-
   teal: $teal,
   turquoise: $turquoise,
   cyan: $cyan,
@@ -138,12 +119,12 @@ $line-height-base:      1.5;
 
 $headings-line-height:   1.3;
 
-$display1-size: 2.5rem; //6rem !default;
+$display1-size: 2.4rem; //6rem !default;
 $display2-size: 2rem;   //5.5rem !default;
 $display3-size: 1.8rem; //4.5rem !default;
 $display4-size: 1.4rem; //3.5rem !default;
 
-$lead-font-size:        1.3rem; //1.25rem
+$lead-font-size:        1.28rem; //1.25rem
 
 $nav-link-padding-y:            .4rem; //.5rem
 $navbar-padding-y:              0; //($spacer / 2)

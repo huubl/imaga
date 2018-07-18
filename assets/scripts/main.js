@@ -29,10 +29,13 @@
         // init Smooth Scroll
         var scroll = new SmoothScroll('a[href*="#"]', {
           updateURL: false,
-          offset: jQuery(".navbar-container").height()
+          offset: jQuery("header.navbar-container").height()
         });
+        jQuery('.brand-img').on( 'load', function(){
+          console.log('img ready?');
 
-        jQuery(".navbar-spacing").height( jQuery(".navbar-container").height() );
+          jQuery("div.wrap").css( 'margin-top', jQuery("header.navbar-container").height() + 'px' );
+        });
 
       },
       finalize: function() {

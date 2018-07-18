@@ -231,7 +231,7 @@
 .bg-contain{
 }
 .bg-cover{
-  background-size: cover !important;  
+  background-size: cover !important;
 }
 .bg-center{
   background-position: center !important;
@@ -249,7 +249,15 @@
     background-position: center bottom !important;
   }
 }
-@include media-breakpoint-down(sm) {}
-@include media-breakpoint-down(md) {}
-@include media-breakpoint-down(lg) {}
+
 @include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(sm) {
+  .bg-we-help-agencies-and-companies{
+    position: relative;
+    padding-top: 56.25%;
+    left: 0;
+    right: 0;
+  }
+}

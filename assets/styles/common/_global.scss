@@ -1,17 +1,3 @@
-a{
-  font-weight: 400;
-
-  &.link{
-    text-decoration: underline;
-  }
-
-  &.rotate:not(.collapsed){
-    i.rotate{
-      transform: rotate(180deg);
-    }
-  }
-}
-
 .fa{
   &.s1{
     font-size: $h1-font-size !important;
@@ -48,8 +34,14 @@ a{
 }
 
 .container{
-  @extend .py-3;
-  @extend .py-md-5;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@include media-breakpoint-up(md) {
+  .container{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 @include media-breakpoint-down(sm) {
   .jumbotron{
@@ -115,7 +107,7 @@ a{
   }
 }
 
-.logged-in{
+.admin-bar{
   .navbar-container{
     margin-top: 32px;
   }
@@ -142,6 +134,7 @@ a{
   color: $body-color;
 }
 
+// Create underlines for each color in theme-colors()
 @each $color, $value in $theme-colors {
   .underline-#{$color}{
     border-bottom: 2px solid $value;
@@ -159,6 +152,8 @@ a{
   bottom: -80px;
   left: calc(50% - 80px);
 }
+
+// Create conversion arrow for each color in theme-colors()
 @each $color, $value in $theme-colors {
   .conversion-arrow-#{$color}:after{
     position: absolute;
@@ -171,5 +166,26 @@ a{
     border-bottom: 80px solid $value;
     bottom: -80px;
     left: calc(50% - 80px);
+  }
+}
+
+@include media-breakpoint-up(xl){
+  .col-xl-2-4{
+    @include make-col(2.4, 12)
+  }
+}
+@include media-breakpoint-up(md){
+  .col-md-2-4{
+    @include make-col(2.4, 12)
+  }
+}
+@include media-breakpoint-up(ld){
+  .col-lg-2-4{
+    @include make-col(2.4, 12)
+  }
+}
+@include media-breakpoint-up(sm){
+  .col-sm-2-4{
+    @include make-col(2.4, 12)
   }
 }

@@ -8,8 +8,8 @@ use IMAGA\Theme\Assets;
 
 <? while (have_posts()) : the_post(); ?>
 
-  <div class="jumbotron jumbotron-fluid bg-flat-red overflow-hidden mb-0">
-    <div class="container text-white py-0">
+  <div class="jumbotron jumbotron-fluid bg-red overflow-hidden mb-0 py-0">
+    <div class="container text-white">
 
       <div class="row justify-content-center">
         <div class="col-10">
