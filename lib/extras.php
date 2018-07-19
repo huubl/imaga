@@ -187,7 +187,7 @@ function the_brands( $post_objects ){
     foreach( $post_objects as $post_object):
       $modulus++;
       ?>
-      <div class="col-6 col-md-2-4 p-3">
+      <div class="col-6 col-md-2-4 p-md-3">
 
         <? if( get_field('url' ,$post_object->ID) ):?>
           <a href="<? the_field('url', $post_object->ID); ?>" target="_blank" alt="<? the_title($post_object->ID); ?>">

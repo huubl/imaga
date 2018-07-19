@@ -1,4 +1,8 @@
+.box-shadow{
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1), 0 2px 2px 0 rgba(0,0,0,.1);
+}
 .fa{
+  vertical-align: middle;
   &.s1{
     font-size: $h1-font-size !important;
   }
@@ -15,23 +19,6 @@
     font-size: $h5-font-size !important;
   }
 }
-.scroll-arrow{
-  position: absolute;
-  left: calc(50% - 25px);
-  width:50px;
-  height:50px;
-  margin-bottom: 25px;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50px;
-
-  .fa{
-    color: #FFFFFF;
-    &:hover{
-      color: #FFFFFF;
-    }
-  }
-}
 
 .container{
   padding-top: 1rem;
@@ -43,36 +30,11 @@
     padding-bottom: 3rem;
   }
 }
-@include media-breakpoint-down(sm) {
-  .jumbotron{
-    .container{
-      padding-bottom: 0 !important;
-    }
-  }
-}
-
-.jumbotron,section{
-  position: relative;
-}
 
 .overflow-hidden{
   overflow: hidden;
 }
 
-
-.conversion-summary,
-.conversion-research,
-.conversion-strategy,
-.conversion-design,
-.conversion-build{
-  .conversion-arrow:after{
-    bottom: -100px;
-  }
-}
-
-.box-shadow{
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1),0 2px 2px 0 rgba(0,0,0,.1);
-}
 
 .product-device {
   position: absolute;
@@ -116,10 +78,11 @@
 .card{
   border-radius: 0px;
   border: 0px;
-  transition: box-shadow .15s ease-in-out;
+  transition: all 150ms ease-in-out;
 
   &:hover{
-    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+    transform:translateY(-3px);
+    @extend .box-shadow;
   }
 
   a.text-body{
@@ -138,34 +101,6 @@
 @each $color, $value in $theme-colors {
   .underline-#{$color}{
     border-bottom: 2px solid $value;
-  }
-}
-.conversion-arrow-none:after{
-  position: absolute;
-  content: '';
-  height:0;
-  width:0;
-  border-top: 0 solid transparent;
-  border-right: 80px solid transparent;
-  border-left: 80px solid transparent;
-  border-bottom: 80px solid $white;
-  bottom: -80px;
-  left: calc(50% - 80px);
-}
-
-// Create conversion arrow for each color in theme-colors()
-@each $color, $value in $theme-colors {
-  .conversion-arrow-#{$color}:after{
-    position: absolute;
-    content: '';
-    height:0;
-    width:0;
-    border-top: 0 solid transparent;
-    border-right: 80px solid transparent;
-    border-left: 80px solid transparent;
-    border-bottom: 80px solid $value;
-    bottom: -80px;
-    left: calc(50% - 80px);
   }
 }
 

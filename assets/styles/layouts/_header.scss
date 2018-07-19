@@ -77,3 +77,93 @@
     }
   }
 }
+
+.jumbotron, section{
+  position: relative;
+}
+
+.jumbotron{
+  .scroll-arrow{
+    position: absolute;
+    left: calc(50% - 25px);
+    bottom: 36px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 50px;
+    z-index: 900;
+
+    .fa{
+      color: #FFFFFF;
+      &:hover{
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+
+.conversion-arrow-none:after{
+  position: absolute;
+  content: '';
+  height:0;
+  width:0;
+  border-top: 0 solid transparent;
+  border-right: 80px solid transparent;
+  border-left: 80px solid transparent;
+  border-bottom: 80px solid $white;
+  bottom: -80px;
+  left: calc(50% - 80px);
+}
+
+// Create conversion arrow for each color in theme-colors()
+@each $color, $value in $theme-colors {
+  .conversion-arrow-#{$color}:after{
+    position: absolute;
+    content: '';
+    height:0;
+    width:0;
+    border-top: 0 solid transparent;
+    border-right: 80px solid transparent;
+    border-left: 80px solid transparent;
+    border-bottom: 80px solid $value;
+    bottom: -80px;
+    left: calc(50% - 80px);
+  }
+}
+
+@include media-breakpoint-down(sm){
+  .jumbotron{
+    .bg-container{
+      position: relative;
+      padding-top: 56.25%;
+      left: 0px;
+      margin-left: -($grid-gutter-width / 2);
+      margin-right: -($grid-gutter-width / 2);
+    }
+
+    .row{
+      position: relative;
+
+      .scroll-arrow{
+        position: absolute;
+        left: calc(50% - 25px);
+        bottom: -25px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 48px;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .jumbotron{
+    .container{
+      padding-bottom: 0 !important;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 <section class="layout-facts bg-blue">
   <div class="container">
-    <div class="row text-white text-center">
+    <div class="row text-white text-md-center">
       <? if( have_rows('facts') ): ?>
         <? while ( have_rows('facts') ) : the_row(); ?>
           <div class="col">

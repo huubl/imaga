@@ -1,11 +1,9 @@
 .brands-img{
   @include filter(grayscale, 100%);
   transition: all 200ms ease;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 
   &:hover{
-    transform: scale(1.01);
+    transform: scale(1.01) translateY(-3px);
     @include filter(grayscale, 0);
     @extend .box-shadow;
   }

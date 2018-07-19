@@ -7,7 +7,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
 
-      <?= Navigation\brand( Assets\asset_path("images/brand-full-color.png") ); ?>
+      <?= Navigation\brand( Assets\asset_path("images/brand/imaga.svg"), 140 ); ?>
 
       <?= Navigation\toggler( '.navbar-toggle' ); ?>
 

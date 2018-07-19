@@ -32,8 +32,9 @@
           offset: jQuery("header.navbar-container").height()
         });
         jQuery('.brand-img').on( 'load', function(){
-          console.log('img ready?');
-
+          jQuery("div.wrap").css( 'margin-top', jQuery("header.navbar-container").height() + 'px' );
+        });
+        jQuery(window).resize(function(){
           jQuery("div.wrap").css( 'margin-top', jQuery("header.navbar-container").height() + 'px' );
         });
 

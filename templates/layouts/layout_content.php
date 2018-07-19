@@ -7,7 +7,7 @@
   <section class="layout-content <? the_sub_field('background_color'); ?>">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-8 lead <? the_sub_field('text_alignment'); ?> <? the_sub_field('text_color'); ?>">
+        <div class="col-12 col-md-8 lead <? the_sub_field('text_alignment'); ?> <? the_sub_field('text_color'); ?>">
           <? get_template_part('templates/parts/title'); ?>
           <? the_sub_field('content'); ?>
         </div>
@@ -28,12 +28,12 @@
           <div class="col-6"></div>
         <? endif; ?>
         <? if( $image_alignment == 'bg-left' ): ?>
-          <? $padding = "pl-5"; ?>
+          <? $padding = "pl-md-5"; ?>
         <? else: ?>
-        <? $padding = "pr-5"; ?>
+          <? $padding = "pr-md-5"; ?>
         <? endif; ?>
 
-        <div class="col-6 <?= $padding; ?> lead <? the_sub_field('text_alignment'); ?> <? the_sub_field('text_color'); ?>">
+        <div class="col-12 col-md-6 <?= $padding; ?> lead <? the_sub_field('text_alignment'); ?> <? the_sub_field('text_color'); ?>">
             <? get_template_part('templates/parts/title'); ?>
             <? the_sub_field('content'); ?>
           </div>

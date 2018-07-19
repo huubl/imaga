@@ -4,15 +4,11 @@
 
 <footer class="bg-gray-800 text-gray-500">
   <div class="container">
-    <div class="row pb-3">
+    <div class="row pb-md-3">
       <div class="col-12">
-        <span class="mr-4">Follow us on:</span>
-        <a class="text-gray-400  mr-4" href="https://www.facebook.com/imaga.nl" title="IMAGA on Facebook">
-          <span class="fa fa-facebook-square"></span>
-        </a>
-        <a class="text-gray-400" href="https://nl.linkedin.com/in/marcokramer" title="IMAGA on Linkedin">
-          <span class="fa fa-linkedin-square"></span>
-        </a>
+        <span class="mr-3">Follow us on:</span>
+        <a class="text-gray-400  mr-3" href="https://www.facebook.com/imaga.nl" title="IMAGA on Facebook"><span class="fa fa-facebook-square"></span></a>
+        <a class="text-gray-400" href="https://nl.linkedin.com/in/marcokramer" title="IMAGA on Linkedin"><span class="fa fa-linkedin-square"></span></a>
       </div>
     </div>
     <hr>
