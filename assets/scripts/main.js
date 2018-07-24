@@ -31,9 +31,11 @@
           updateURL: false,
           offset: jQuery("header.navbar-container").height()
         });
-        jQuery('.brand-img').on( 'load', function(){
+
+        jQuery(window).on( 'load', function(){
           jQuery("div.wrap").css( 'margin-top', jQuery("header.navbar-container").height() + 'px' );
         });
+
         jQuery(window).resize(function(){
           jQuery("div.wrap").css( 'margin-top', jQuery("header.navbar-container").height() + 'px' );
         });
