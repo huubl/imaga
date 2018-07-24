@@ -4,66 +4,51 @@
  */
 
 use IMAGA\Theme\Assets;
+use IMAGA\Theme\Extras;
 ?>
 
 <? while (have_posts()) : the_post(); ?>
 
   <? get_template_part('templates/header', 'jumbotron'); ?>
 
-      <div class="row text-center">
-        <div class="col-6 col-md-3 mb-3 mb-md-0">
-          <a href="/conversion-optimization/conversion-research">
-            <img class="img-fluid mb-2" src="<?= Assets\asset_path('images/icons/conversion-research-light.svg');?>" alt="Conversion Research">
-            <h4 class="text-white">Conversion<br>Research</h4>
-          </a>
-        </div>
-        <div class="col-6 col-md-3 mb-3 mb-md-0">
-          <a href="/conversion-optimization/conversion-strategy">
-            <img class="img-fluid mb-2" src="<?= Assets\asset_path('images/icons/conversion-strategy-light.svg');?>" alt="Conversion Strategy">
-            <h4 class="text-white">Conversion<br>Strategy</h4>
-          </a>
-        </div>
-        <div class="col-6 col-md-3 mb-3 mb-md-0">
-          <a href="/conversion-optimization/conversion-design">
-            <img class="img-fluid mb-2" src="<?= Assets\asset_path('images/icons/conversion-design-light.svg');?>" alt="Conversion Design">
-            <h4 class="text-white">Conversion<br>Design</h4>
-          </a>
-        </div>
-        <div class="col-6 col-md-3 mb-3 mb-md-0">
-          <a href="/conversion-optimization/conversion-build">
-            <img class="img-fluid mb-2" src="<?= Assets\asset_path('images/icons/conversion-build-light.svg');?>" alt="Conversion Build">
-            <h4 class="text-white">Conversion<br>Build</h4>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <section>
+  <section id="conversions" class="<? the_field('conversion_bg'); ?>">
     <div class="container">
-
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-8">
-          <h1 class="display-2 mb-4">Our Conversion Optimization Research offers two kinds of data: Qualitative and Quantitative</h1>
-          <p class="lead">Looking for experienced and certified Optimizers that follow a rigid and proven process? Marco is Google and ConversionXL certified and uses the CXL-Model to discover what matters most to your users and your bottom line. This Model is one of the best and internationally recognized Conversion Research frameworks and helps guide the Conversion Optimization processes and testing.</p>
+      <div class="row text-center">
+        <div class="col-3">
+          <a href="/conversion-optimization/conversion-research#conversions">
+            <img class="img-fluid mb-2" src="<?= Assets\asset_path('images/icons/conversion-research-light.svg');?>" alt="Conversion Research">
+            <h4 class="d-none d-md-block text-white">Conversion<br>Research</h4>
+          </a>
         </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12 text-center py-3 py-md-5">
-          <img class="img-fluid" src="<?= Assets\asset_path('images/insights-diagram.png'); ?>" alt="Insights">
+        <div class="col-3">
+          <a href="/conversion-optimization/conversion-strategy#conversions">
+            <img class="img-fluid mb-2" src="<?= Assets\asset_path('images/icons/conversion-strategy-light.svg');?>" alt="Conversion Strategy">
+            <h4 class="d-none d-md-block text-white">Conversion<br>Strategy</h4>
+          </a>
         </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-8">
-          <p class="lead mb-3">Conversion Optimization Research and good, clean data is key to getting the valuable insights, making the right business decisions and moving your company forward.</p>
-          <p class="lead">We view Conversion optimization work as a process. We don’t just assume what might be wrong and we certainly don’t just start ‘fixing’ and changing your website without doing the research first.</p>
+        <div class="col-3">
+          <a href="/conversion-optimization/conversion-design#conversions">
+            <img class="img-fluid mb-2" src="<?= Assets\asset_path('images/icons/conversion-design-light.svg');?>" alt="Conversion Design">
+            <h4 class="d-none d-md-block text-white">Conversion<br>Design</h4>
+          </a>
+        </div>
+        <div class="col-3">
+          <a href="/conversion-optimization/conversion-build#conversions">
+            <img class="img-fluid mb-2" src="<?= Assets\asset_path('images/icons/conversion-build-light.svg');?>" alt="Conversion Build">
+            <h4 class="d-none d-md-block text-white">Conversion<br>Build</h4>
+          </a>
         </div>
       </div>
     </div>
   </section>
+
+  <? if( have_rows('layouts') ): ?>
+    <? while( have_rows('layouts') ): the_row(); ?>
+
+      <? Extras\get_layout( get_row_layout() ); ?>
+
+    <? endwhile; ?>
+  <? endif; ?>
 
   <section class="bg-blue">
     <? get_template_part('templates/parts/conversion-footer'); ?>
