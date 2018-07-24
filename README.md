@@ -1,9 +1,8 @@
 [![Made By IMAGA](https://img.shields.io/badge/Made%20By-IMAGA-2896e4.svg)](http://IMAGA.nl/)
 
 
-# IMAGA WordPress basis thema
-Het basis template voor IMAGA custom projecten.
-Op basis van Sage 8.5.3.
+# IMAGA2018 Thema
+Het WordPress theme voor IMAGA.
 
 
 #### Server
@@ -11,5 +10,7 @@ Op basis van Sage 8.5.3.
  * WordPress 4.9 of hoger
 
 #### Bower Packages
- * Slick Carrousel
+ * [Slick Carrousel](https://github.com/kenwheeler/slick)
  * [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+ * [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
+ * [Animate On Scroll(AOS)](https://github.com/michalsnik/aos)
