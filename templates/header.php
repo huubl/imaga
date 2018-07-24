@@ -1,4 +1,3 @@
-
 <? use IMAGA\Theme\Assets; ?>
 <? use IMAGA\Theme\Navigation; ?>
 
@@ -18,7 +17,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <?= Navigation\navigation( 'primary_navigation', 'secondary_navigation', 1, 2, "mr-auto nav navbar-nav"); ?>
+      <?= Navigation\navigation( 'primary_navigation', 'secondary_navigation', 1, 0, "mr-auto nav navbar-nav"); ?>
     </div>
   </nav>
 
