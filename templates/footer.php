@@ -2,7 +2,7 @@
 <? use IMAGA\Theme\Assets; ?>
 <? use IMAGA\Theme\Extras; ?>
 
-<footer class="bg-gray-800 text-gray-500">
+<footer class="bg-gray-900 text-gray-500">
   <div class="container">
     <div class="row pb-md-3">
       <div class="col-12">

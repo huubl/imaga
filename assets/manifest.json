@@ -29,6 +29,11 @@
         "scripts/AllDevices.js"
       ]
     },
+    "tinymce.js": {
+      "files": [
+        "scripts/tinymce.js"
+      ]
+    },
     "jquery.js": {
       "bower": ["jquery"]
     }

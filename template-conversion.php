@@ -55,7 +55,7 @@ use IMAGA\Theme\Extras;
     <? endwhile; ?>
   <? endif; ?>
 
-  <section class="bg-blue">
+  <section class="bg-gray-800">
     <? get_template_part('templates/parts/conversion-footer'); ?>
   </section>
 

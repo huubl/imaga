@@ -45,18 +45,27 @@
     }
   }
   .nav-item{
-    &.active{
-      border-bottom:2px solid $teal;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    transition: all 150ms ease;
+
+    &.active,
+    &:hover{
+      border-color: $blue;
+    }
+  }
+
+  @each $color, $value in $theme-colors {
+    .nav-item.#{$color}{
+      &.active,
+      &:hover{
+        border-color: $value !important;
+      }
     }
   }
 }
 
-
-@each $color, $value in $theme-colors {
-  .nav-item.#{$color}{
-    border-color: $value !important;
-  }
-}
 
 .nav-inline{
   display: inline-block;

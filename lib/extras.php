@@ -175,7 +175,7 @@ function the_employees(){
 }
 
 /**
- * Displays all item in post type 'Brands'
+ * Displays all items in $post_objects
  */
 function the_brands( $post_objects ){
   $modulus = 0;
@@ -190,10 +190,10 @@ function the_brands( $post_objects ){
       <div class="col-6 col-md-2-4 p-md-3">
 
         <? if( get_field('url' ,$post_object->ID) ):?>
-          <a href="<? the_field('url', $post_object->ID); ?>" target="_blank" alt="<? the_title($post_object->ID); ?>">
+          <a href="<? the_field('url', $post_object->ID); ?>" target="_blank" alt="<?= get_the_title($post_object->ID); ?>">
         <? endif;?>
 
-            <img class="img-fluid brands-img" src="<?= get_the_post_thumbnail_url($post_object->ID); ?>" title="<? the_title($post_object->ID); ?>"/>
+            <img class="img-fluid brands-img" src="<?= get_the_post_thumbnail_url($post_object->ID); ?>" title="<?= get_the_title($post_object->ID); ?>"/>
 
         <? if( get_field('url', $post_object->ID) ):?>
           </a>
@@ -208,6 +208,55 @@ function the_brands( $post_objects ){
     <?
   endif;
 }
+
+/**
+ * Displays all item in post type 'Reviews'
+ */
+function recent_reviews( $post_per_page = 4 ){
+  $args = array('post_type' => 'reviews', 'posts_per_page' => $post_per_page);
+  $query = new wp_query( $args );
+
+  if($query->have_posts()):
+    ?>
+    <div class="review-slider w-100">
+    <?
+      while( $query->have_posts() ) :
+        $query->the_post();
+        $seconds = strtotime("now") - strtotime(get_the_date("Y/m/d"));
+        ?>
+
+        <div class="review">
+          <div class="col-12">
+
+            <div class="row">
+              <div class="col-3 text-right">
+                <img class="img-fluid img-circle" src="<?= get_the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
+              </div>
+              <div class="col-9">
+                <? the_title(); ?>, <? the_field('company'); ?> <? the_field('location'); ?>
+                <span class="review-stars text-orange">
+                  <? the_field('stars'); ?>
+                </span>
+                <p>
+                  <small>
+                    <? the_content(); ?>
+                  </small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <?
+      endwhile;
+    ?>
+    </div>
+    <?
+    wp_reset_postdata();
+    wp_reset_query();
+  endif;
+}
+
 /**
  * Fire BrowserSync reload on post save
  */
