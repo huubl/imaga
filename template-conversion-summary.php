@@ -8,20 +8,7 @@ use IMAGA\Theme\Assets;
 
 <? while (have_posts()) : the_post(); ?>
 
-  <div class="jumbotron jumbotron-fluid bg-red overflow-hidden mb-0 py-0">
-    <div class="container text-white">
-
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-10">
-          <h1 class="display-1 mb-3">Discover insights that matters to your bottom line <br>with our Conversion Optimization Process</h1>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-10">
-          <p class="lead">Find out exactly where and when your visitors are experiencing difficulty and work towards a total 360° optimal experience for all your customers</p>
-        </div>
-      </div>
+  <? get_template_part('templates/header', 'jumbotron'); ?>
 
       <div class="row text-center">
         <div class="col-6 col-md-3 mb-3 mb-md-0">
