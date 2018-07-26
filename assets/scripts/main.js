@@ -39,10 +39,19 @@
         jQuery(window).resize(function(){
           jQuery("div.wrap").css( 'margin-top', jQuery("header.navbar-container").height() + 'px' );
         });
-
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
+
+        // The function actually applying the offset
+        function offsetAnchor() {
+          if (location.hash.length !== 0) {
+            window.scrollTo(window.scrollX, window.scrollY - jQuery("header.navbar-container").height() );
+          }
+        }
+
+        // Set the offset when entering page with hash present in the url
+        window.setTimeout(offsetAnchor, 0);
       }
     },
     // Home page
