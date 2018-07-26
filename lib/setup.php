@@ -103,16 +103,6 @@ function add_google_fonts() {
 add_action( 'wp_head', __NAMESPACE__ . '\\add_google_fonts' , 1);
 
 /**
- * Add Bootstrap styles to Gravityforms
- */
-function add_bootstrap_container_class( $field_container, $field, $form, $css_class, $style, $field_content ) {
-	$id = $field->id;
-  $field_id = is_admin() || empty( $form ) ? "field_{$id}" : 'field_' . $form['id'] . "_$id";
-	return '<li id="' . $field_id . '" class="' . $css_class . ' form-group">{FIELD_CONTENT}</li>';
-}
-add_filter( 'gform_field_container', __NAMESPACE__ . '\\add_bootstrap_container_class', 10, 6 );
-
-/**
  * Remove acf-post2post nag
  */
 add_filter('remove_hube2_nag', '__return_true');
@@ -140,23 +130,7 @@ function prefix_remove_body_class($wp_classes) {
 add_filter('body_class', __NAMESPACE__ . '\\prefix_remove_body_class', 20, 2);
 
 /**
- * Replace Flex Layout title with content
- */
-function acf_flexible_content_layout_title( $title, $field, $layout, $i ) {
-	if ( $desc = get_sub_field( 'title' ) ) {
-    // Shorten string if longer than 20 characters
-    $desc = (strlen($desc) > 50) ? substr($desc,0,50).'...' : $desc;
-		return $title . " - " . $desc;
-	} elseif ( $desc = get_sub_field( 'lead' ) ) {
-    $desc = (strlen($desc) > 50) ? substr($desc,0,50).'...' : $desc;
-		return $title . " - " . $desc;
-	}
-	return $title;
-}
-add_filter( 'acf/fields/flexible_content/layout_title', __NAMESPACE__ . '\\acf_flexible_content_layout_title', 10, 4 );
-
-/**
- * Removes from admin menu
+ * Remove from admin menu
  */
 function remove_admin_menus() {
     remove_menu_page( 'edit-comments.php' );
@@ -164,7 +138,7 @@ function remove_admin_menus() {
 add_action( 'admin_menu', __NAMESPACE__ . '\\remove_admin_menus' );
 
 /**
- *Removes from post and pages
+ *Remove from post and pages
  */
 function remove_comment_support() {
     remove_post_type_support( 'post', 'comments' );
@@ -173,7 +147,7 @@ function remove_comment_support() {
 add_action('init', __NAMESPACE__ . '\\remove_comment_support', 100);
 
 /**
- * Removes from admin bar
+ * Remove from admin bar
  */
 function admin_bar_render() {
     global $wp_admin_bar;
