@@ -1,0 +1,139 @@
+{
+    "key": "group_5b55d4583295a",
+    "title": "Conversion Summary Fields",
+    "fields": [
+        {
+            "key": "field_5b55d4584a3b7",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "Titel voor de pagina in de header.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b55d4584e0bd",
+            "label": "Lead",
+            "name": "lead",
+            "type": "textarea",
+            "instructions": "Intro tekst voor de pagina in de header.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_5b55d45855b44",
+            "label": "Conversion Background",
+            "name": "conversion_bg",
+            "type": "clone",
+            "instructions": "Kies de kleur van de Conversion Type.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_5b597b5ff72a0"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_5b55d4585984a",
+            "label": "Header Toggle",
+            "name": "header_toggle",
+            "type": "button_group",
+            "instructions": "Kies een kant voor de header afbeelding.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "bg-left": "Afbeelding links",
+                "bg-right": "Afbeelding rechts"
+            },
+            "allow_null": 0,
+            "default_value": "bg-right",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5b597e159fa05",
+            "label": "Tekst Kleur",
+            "name": "text_color",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_5b3df41bd8899"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template-conversion-summary.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "Custom Field for the Conversions Summary page",
+    "modified": 1532612270
+}
