@@ -278,7 +278,7 @@ function acf_flexible_content_layout_title( $title, $field, $layout, $i ) {
 
 	if ( isset($desc) ) {
 
-    return $title . " - " . $desc = (strlen($desc) > 50) ? substr($desc,0,50).'...' : $desc;
+    return $title . " - " . $desc = (strlen($desc) > 50) ? mb_substr($desc, 0, 50).'...' : $desc;
 
 	}
 	return $title;
