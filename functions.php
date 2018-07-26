@@ -12,6 +12,7 @@ define('ACF_EARLY_ACCESS', '5');
 
 $files = [
   'lib/setup.php',                        // Theme setup
+  'lib/shortcodes.php',                   // Theme shortcodes
   'lib/navigation.php',                   // Navigation Functions
   'lib/navigation/bootstrap_walker.php',  // Navigation Bootstrap Walker
   'lib/navigation/start_depth.php',       // Navigation Start Depth
