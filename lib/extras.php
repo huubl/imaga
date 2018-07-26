@@ -274,7 +274,7 @@ function acf_flexible_content_layout_title( $title, $field, $layout, $i ) {
 
   // some magic
   // see: https://stackoverflow.com/a/40607717
-  $desc = get_sub_field( 'title' ) ??0?: get_sub_field( 'lead' ) ??0?: get_sub_field( 'quote' );
+  $desc = get_sub_field( 'title' ) ??0?: get_sub_field( 'lead' ) ??0?: get_sub_field( 'author' );
 
 	if ( isset($desc) ) {
 
