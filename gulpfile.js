@@ -306,6 +306,7 @@ gulp.task('zip', function(callback) {
 
   return gulp.src([
     'dist/**/*',
+    'acf-json/*',
     'templates/**/*',
     'vendor/**/*',
     'lang/*',
