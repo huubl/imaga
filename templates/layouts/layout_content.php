@@ -4,10 +4,10 @@
 
 <? if( get_sub_field('image_toggle') == FALSE ): ?>
 
-  <section class="layout-content <? the_sub_field('background_color'); ?>">
+  <section class="layout-content <? the_sub_field('background_color'); ?> <? the_sub_field('text_color'); ?> <? the_sub_field('text_alignment'); ?>">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12 col-md-8 lead <? the_sub_field('text_alignment'); ?> <? the_sub_field('text_color'); ?>">
+        <div class="col-12 col-md-8 lead">
           <? get_template_part('templates/parts/title'); ?>
           <? the_sub_field('content'); ?>
         </div>
@@ -20,7 +20,7 @@
   <? $image = get_sub_field('image_array'); ?>
   <? $image_alignment = get_sub_field('image_alignment'); ?>
 
-  <section class="single-content <? the_sub_field('background_color'); ?>">
+  <section class="single-content <? the_sub_field('background_color'); ?> <? the_sub_field('text_alignment'); ?> <? the_sub_field('text_color'); ?>">
     <div class="container">
       <div class="row">
 
@@ -33,7 +33,7 @@
           <? $padding = "pr-md-5"; ?>
         <? endif; ?>
 
-        <div class="col-12 col-md-6 <?= $padding; ?> lead <? the_sub_field('text_alignment'); ?> <? the_sub_field('text_color'); ?>">
+        <div class="col-12 col-md-6 <?= $padding; ?> lead">
             <? get_template_part('templates/parts/title'); ?>
             <? the_sub_field('content'); ?>
           </div>

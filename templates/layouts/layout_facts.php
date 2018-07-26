@@ -1,6 +1,6 @@
-<section class="layout-facts bg-blue">
+<section class="layout-facts <? the_sub_field('background_color'); ?> <? the_sub_field('text_color'); ?>">
   <div class="container">
-    <div class="row text-white text-md-center">
+    <div class="row text-md-center">
       <? if( have_rows('facts') ): ?>
         <? while ( have_rows('facts') ) : the_row(); ?>
           <div class="col">
@@ -9,6 +9,11 @@
           </div>
         <? endwhile; ?>
       <? endif;?>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center <? the_sub_field('text_color'); ?>">
+        <small><? the_sub_field('lead'); ?></small>
+      </div>
     </div>
   </div>
 </section>
