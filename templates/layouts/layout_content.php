@@ -18,32 +18,42 @@
 <? else: ?>
 
   <? $image = get_sub_field('image_array'); ?>
+
   <? $image_alignment = get_sub_field('image_alignment'); ?>
+
+  <? $image_sizing = get_sub_field('image_sizing'); ?>
+
+  <? $padding = ( $image_alignment == 'bg-left' ) ? "pl-md-5" : "pr-md-5"; ?>
+
+  <? $order = (  $image_alignment == 'bg-right' ) ? "order-1" : "order-3"; ?>
+
 
   <section class="single-content <? the_sub_field('background_color'); ?> <? the_sub_field('text_alignment'); ?> <? the_sub_field('text_color'); ?>">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
 
-        <? if( $image_alignment == 'bg-left' ): ?>
-          <div class="col-6"></div>
-        <? endif; ?>
-        <? if( $image_alignment == 'bg-left' ): ?>
-          <? $padding = "pl-md-5"; ?>
-        <? else: ?>
-          <? $padding = "pr-md-5"; ?>
-        <? endif; ?>
+        <? if( $image_sizing == 'cover' and $image_alignment == 'bg-left' ): ?><div class="col-6"></div><? endif; ?>
 
-        <div class="col-12 col-md-6 <?= $padding; ?> lead">
-            <? get_template_part('templates/parts/title'); ?>
-            <? the_sub_field('content'); ?>
+        <div class="col-12 col-md-6 <?= $order; ?> <?= $padding; ?> lead">
+          <? get_template_part('templates/parts/title'); ?>
+          <? the_sub_field('content'); ?>
+        </div>
+
+        <? if( $image_sizing == 'contain' ): ?>
+
+          <div class="col-12 col-md-6 order-2">
+            <img class="img-fluid <? the_sub_field('image_styling'); ?>" src="<?= $image['url']; ?>" title="<?= $image['alt']; ?>" alt="<?= $image['alt']; ?>">
           </div>
+
+        <? endif; ?>
+
         </div>
       </div>
 
 
-      <? if( !empty($image) ): ?>
+      <? if( $image_sizing == 'cover' and !empty($image) ): ?>
 
-        <div class="<?= $image_alignment; ?>" style="background-image: url('<?= $image['url']; ?>');" title="<?= $image['alt']; ?>"></div>
+        <div class="<?= $image_alignment; ?>" style="background-image: url('<?= $image['url']; ?>');" title="<?= $image['alt']; ?>" alt="<?= $image['alt']; ?>"></div>
 
       <? endif; ?>
 
