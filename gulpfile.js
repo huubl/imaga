@@ -339,8 +339,6 @@ gulp.task('version', function() {
     '',
     'License: '+ pkg.licenses[0].type,
     'License URI: '+ pkg.licenses[0].url,
-    '',
-    'GitHub Theme URI: https://github.com/odil-io/IMAGA',
     '*/',
     ''].join('\n');
 
