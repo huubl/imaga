@@ -92,6 +92,8 @@
 }
 
 .jumbotron{
+  min-height: 450px;
+
   .scroll-arrow{
     position: absolute;
     left: calc(50% - 25px);
