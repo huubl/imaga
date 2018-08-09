@@ -11,7 +11,7 @@
         <? $padding = "pr-md-5"; ?>
       <? endif; ?>
 
-      <div class="col-12 col-md-6 <?= $padding; ?>">
+      <div class="col-12 col-md-6 <?= $padding; ?> pb-4 pb-md-0">
         <h1 class="display-1 mb-4"><? the_field('title'); ?></h1>
         <p class="lead mb-5"><? the_field('lead'); ?></p>
       </div>

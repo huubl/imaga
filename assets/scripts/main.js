@@ -32,7 +32,15 @@
           slidesToShow: 3,
           slidesToScroll: 3,
           dots: false,
-          arrows: false
+          arrows: false,
+          responsive: [{
+            breakpoint: 512,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true
+            }
+          }]
         });
 
         // init Smooth Scroll

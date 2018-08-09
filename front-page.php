@@ -4,20 +4,18 @@
 <div class="jumbotron jumbotron-fluid bg-white overflow-hidden mb-0 py-0">
   <div class="container">
 
-    <div class="row py-md-1">
-      <div class="col-12 col-md-6 pr-md-5">
+    <div class="row">
+      <div class="col-12 col-md-6 pr-md-5 pb-4 pb-md-0">
         <h1 class="display-1 mb-3">Is your website leaking money?</h1>
         <p class="lead">With a good Conversion Optimization process you can improve your website, convert more of your visitors to customers and reach your goals better, even with the same traffic.</p>
         <p class="lead">Team up with us and receive access to the latest conversion, optimization and persuasion techniques to help your website perform better. You’ll be part of our team as we work with you. Everything we do starts with you and your customers.</p>
       </div>
-      <div class="col-12 d-block d-md-none p-0">
-        <img class="img-fluid" src="<? the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
-      </div>
+      <a class="scroll-arrow bg-yellow" href="#how-we-can-help"><i class="fa fa-chevron-down"></i></a>
     </div>
 
+
+    <div class="bg-container bg-right bg-cover bg-center" style="background-image: url('<? the_post_thumbnail_url(); ?>');"></div>
   </div>
-  <div class="bg-right bg-cover d-none d-md-block" style="background-image: url('<? the_post_thumbnail_url(); ?>');"></div>
-  <a class="scroll-arrow bg-yellow" href="#how-we-can-help"><i class="fa fa-chevron-down"></i></a>
 </div>
 
 <section id="how-we-can-help" class="how-we-can-help bg-light">

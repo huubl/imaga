@@ -114,7 +114,6 @@
   }
 }
 
-
 .conversion-arrow-none:after{
   position: absolute;
   content: '';
@@ -143,6 +142,8 @@
     left: calc(50% - 80px);
   }
 }
+
+
 
 @include media-breakpoint-down(sm){
   .jumbotron{

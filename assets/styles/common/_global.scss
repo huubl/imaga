@@ -104,6 +104,25 @@
   }
 }
 
+.review-slider{
+  .slick-prev{
+    position: absolute;
+    left: 15px;
+    bottom: -25px;
+    z-index: 1000;
+
+    @extend .btn;
+  }
+  .slick-next{
+    position: absolute;
+    right: 15px;
+    bottom: -25px;
+    z-index: 1000;
+
+    @extend .btn;
+  }
+}
+
 @include media-breakpoint-up(xl){
   .col-xl-2-4{
     @include make-col(2.4, 12)

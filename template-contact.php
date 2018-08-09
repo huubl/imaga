@@ -8,19 +8,21 @@ use IMAGA\Theme\Extras;
 ?>
 
 <? while (have_posts()) : the_post(); ?>
-  <div class="jumbotron jumbotron-fluid bg-white overflow-hidden mb-0">
-    <div class="container py-0">
+  <div class="jumbotron jumbotron-fluid bg-white overflow-hidden mb-0 py-0">
+    <div class="container">
 
       <div class="row">
-        <div class="col-6 pt-6 pr-5">
+        <div class="col-12 col-md-6 pr-md-5 pb-4 pb-md-0">
           <h1 class="display-2">Are you looking to improve and transform a website?</h1>
           <h1 class="lead my-4">Or having a hard time with Google Analytics and getting the right kind of data?<br>Trying to figure out what’s stopping your users from buying?<br>Or are you simply looking to create a brand new website?</h1>
-          <h1 class="lead mb-4"><a href="mailto:hallo@imaga.nl" class="btn btn-imperial-red px-4">hallo@imaga.nl</a></h1>
+          <h1 class="lead mb-4"><a href="mailto:hallo@imaga.nl" class="btn btn-red px-4">hallo@imaga.nl</a></h1>
           <p class="lead">Or call Marco: <a href="tel:+31652673086" class="text-green"><i class="fa fa-phone"></i> +31 6 52 67 30 86</a></p>
         </div>
+        <a class="scroll-arrow bg-yellow" href="#headquarters"><i class="fa fa-chevron-down"></i></a>
       </div>
-      <div class="bg-right" style="background-image: url('<? the_post_thumbnail_url(); ?>');"></div>
-      <a class="scroll-arrow bg-blue" href="#headquarters"><i class="fa fa-chevron-down"></i></a>
+
+
+      <div class="bg-container bg-right bg-cover bg-center" style="background-image: url('<? the_post_thumbnail_url(); ?>');"></div>
     </div>
   </div>
 
@@ -28,16 +30,16 @@ use IMAGA\Theme\Extras;
     <div class="container">
 
       <div class="row justify-content-center">
-        <div class="col-4 text-right">
+        <div class="col-12 col-md-4 text-md-right">
           <p class="display-3">Imaga Headquarters:</p>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-md-4">
           <p class="lead">Zuiderplein 4-6<br>8911 AJ Leeuwarden<br>The Netherlands</p>
         </div>
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-8 text-center">
+        <div class="col-12 col-md-8 text-md-center">
           <p class="lead">We help agencies and smart companies transform more of their visitors to real customers.</p>
         </div>
       </div>
@@ -45,17 +47,17 @@ use IMAGA\Theme\Extras;
   </section>
 
   <section class="bg-light">
-    <div class="container text-center">
+    <div class="container text-md-center">
       <div class="row">
         <div class="col-12">
           <h2 class="display-2 mb-4">Request a free Touch & Go for your website…</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <p class="lead">A Touch & Go is a quick technical inspection of your website</p>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <a href="#touch-and-go" class="btn btn-teal btn-lg">Get me a free Touch & Go</a>
         </div>
       </div>
@@ -83,12 +85,12 @@ use IMAGA\Theme\Extras;
   <section class="bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-12 text-center">
+        <div class="col-12 text-md-center">
           <h2 class="display-1 mb-4">We love to do Conversion Research to:</h2>
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-7">
+        <div class="col-12 col-md-7">
           <ul class="list-unstyled">
             <li>
               <div class="row">

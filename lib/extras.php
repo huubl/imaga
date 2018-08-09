@@ -119,51 +119,55 @@ function the_employees(){
       ?>
       <section id="<?= strtolower( str_replace(' ','', get_the_title() ) ); ?>" class="pt-6 <?= $switch_bg; ?>">
         <div class="container">
-          <div class="row">
-            <div class="col-6 <?= $switch_class; ?>">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
               <div class="row">
-                <div class="col-3">
+                <div class="col-4 col-md-2">
                   <img class="img-fluid img-circle box-shadow" src="<? the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
                 </div>
-                <div class="col-9">
-                  <h1 class="display-4"><? the_title(); ?></h1>
+                <div class="col-8 d-block d-md-none">
+                  <h1 class="display-1"><? the_title(); ?></h1>
+                </div>
+                <div class="col-12 col-md-10 pt-3 pt-md-0 pb-3">
+                  <h1 class="display-2 d-none d-md-block"><? the_title(); ?></h1>
                   <? if( $terms ): ?>
-                    <ul class="list-group list-group-flush">
-                      <? foreach( $terms as $term ): ?>
-                        <li class="list-group-item <?= $switch_bg; ?>"><?= $term->name; ?></li>
-                      <? endforeach; ?>
-                    </ul>
+                    <? foreach( $terms as $term ): ?>
+                      <span class="badge badge-blue mr-2"><?= $term->name; ?></span>
+                    <? endforeach; ?>
                   <? endif; ?>
                 </div>
               </div>
-            </div>
-            <div class="col-6 pt-lg-8">
-              <? the_content(); ?>
-            </div>
-          </div>
-          <div class="row justify-content-center pt-6">
-            <div class="col-8">
-              <? if( have_rows('content') ): ?>
-                <? while( have_rows('content') ): the_row(); ?>
-                  <h1 class="display-1"><? the_sub_field('title'); ?></h1>
-                  <div class="mb-4">
-                    <? the_sub_field('content'); ?>
-                  </div>
-                <? endwhile; ?>
-              <? endif; ?>
-            </div>
-          </div>
-          <div class="row text-center py-4">
-            <? if( have_rows('badges') ): ?>
-              <? while( have_rows('badges') ): the_row(); ?>
-                <? $image = get_sub_field('image'); ?>
-                <? if( !empty($image) ): ?>
-                  <div class="col">
-                    <img class="img-fluid" src="<?= $image['url']; ?>" alt="<? the_sub_field('title'); ?>">
-                  </div>
+
+              <div class="row justify-content-end">
+                <div class="col-12 col-md-10">
+                  <? the_content(); ?>
+                </div>
+              </div>
+              <div class="row justify-content-end pt-3">
+                <div class="col-12 col-md-10">
+                  <? if( have_rows('content') ): ?>
+                    <? while( have_rows('content') ): the_row(); ?>
+                      <h1 class="display-1"><? the_sub_field('title'); ?></h1>
+                      <div class="mb-4">
+                        <? the_sub_field('content'); ?>
+                      </div>
+                    <? endwhile; ?>
+                  <? endif; ?>
+                </div>
+              </div>
+              <div class="row text-center py-4">
+                <? if( have_rows('badges') ): ?>
+                  <? while( have_rows('badges') ): the_row(); ?>
+                    <? $image = get_sub_field('image'); ?>
+                    <? if( !empty($image) ): ?>
+                      <div class="col">
+                        <img class="img-fluid" src="<?= $image['url']; ?>" alt="<? the_sub_field('title'); ?>">
+                      </div>
+                    <? endif; ?>
+                  <? endwhile; ?>
                 <? endif; ?>
-              <? endwhile; ?>
-            <? endif; ?>
+              </div>
+            </div>
           </div>
         </div>
       </section>
