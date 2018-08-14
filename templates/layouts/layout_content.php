@@ -32,7 +32,9 @@
     <div class="container">
       <div class="row align-items-center">
 
-        <? if( $image_sizing == 'cover' and $image_alignment == 'bg-left' ): ?><div class="col-6"></div><? endif; ?>
+        <? if( $image_sizing == 'cover' and $image_alignment == 'bg-left' ): ?>
+          <div class="col-6"></div>
+        <? endif; ?>
 
         <div class="col-12 col-md-6 <?= $order; ?> <?= $padding; ?> lead">
           <? get_template_part('templates/parts/title'); ?>
@@ -53,7 +55,7 @@
 
       <? if( $image_sizing == 'cover' and !empty($image) ): ?>
 
-        <div class="<?= $image_alignment; ?>" style="background-image: url('<?= $image['url']; ?>');" title="<?= $image['alt']; ?>" alt="<?= $image['alt']; ?>"></div>
+        <div class="<?= $image_alignment; ?> bg-<?= $image_sizing; ?>" style="background-image: url('<?= $image['url']; ?>');" title="<?= $image['alt']; ?>" alt="<?= $image['alt']; ?>"></div>
 
       <? endif; ?>
 
