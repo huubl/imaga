@@ -3,7 +3,6 @@
 
 <div class="jumbotron jumbotron-fluid bg-white overflow-hidden mb-0 py-0">
   <div class="container">
-
     <div class="row">
       <div class="col-12 col-md-6 pr-md-5 pb-4 pb-md-0">
         <h1 class="display-1 mb-3">Is your website leaking money?</h1>
@@ -12,13 +11,11 @@
       </div>
       <a class="scroll-arrow bg-yellow" href="#how-we-can-help"><i class="fa fa-chevron-down"></i></a>
     </div>
-
-
-    <div class="bg-container bg-right bg-cover bg-center" style="background-image: url('<? the_post_thumbnail_url(); ?>');"></div>
   </div>
+  <div class="bg-container bg-right bg-cover bg-center" style="background-image: url('<? the_post_thumbnail_url(); ?>');"></div>
 </div>
 
-<section id="how-we-can-help" class="how-we-can-help bg-light">
+<section id="how-we-can-help" class="how-we-can-help bg-blue text-white">
     <div class="container text-md-center">
       <div class="row">
         <div class="col-12">
@@ -27,23 +24,23 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-12 col-md-6 mb-4">
-          <a href="#i-want-to-improve" class="btn btn-green btn-lg d-none d-sm-inline">
+          <a href="#i-want-to-improve" class="btn btn-green btn-md d-none d-sm-block">
             I want to improve my (client's) website<i class="ml-3 fa fa-chevron-circle-right"></i>
           </a>
-          <a href="#i-want-to-improve" class="btn btn-green btn-lg d-block d-sm-none">
-            I want to improve my (client's) website<i class="ml-3 fa fa-chevron-circle-right"></i>
+          <a href="#i-want-to-improve" class="btn btn-green btn-md d-block d-sm-none">
+            Improve website<i class="ml-3 fa fa-chevron-circle-right"></i>
           </a>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-12">
-          <p class="lead">Or maybe you’ve got a great idea and need a website?</p>
-          <a href="#i-need-a-new-website" class="lead btn btn-lg btn-outline-dark px-md-8 d-none d-sm-inline">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+          <p class="lead">Or maybe you need a new website?</p>
+          <a href="#i-need-a-new-website" class="lead btn btn-md btn-outline-white d-none d-sm-block">
             I need a new website<i class="ml-3 fa fa-chevron-circle-right"></i>
           </a>
-          <a href="#i-need-a-new-website" class="lead btn btn-lg btn-outline-dark px-md-8 d-block d-sm-none">
-            I need a new website<i class="ml-3 fa fa-chevron-circle-right"></i>
+          <a href="#i-need-a-new-website" class="lead btn btn-md btn-outline-white d-block d-sm-none">
+            New website<i class="ml-3 fa fa-chevron-circle-right"></i>
           </a>
         </div>
       </div>
@@ -123,12 +120,44 @@
         </ul>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12 text-md-center">
-        <a href="#research-deliverables" class="btn btn-primary btn-lg mb-2">See our Conversion Research Deliverables<i class="ml-2 fa fa-chevron-circle-right"></i></a>
-        <p><a href="#submit-goals" class="link">Submit your goals</a> and let us contact you</p>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 text-md-center">
+        <a href="#research-deliverables" class="btn btn-primary btn-md mb-2 d-none d-sm-block">See our Conversion Research Deliverables<i class="ml-2 fa fa-chevron-circle-right"></i></a>
+        <a href="#research-deliverables" class="btn btn-primary btn-md mb-2 d-block d-sm-none">Conversion Research Deliverables<i class="ml-2 fa fa-chevron-circle-right"></i></a>
+        <p>Of course, you can also <a href="#submit-goals" class="link">submit your goals</a> and let us contact you</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="bg-red">
+  <div class="container">
+
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6 text-white">
+        <h2 class="display-2 mb-4">
+          We help agencies and companies <br>transform more of their visitors to real customers
+          <small class=" lead">(and will teach you exactly how we do it)</small>
+        </h2>
+        <h3 class="lead">Can your (clients) website be improved?</h3>
+        <h3 class="lead mb-4">Discover the best possible understanding of your customers with our wide range of different qualitative and quantitative conversion optimized methodes. Learn valuable insights about your specific customers:</h3>
+        <a href="#free-touch-and-go" class="lead btn btn-md btn-outline-white">Request a free Touch & Go<i class="ml-2 fa fa-chevron-circle-right"></i></a>
+        <p><small>Results and a remote video-presentation within 3 days</small></p>
+      </div>
+    </div>
+
+  </div>
+  <div class="bg-we-help-agencies-and-companies">
+    <!--
+    <div class="bg-bar bg-red">
+      <div class="icon">
+        <img class="img-fluid" src="<?= Assets\asset_path('images/icons/happy-browser-window-light.svg'); ?>"  width="36" alt="We help agencies and companies transform more of their visitors to real customers">
+      </div>
+      <div class="content">
+        Some description about this photo. Nothing special.
+      </div>
+    </div>
+    -->
   </div>
 </section>
 
@@ -146,35 +175,6 @@
 
       <? Extras\recent_reviews(); ?>
 
-    </div>
-  </div>
-</section>
-
-<section class="bg-red text-white">
-  <div class="container">
-
-    <div class="row align-items-center">
-      <div class="col-12 col-md-6">
-        <h2 class="display-2 mb-4">
-          We help agencies and companies <br>transform more of their visitors to real customers
-          <small class=" lead">(and will teach you exactly how we do it)</small>
-        </h2>
-        <h3 class="lead">Can your (clients) website be improved?</h3>
-        <h3 class="lead mb-4">Discover the best possible understanding of your customers with our wide range of different qualitative and quantitative conversion optimized methodes. Learn valuable insights about your specific customers:</h3>
-        <a href="#free-touch-and-go" class="lead link text-white">Request a free Touch & Go<i class="ml-2 fa fa-chevron-circle-right"></i></a>
-        <p><small>Results and a remote video-presentation within 3 days</small></p>
-      </div>
-    </div>
-
-  </div>
-  <div class="bg-we-help-agencies-and-companies">
-    <div class="bg-bar bg-red">
-      <div class="icon">
-        <img class="img-fluid" src="<?= Assets\asset_path('images/icons/happy-browser-window-light.svg'); ?>"  width="36" alt="We help agencies and companies transform more of their visitors to real customers">
-      </div>
-      <div class="content">
-        Some description about this photo. Nothing special.
-      </div>
     </div>
   </div>
 </section>

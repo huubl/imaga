@@ -10,7 +10,12 @@
 .btn-iwti{
   margin-top: -22px;
 }
-
+.btn-outline-white,
+.btn-outline-light{
+  &:hover{
+    color: theme-color('dark');
+  }
+}
 @include media-breakpoint-down(sm) {}
 @include media-breakpoint-down(md) {
   .btn-lg{

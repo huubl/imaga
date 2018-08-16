@@ -32,9 +32,9 @@
                 "id": ""
             },
             "choices": {
-                "text-left": "Links",
-                "text-center": "Gecentreerd",
-                "text-right": "Rechts"
+                "text-md-left": "Links",
+                "text-md-center": "Gecentreerd",
+                "text-md-right": "Rechts"
             },
             "allow_null": 0,
             "default_value": "",
@@ -327,5 +327,5 @@
     ],
     "active": 0,
     "description": "",
-    "modified": 1532612322
+    "modified": 1534404843
 }

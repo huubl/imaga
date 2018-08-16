@@ -19,6 +19,6 @@
     </div>
 
 
-    <div class="bg-container <?= $image_alignment; ?> bg-cover bg-center" style="background-image: url('<? the_post_thumbnail_url(); ?>');"></div>
   </div>
+  <div class="bg-container <?= $image_alignment; ?> bg-cover bg-center" style="background-image: url('<? the_post_thumbnail_url(); ?>');"></div>
 </div>

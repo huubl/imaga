@@ -28,7 +28,7 @@
   <? $order = (  $image_alignment == 'bg-right' ) ? "order-1" : "order-3"; ?>
 
 
-  <section class="single-content <? the_sub_field('background_color'); ?> <? the_sub_field('text_alignment'); ?> <? the_sub_field('text_color'); ?>">
+  <section class="layout-content <? the_sub_field('background_color'); ?> <? the_sub_field('text_alignment'); ?> <? the_sub_field('text_color'); ?>">
     <div class="container">
       <div class="row align-items-center">
 
@@ -55,7 +55,7 @@
 
       <? if( $image_sizing == 'cover' and !empty($image) ): ?>
 
-        <div class="<?= $image_alignment; ?> bg-<?= $image_sizing; ?>" style="background-image: url('<?= $image['url']; ?>');" title="<?= $image['alt']; ?>" alt="<?= $image['alt']; ?>"></div>
+        <div class="layout-background <?= $image_alignment; ?> bg-<?= $image_sizing; ?>" style="background-image: url('<?= $image['url']; ?>');" title="<?= $image['alt']; ?>" alt="<?= $image['alt']; ?>"></div>
 
       <? endif; ?>
 
