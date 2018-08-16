@@ -25,7 +25,7 @@
             "key": "field_5b3b738792c2a",
             "label": "Lead",
             "name": "lead",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "Intro tekst voor de pagina in de header.",
             "required": 0,
             "conditional_logic": 0,
@@ -35,10 +35,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": 3,
-            "new_lines": "br"
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_5b3b8cb33d19a",
@@ -138,5 +138,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1532612282
+    "modified": 1534414991
 }

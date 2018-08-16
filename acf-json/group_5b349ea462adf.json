@@ -198,6 +198,20 @@
                 "operator": "==",
                 "value": "template-conversion-summary.php"
             }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template-about-us.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -215,13 +229,11 @@
         "slug",
         "author",
         "format",
-        "page_attributes",
-        "featured_image",
         "categories",
         "tags",
         "send-trackbacks"
     ],
     "active": 1,
     "description": "Toevoeging voor custom secties",
-    "modified": 1532612276
+    "modified": 1534417966
 }

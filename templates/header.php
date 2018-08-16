@@ -1,7 +1,7 @@
 <? use IMAGA\Theme\Assets; ?>
 <? use IMAGA\Theme\Navigation; ?>
 
-<header class="box-shadow bg-white fixed-top navbar-container">
+<header class="box-shadow bg-white navbar-container">
 
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">

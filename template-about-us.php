@@ -11,16 +11,13 @@ use IMAGA\Theme\Extras;
 
   <? get_template_part('templates/header', 'jumbotron'); ?>
 
-  <section class="bg-blue text-white">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 text-center">
-          <h2><i>“Thinking is to humans as swimming is to cats, we only do it when we have to”</i></h2>
-          <p class="lead"><b>Marco Kramer</b></p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <? if( have_rows('layouts') ): ?>
+    <? while( have_rows('layouts') ): the_row(); ?>
+
+      <? Extras\get_layout( get_row_layout() ); ?>
+
+    <? endwhile; ?>
+  <? endif; ?>
 
   <section id="employees">
     <? Extras\the_employees(); ?>

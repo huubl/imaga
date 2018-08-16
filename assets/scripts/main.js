@@ -46,29 +46,18 @@
         // init Smooth Scroll
         var scroll = new SmoothScroll('a[href*="#"]', {
           updateURL: false,
-          offset: jQuery("header.navbar-container").height()
-        });
-
-        jQuery(window).on( 'load', function(){
-          jQuery("div.wrap").css( 'margin-top', jQuery("header.navbar-container").height() + 'px' );
-        });
-
-        jQuery(window).resize(function(){
-          jQuery("div.wrap").css( 'margin-top', jQuery("header.navbar-container").height() + 'px' );
+          offset: -2,
         });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
 
-        // The function actually applying the offset
-        function offsetAnchor() {
-          if (location.hash.length !== 0) {
-            window.scrollTo(window.scrollX, window.scrollY + 1 );
-          }
-        }
-
         // Set the offset when entering page with hash present in the url
-        window.setTimeout(offsetAnchor, 0);
+        window.setTimeout(function(){
+          if (location.hash.length !== 0) {
+            window.scrollTo(window.scrollX, window.scrollY + 2 );
+          }
+        }, 0);
       }
     },
     // Home page
