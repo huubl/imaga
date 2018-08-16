@@ -41,27 +41,6 @@
             "delay": 0
         },
         {
-            "key": "field_5b55d45855b44",
-            "label": "Conversion Background",
-            "name": "conversion_bg",
-            "type": "clone",
-            "instructions": "Kies de kleur van de Conversion Type.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "30",
-                "class": "",
-                "id": ""
-            },
-            "clone": [
-                "field_5b597b5ff72a0"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
-        },
-        {
             "key": "field_5b55d4585984a",
             "label": "Header Toggle",
             "name": "header_toggle",
@@ -82,6 +61,27 @@
             "default_value": "bg-right",
             "layout": "horizontal",
             "return_format": "value"
+        },
+        {
+            "key": "field_5b55d45855b44",
+            "label": "Conversion Background",
+            "name": "conversion_bg",
+            "type": "clone",
+            "instructions": "Kies de kleur van de Conversion Type.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_5b597b5ff72a0"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
         },
         {
             "key": "field_5b597e159fa05",
@@ -134,6 +134,6 @@
         "send-trackbacks"
     ],
     "active": 1,
-    "description": "Custom velden voor de Conversion Summary pagina",
-    "modified": 1534422268
+    "description": "Custom Field for the Conversions Summary page",
+    "modified": 1534422931
 }

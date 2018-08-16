@@ -1,6 +1,28 @@
 {
     "key": "group_5b34c8773bc73",
     "title": "Layout Content",
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "discussion",
+        "comments",
+        "revisions",
+        "send-trackbacks"
+    ],
+    "active": 0,
+    "description": "",
     "fields": [
         {
             "key": "field_5b34cd3ff5f6e",
@@ -305,27 +327,5 @@
             "return_format": "value"
         }
     ],
-    "location": [
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "post"
-            }
-        ]
-    ],
-    "menu_order": 0,
-    "position": "normal",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": [
-        "discussion",
-        "comments",
-        "revisions",
-        "send-trackbacks"
-    ],
-    "active": 0,
-    "description": "",
-    "modified": 1534404843
+    "modified": 1534422783
 }
