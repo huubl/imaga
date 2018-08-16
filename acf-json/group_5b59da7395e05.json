@@ -1,6 +1,71 @@
 {
     "key": "group_5b59da7395e05",
     "title": "Default Template Fields",
+    "fields": [
+        {
+            "key": "field_5b59da73aecd9",
+            "label": "Title",
+            "name": "title",
+            "type": "clone",
+            "instructions": "Titel voor de pagina in de header.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_5b55d4584a3b7"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_5b59da73b29da",
+            "label": "Lead",
+            "name": "lead",
+            "type": "clone",
+            "instructions": "Intro tekst voor de pagina in de header.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_5b55d4584e0bd"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_5b7576121bee3",
+            "label": "Header Toggle",
+            "name": "header_toggle",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_5b59da73b45dc"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
     "location": [
         [
             {
@@ -14,6 +79,13 @@
                 "param": "post_template",
                 "operator": "==",
                 "value": "template-about-us.php"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template-contact.php"
             }
         ]
     ],
@@ -37,68 +109,6 @@
         "send-trackbacks"
     ],
     "active": 1,
-    "description": "",
-    "modified": 1534422781,
-    "fields": [
-        {
-            "key": "field_5b59da73aecd9",
-            "label": "Title",
-            "name": "title",
-            "type": "text",
-            "instructions": "Titel voor de pagina in de header.",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5b59da73b29da",
-            "label": "Lead",
-            "name": "lead",
-            "type": "wysiwyg",
-            "instructions": "Intro tekst voor de pagina in de header.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
-        },
-        {
-            "key": "field_5b59da73b45dc",
-            "label": "Header Toggle",
-            "name": "header_toggle",
-            "type": "button_group",
-            "instructions": "Kies een kant voor de header afbeelding.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "20",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "bg-left": "Afbeelding links",
-                "bg-right": "Afbeelding rechts"
-            },
-            "allow_null": 0,
-            "default_value": "bg-right",
-            "layout": "horizontal",
-            "return_format": "value"
-        }
-    ]
+    "description": "Custom velden voor Default Template, About Us en Contact",
+    "modified": 1534424936
 }

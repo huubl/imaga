@@ -3,11 +3,11 @@
     "title": "Conversion Summary Fields",
     "fields": [
         {
-            "key": "field_5b55d4584a3b7",
+            "key": "field_5b75715751e35",
             "label": "Title",
             "name": "title",
-            "type": "text",
-            "instructions": "Titel voor de pagina in de header.",
+            "type": "clone",
+            "instructions": "",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -15,18 +15,20 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "clone": [
+                "field_5b55d4584a3b7"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
         },
         {
-            "key": "field_5b55d4584e0bd",
+            "key": "field_5b7571d181eb1",
             "label": "Lead",
             "name": "lead",
-            "type": "wysiwyg",
-            "instructions": "Intro tekst voor de pagina in de header.",
+            "type": "clone",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -34,18 +36,20 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "clone": [
+                "field_5b55d4584e0bd"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
         },
         {
             "key": "field_5b55d4585984a",
             "label": "Header Toggle",
             "name": "header_toggle",
-            "type": "button_group",
-            "instructions": "Kies een kant voor de header afbeelding.",
+            "type": "clone",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -53,14 +57,13 @@
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "bg-left": "Afbeelding links",
-                "bg-right": "Afbeelding rechts"
-            },
-            "allow_null": 0,
-            "default_value": "bg-right",
-            "layout": "horizontal",
-            "return_format": "value"
+            "clone": [
+                "field_5b59da73b45dc"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
         },
         {
             "key": "field_5b55d45855b44",
@@ -135,5 +138,5 @@
     ],
     "active": 1,
     "description": "Custom Field for the Conversions Summary page",
-    "modified": 1534422931
+    "modified": 1534426275
 }
