@@ -22,7 +22,8 @@
                 "bg-green": "Groen",
                 "bg-blue": "Blauw",
                 "bg-cyan": "Cyaan",
-                "bg-yellow": "Geel"
+                "bg-yellow": "Geel",
+                "bg-gray-900": "Dark"
             },
             "allow_null": 0,
             "default_value": "bg-none",
@@ -68,6 +69,6 @@
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 0,
-    "description": "",
-    "modified": 1532612297
+    "description": "Slechts om gekloonde velden op één plek te houden",
+    "modified": 1534422337
 }
