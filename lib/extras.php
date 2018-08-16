@@ -123,7 +123,7 @@ function the_employees(){
             <div class="col-12 col-md-10">
               <div class="row">
                 <div class="col-4 col-md-2">
-                  <img class="img-fluid img-circle box-shadow" src="<? the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
+                  <img class="img-fluid img-circle box-shadow" src="<? the_post_thumbnail_url('thumbnail'); ?>" alt="<? the_title(); ?>">
                 </div>
                 <div class="col-8 d-block d-md-none">
                   <h1 class="display-1"><? the_title(); ?></h1>
