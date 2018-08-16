@@ -23,7 +23,10 @@ $files = [
   'lib/titles.php',                       // Page titles
   'lib/wrapper.php',                      // Theme wrapper class
   'lib/customizer.php',                   // Theme customizer
-  'lib/posts.php'                         // Custom Post Types
+  'lib/posttypes/brands.php',             // Custom Post Type Brands
+  'lib/posttypes/employees.php',          // Custom Post Type Employees
+  'lib/posttypes/reviews.php',            // Custom Post Type Reviews
+  'lib/taxonomies/skills.php',            // Custom Taxonomy Skills
 ];
 
 foreach ($files as $file):
