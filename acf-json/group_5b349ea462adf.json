@@ -47,6 +47,37 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_5b7ac2ba23fd3": {
+                    "key": "layout_5b7ac2ba23fd3",
+                    "name": "layout_lists",
+                    "label": "Layout Lists",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b7ac2c123fd4",
+                            "label": "Clone: Layout Lists",
+                            "name": "clone_layout_lists",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5b7ac151a75f6"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "5b360f0d04ba7": {
                     "key": "5b360f0d04ba7",
                     "name": "layout_facts",
@@ -170,6 +201,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5b7abd0945778": {
+                    "key": "layout_5b7abd0945778",
+                    "name": "layout_reviews",
+                    "label": "Layout Reviews",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b7abd1445779",
+                            "label": "Clone: Layout Reviews",
+                            "name": "clone_layout_reviews",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5b7abc935bb05"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Voeg rij toe",
@@ -242,5 +304,5 @@
     ],
     "active": 1,
     "description": "Toevoeging voor custom secties",
-    "modified": 1534426734
+    "modified": 1534771932
 }
