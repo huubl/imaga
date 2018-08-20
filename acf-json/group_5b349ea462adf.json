@@ -232,6 +232,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5b7ad432ee479": {
+                    "key": "layout_5b7ad432ee479",
+                    "name": "layout_employees",
+                    "label": "Layout Employees",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b7ad43bee47a",
+                            "label": "Clone: Layout Employees",
+                            "name": "clone_layout_employees",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5b7ad3e67df5d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Voeg rij toe",
@@ -304,5 +335,5 @@
     ],
     "active": 1,
     "description": "Toevoeging voor custom secties",
-    "modified": 1534771932
+    "modified": 1534776420
 }
