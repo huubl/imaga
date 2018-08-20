@@ -105,7 +105,8 @@
                 "bg-blue": "Blauw",
                 "bg-cyan": "Cyaan",
                 "bg-yellow": "Geel",
-                "bg-gray-900": "Dark"
+                "bg-gray-800": "Darker",
+                "bg-gray-900": "Darkest"
             },
             "allow_null": 0,
             "default_value": "bg-none",
@@ -129,6 +130,6 @@
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 0,
-    "description": "",
-    "modified": 1534426473
+    "description": "Opslag voor verschillende custom velden",
+    "modified": 1534775107
 }

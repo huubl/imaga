@@ -3,6 +3,25 @@
     "title": "Layout Reviews",
     "fields": [
         {
+            "key": "field_5b7acf7c0d501",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5b7abc9a9b853",
             "label": "Reviews",
             "name": "",
@@ -15,7 +34,7 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Deze layout heeft geen opties. Geeft alle reviews weer van de post type 'reviews'.",
+            "message": "De layout geeft alle items uit de post type 'reviews' weer.",
             "new_lines": "wpautop",
             "esc_html": 0
         }
@@ -35,7 +54,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": 0,
     "description": "",
-    "modified": 1534771504
+    "modified": 1534775195
 }
