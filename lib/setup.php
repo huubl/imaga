@@ -40,43 +40,28 @@ function setup() {
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 
 /**
- * Register sidebars
- */
-function widgets_init() {
-  register_sidebar([
-    'name'          => __('Primary', 'imaga'),
-    'id'            => 'sidebar-primary',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
-  ]);
-
-  register_sidebar([
-    'name'          => __('Footer', 'imaga'),
-    'id'            => 'sidebar-footer',
-    'before_widget' => '<section class="widget %1$s %2$s">',
-    'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
-  ]);
-}
-add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
-
-/**
  * Theme assets
  */
 function assets() {
   wp_enqueue_style('imaga/css', Assets\asset_path('styles/main.css'), false, null);
 
-  if (is_single() && comments_open() && get_option('thread_comments')) {
-    wp_enqueue_script('comment-reply');
-  }
+  // if (is_single() && comments_open() && get_option('thread_comments')) {
+  //   wp_enqueue_script('comment-reply');
+  // }
 
   wp_enqueue_script('imaga/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
-  wp_enqueue_script('imaga/devices-js', Assets\asset_path('scripts/devices.js'), ['jquery'], null, true);
+  //wp_enqueue_script('imaga/devices-js', Assets\asset_path('scripts/devices.js'), ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
+
+/**
+ * Login assets
+ */
+function add_login_stylesheet() {
+  wp_register_style('imaga/login', Assets\asset_path('styles/login.css') );
+  wp_enqueue_style( 'imaga/login');
+}
+add_action( 'login_enqueue_scripts', __NAMESPACE__ . '\\add_login_stylesheet' );
 
 /*
  * ACF Google Maps API Key
@@ -106,15 +91,6 @@ add_action( 'wp_head', __NAMESPACE__ . '\\add_google_fonts' , 1);
  * Remove acf-post2post nag
  */
 add_filter('remove_hube2_nag', '__return_true');
-
-/**
- * Register en enqueue custom login stylesheet
- */
-function add_login_stylesheet() {
-  wp_register_style('imaga/login', Assets\asset_path('styles/login.css') );
-  wp_enqueue_style( 'imaga/login');
-}
-add_action( 'login_enqueue_scripts', __NAMESPACE__ . '\\add_login_stylesheet' );
 
 /**
  * Remove 'page-template' from body class on pages with custom templates

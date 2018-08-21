@@ -16,7 +16,7 @@ function create_post_type_employees() {
     'label'                 => __( 'Employees', 'imaga' ),
     'description'           => __( 'Employees of IMAGA', 'imaga' ),
     'labels'                => $labels,
-    'supports'              => array( 'title', 'editor', 'thumbnail', ),
+    'supports'              => array( 'title', 'editor', 'thumbnail' ),
     'taxonomies'            => array( 'skills' ), // Add taxonomies
     'hierarchical'          => false,
     'public'                => true,
@@ -30,7 +30,7 @@ function create_post_type_employees() {
     'has_archive'           => true,
     'exclude_from_search'   => false,
     'publicly_queryable'    => true,
-    'capability_type'       => 'page',// or 'post'. Change when needed.
+    'capability_type'       => 'post',// or 'post'. Change when needed.
   );
 
   // Registering the post type

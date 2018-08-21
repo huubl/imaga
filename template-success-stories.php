@@ -1,6 +1,6 @@
 <?
 /**
-* Template Name: About Us
+* Template Name: Success Stories
 */
 
 use IMAGA\Theme\Assets;
@@ -9,7 +9,7 @@ use IMAGA\Theme\Extras;
 
 <? while (have_posts()) : the_post(); ?>
 
-  <? get_template_part('templates/header', 'jumbotron'); ?>
+  <? get_template_part('templates/header', 'story'); ?>
 
   <? if( have_rows('layouts') ): ?>
     <? while( have_rows('layouts') ): the_row(); ?>

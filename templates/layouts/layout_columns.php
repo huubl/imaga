@@ -11,7 +11,7 @@
         <? while ( have_rows('columns') ) : the_row(); ?>
           <div class="col-4">
             <div class="lead mb-3">
-              <? the_sub_field('title'); ?>
+              <b><? the_sub_field('title'); ?></b>
             </div>
             <div class="lead">
               <? the_sub_field('content'); ?>

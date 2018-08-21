@@ -303,14 +303,14 @@
             {
                 "param": "post_template",
                 "operator": "==",
-                "value": "template-about-us.php"
+                "value": "template-contact.php"
             }
         ],
         [
             {
-                "param": "post_template",
+                "param": "post_type",
                 "operator": "==",
-                "value": "template-contact.php"
+                "value": "work"
             }
         ]
     ],
@@ -335,5 +335,5 @@
     ],
     "active": 1,
     "description": "Toevoeging voor custom secties",
-    "modified": 1534776420
+    "modified": 1534844257
 }

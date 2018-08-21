@@ -1,11 +1,11 @@
 <?
 
-namespace IMAGA\Theme\Taxonomie\Skills;
+namespace IMAGA\Theme\Taxonomies\Employees\Skills;
 
 /*
  * Skills Taxonomy for Employees
  */
-function create_taxonomies_skills() {
+function create_taxonomy_skills() {
 
   $labels = array(
     'name'                       => _x( 'Skills', 'Skills General Name', 'imaga' ),
@@ -16,7 +16,7 @@ function create_taxonomies_skills() {
     'labels'                     => $labels,
     'hierarchical'               => false,
     'public'                     => true,
-    'show_ui'                    => false,
+    'show_ui'                    => true,
     'show_admin_column'          => true,
     'show_in_nav_menus'          => true,
     'show_tagcloud'              => false,
@@ -26,4 +26,4 @@ function create_taxonomies_skills() {
   register_taxonomy( 'skills', array( 'employees' ), $args );
 }
 
-add_action( 'init', __NAMESPACE__ . '\\create_taxonomies_skills' );
+add_action( 'init', __NAMESPACE__ . '\\create_taxonomy_skills' );

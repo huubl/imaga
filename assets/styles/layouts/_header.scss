@@ -93,23 +93,23 @@
 
 .jumbotron{
   min-height: 450px;
+}
 
-  .scroll-arrow{
-    position: absolute;
-    left: calc(50% - 25px);
-    bottom: 36px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    line-height: 48px;
-    border-radius: 50px;
-    z-index: 900;
+.scroll-arrow{
+  position: absolute;
+  left: calc(50% - 25px);
+  bottom: 36px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 50px;
+  z-index: 900;
 
-    .fa{
+  .fa{
+    color: #FFFFFF;
+    &:hover{
       color: #FFFFFF;
-      &:hover{
-        color: #FFFFFF;
-      }
     }
   }
 }
@@ -127,6 +127,19 @@
   left: calc(50% - 80px);
 }
 
+.header-work{
+
+  .scroll-arrow{
+    bottom: -25px;
+  }
+  .bg-container{
+    padding-top: 46%;
+  }
+  .description{
+    margin-top: -160px;
+  }
+}
+
 // Create conversion arrow for each color in theme-colors()
 @each $color, $value in $theme-colors {
   .conversion-arrow-#{$color}:after{
@@ -142,7 +155,6 @@
     left: calc(50% - 80px);
   }
 }
-
 
 
 @include media-breakpoint-down(sm){
