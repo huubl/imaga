@@ -15,16 +15,4 @@
   </article>
 <? endwhile; ?>
 
-
-<section>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <h3 class="display-1"><span class="underline-green">Related posts</span></h3>
-      </div>
-    </div>
-    <div class="row">
-      <? get_template_part('templates/parts/related-posts'); ?>
-    </div>
-  </div>
-</section>
+<? get_template_part('templates/parts/related-posts'); ?>

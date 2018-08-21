@@ -72,11 +72,11 @@
 .card{
   border-radius: 0px;
   border: 0px;
-  transition: all 150ms ease-in-out;
 
   &:hover{
-    transform:translateY(-3px);
-    @extend .box-shadow;
+    .card-img-top{
+      transform: scale(1.03);
+    }
   }
 
   a.text-body{
@@ -84,6 +84,7 @@
   }
   .card-img-top{
     border-radius: 0px;
+    transition: all 150ms ease-in-out;
   }
 }
 

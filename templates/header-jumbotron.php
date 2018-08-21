@@ -9,9 +9,11 @@ array (size=1)
   'header_image_toggle' => string 'bg-left' (length=7)
 
 */
-foreach ( get_field('header_toggle') as $key => $value):
-  $image_alignment = $value;
-endforeach;
+if( get_field('header_toggle') ):
+  foreach ( get_field('header_toggle') as $key => $value):
+    $image_alignment = $value;
+  endforeach;
+endif;
 ?>
 
 <div class="jumbotron jumbotron-fluid bg-white overflow-hidden mb-0 py-0">

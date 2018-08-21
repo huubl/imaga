@@ -16,16 +16,4 @@
   </article>
 <? endwhile; ?>
 
-
-<section class="bg-light">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <h3 class="display-1"><span class="underline-green">Featured Work</span></h3>
-      </div>
-    </div>
-    <div class="row">
-      <? get_template_part('templates/parts/featured-work'); ?>
-    </div>
-  </div>
-</section>
+<? get_template_part('templates/parts/featured-work'); ?>
