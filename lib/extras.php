@@ -280,7 +280,7 @@ function acf_flexible_content_layout_title( $title, $field, $layout, $i ) {
   // see: https://stackoverflow.com/a/40607717
   $desc = strip_tags( get_sub_field( 'title' ) ??0?: get_sub_field( 'lead' ) ??0?: get_sub_field( 'author' ) ??0?: get_sub_field( 'content' ) );
 
-	if ( isset($desc) ) {
+	if ( !empty($desc) ) {
 
     return $title . " - " . $desc = (strlen($desc) > 50) ? mb_substr($desc, 0, 50).'...' : $desc;
 
