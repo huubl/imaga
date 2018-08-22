@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="row justify-content-center description">
-      <div class="col-8 pt-4 pb-5  px-4 text-center bg-white box-shadow">
+      <div class="col-12 col-md-8 pt-4 pb-5  px-4 text-center bg-white box-shadow">
         <h1 class="display-2 mb-3"><? the_field('title'); ?></h1>
         <div class="lead"><? the_field('lead'); ?></div>
         <? if( get_field('site_url') ): ?>
