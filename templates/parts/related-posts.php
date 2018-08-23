@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="row">
-      <? $args = array( 'post_type' => 'post', 'orderby' => 'post_date', 'order' => 'desc' ); ?>
+      <? $args = array( 'post_type' => 'post', 'orderby' => 'post_date', 'order' => 'desc', 'posts_per_page' => 3 ); ?>
       <? $query = new wp_query( $args ); ?>
       <? $i = 0;?>
       <div class="card-deck">
