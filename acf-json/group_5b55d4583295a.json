@@ -1,6 +1,6 @@
 {
     "key": "group_5b55d4583295a",
-    "title": "Conversion Summary Fields",
+    "title": "Template: 'Conversion Summary'",
     "fields": [
         {
             "key": "field_5b75715751e35",
@@ -137,5 +137,5 @@
     ],
     "active": 1,
     "description": "Custom velden voor de Conversion Optimization template",
-    "modified": 1535007286
+    "modified": 1535010070
 }

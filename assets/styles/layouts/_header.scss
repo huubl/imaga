@@ -114,18 +114,7 @@
   }
 }
 
-.conversion-arrow-none:after{
-  position: absolute;
-  content: '';
-  height:0;
-  width:0;
-  border-top: 0 solid transparent;
-  border-right: 80px solid transparent;
-  border-left: 80px solid transparent;
-  border-bottom: 80px solid $white;
-  bottom: -80px;
-  left: calc(50% - 80px);
-}
+
 
 .header-work{
 
@@ -140,6 +129,25 @@
   }
 }
 
+.category-service{
+  margin-top: -80px;
+  border-radius: 900px;
+  padding: .3rem;
+}
+
+.conversion-arrow-none:after{
+  position: absolute;
+  content: '';
+  height:0;
+  width:0;
+  border-top: 0 solid transparent;
+  border-right: 40px solid transparent;
+  border-left: 40px solid transparent;
+  border-bottom: 40px solid $white;
+  bottom: -40px;
+  left: calc(50% - 40px);
+}
+
 // Create conversion arrow for each color in theme-colors()
 @each $color, $value in $theme-colors {
   .conversion-arrow-#{$color}:after{
@@ -148,11 +156,11 @@
     height:0;
     width:0;
     border-top: 0 solid transparent;
-    border-right: 80px solid transparent;
-    border-left: 80px solid transparent;
-    border-bottom: 80px solid $value;
-    bottom: -80px;
-    left: calc(50% - 80px);
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+    border-bottom: 40px solid $value;
+    bottom: -40px;
+    left: calc(50% - 40px);
   }
 }
 

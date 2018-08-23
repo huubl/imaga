@@ -1,6 +1,6 @@
 {
     "key": "group_5b3b73219adcd",
-    "title": "Conversion Template Fields",
+    "title": "Template: 'Conversion Category'",
     "fields": [
         {
             "key": "field_5b3b7343ed009",
@@ -66,6 +66,30 @@
             "prefix_name": 0
         },
         {
+            "key": "field_5b3b8cb33d19a",
+            "label": "Conversion Category",
+            "name": "conversion_category",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "conversion-research": "Conversion Research",
+                "conversion-strategy": "Conversion Strategy",
+                "conversion-design": "Conversion Design",
+                "conversion-build": "Conversion Build"
+            },
+            "allow_null": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
             "key": "field_5b3b9352fff6d",
             "label": "Conversion Background",
             "name": "conversion_bg",
@@ -85,30 +109,6 @@
             "layout": "block",
             "prefix_label": 0,
             "prefix_name": 0
-        },
-        {
-            "key": "field_5b3b8cb33d19a",
-            "label": "Conversion Type",
-            "name": "conversion_type",
-            "type": "button_group",
-            "instructions": "De Conversie Type waar de pagina over gaat.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "100",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "conversion-research": "Conversion Research",
-                "conversion-strategy": "Conversion Strategy",
-                "conversion-design": "Conversion Design",
-                "conversion-build": "Conversion Build"
-            },
-            "allow_null": 0,
-            "default_value": "",
-            "layout": "horizontal",
-            "return_format": "value"
         }
     ],
     "location": [
@@ -116,7 +116,7 @@
             {
                 "param": "post_template",
                 "operator": "==",
-                "value": "template-conversion.php"
+                "value": "template-conversion-category.php"
             }
         ]
     ],
@@ -140,5 +140,5 @@
     ],
     "active": 1,
     "description": "Custom velden voor de Conversion templates",
-    "modified": 1535007299
+    "modified": 1535016072
 }

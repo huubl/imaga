@@ -226,7 +226,6 @@ function recent_reviews( $post_per_page = 4 ){
     <?
       while( $query->have_posts() ) :
         $query->the_post();
-        $seconds = strtotime("now") - strtotime(get_the_date("Y/m/d"));
         ?>
 
         <div class="review">

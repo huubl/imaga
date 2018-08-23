@@ -13,13 +13,3 @@
     transition: all 150ms ease;
   }
 }
-
-.conversion-summary,
-.conversion-research,
-.conversion-strategy,
-.conversion-design,
-.conversion-build{
-  .conversion-arrow:after{
-    bottom: -100px;
-  }
-}
