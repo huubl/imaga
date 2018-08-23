@@ -78,7 +78,7 @@
             {
                 "param": "post_template",
                 "operator": "==",
-                "value": "template-about-us.php"
+                "value": "default"
             }
         ],
         [
@@ -95,7 +95,6 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
-        "permalink",
         "the_content",
         "excerpt",
         "discussion",
@@ -110,5 +109,5 @@
     ],
     "active": 1,
     "description": "Custom velden voor Default Template, About Us en Contact",
-    "modified": 1534424936
+    "modified": 1535007312
 }

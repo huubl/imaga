@@ -1,24 +1,6 @@
 {
     "key": "group_5b5705c4263de",
-    "title": "Reviews Post Type Fields",
-    "location": [
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "reviews"
-            }
-        ]
-    ],
-    "menu_order": 0,
-    "position": "side",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": "",
-    "active": 1,
-    "description": "",
-    "modified": 1534422784,
+    "title": "Post Type 'Reviews'",
     "fields": [
         {
             "key": "field_5b5705d14e59e",
@@ -74,5 +56,23 @@
             "append": "",
             "maxlength": ""
         }
-    ]
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "reviews"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1535007017
 }

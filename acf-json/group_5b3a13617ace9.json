@@ -1,24 +1,6 @@
 {
     "key": "group_5b3a13617ace9",
-    "title": "Employee Fields",
-    "location": [
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "employees"
-            }
-        ]
-    ],
-    "menu_order": 0,
-    "position": "normal",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": "",
-    "active": 1,
-    "description": "",
-    "modified": 1534422782,
+    "title": "Post Type 'Employee'",
     "fields": [
         {
             "key": "field_5b3a173a9ac0d",
@@ -165,5 +147,23 @@
                 }
             ]
         }
-    ]
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "employees"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1535006993
 }

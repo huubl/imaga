@@ -126,7 +126,6 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
-        "permalink",
         "the_content",
         "excerpt",
         "discussion",
@@ -141,5 +140,5 @@
     ],
     "active": 1,
     "description": "Custom velden voor de Conversion templates",
-    "modified": 1534773415
+    "modified": 1535007299
 }

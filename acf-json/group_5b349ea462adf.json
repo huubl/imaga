@@ -320,7 +320,6 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
-        "permalink",
         "the_content",
         "excerpt",
         "discussion",
@@ -335,5 +334,5 @@
     ],
     "active": 1,
     "description": "Toevoeging voor custom secties",
-    "modified": 1534947717
+    "modified": 1535006813
 }

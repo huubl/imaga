@@ -17,7 +17,7 @@ use IMAGA\Theme\Extras;
     <? $first_row = $rows[0]; ?>
     <? $color = str_replace('bg', '', $first_row['background_color']); ?>
 
-    <div class="container">
+    <div class="container py-4">
       <div class="row text-center">
         <div class="col-3 <?= get_field('conversion_type') == 'conversion-research' ? "conversion-arrow$color" : '' ; ?>">
           <a href="/conversion-optimization/conversion-research#content">

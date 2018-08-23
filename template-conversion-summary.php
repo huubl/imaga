@@ -12,7 +12,7 @@ use IMAGA\Theme\Extras;
   <? get_template_part('templates/header', 'jumbotron'); ?>
 
   <section id="conversions" class="<? the_field('conversion_bg'); ?>">
-    <div class="container">
+    <div class="container py-4">
       <div class="row text-center">
         <div class="col-3">
           <a href="/conversion-optimization/conversion-research#conversions">

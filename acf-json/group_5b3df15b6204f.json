@@ -1,24 +1,6 @@
 {
     "key": "group_5b3df15b6204f",
     "title": "Layout Columns",
-    "location": [
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "post"
-            }
-        ]
-    ],
-    "menu_order": 0,
-    "position": "normal",
-    "style": "default",
-    "label_placement": "top",
-    "instruction_placement": "label",
-    "hide_on_screen": "",
-    "active": 0,
-    "description": "",
-    "modified": 1534422782,
     "fields": [
         {
             "key": "field_5b3df40a1b5dc",
@@ -95,9 +77,9 @@
                 "id": ""
             },
             "collapsed": "field_5b3df198ecc13",
-            "min": 0,
-            "max": 0,
-            "layout": "row",
+            "min": 1,
+            "max": 4,
+            "layout": "table",
             "button_label": "",
             "sub_fields": [
                 {
@@ -140,5 +122,23 @@
                 }
             ]
         }
-    ]
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1535006897
 }
