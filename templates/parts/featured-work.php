@@ -2,14 +2,16 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12">
-        <h3 class="display-1"><span class="underline-green">Featured Work</span></h3>
+        <h3 class="display-1 mb-5">
+          <span class="underline-green">Featured Work</span>
+        </h3>
       </div>
     </div>
     <div class="row">
       <? $args = array( 'post_type' => 'work', 'orderby' => 'post_date', 'order' => 'desc' ); ?>
       <? $query = new wp_query( $args ); ?>
       <? $i = 0;?>
-      <div class="card-deck">
+      <div class="card-deck mb-4">
         <? if($query->have_posts()): ?>
           <? while( $query->have_posts() ) :  $query->the_post(); $i++; ?>
 
@@ -33,8 +35,8 @@
               </a>
             </article>
 
-            <? if($i % 3 == 0): ?>
-          </div><div class="card-deck">
+            <? if($i % 4 == 0): ?>
+          </div><div class="card-deck mb-4">
             <? endif; ?>
 
           <? endwhile; ?>

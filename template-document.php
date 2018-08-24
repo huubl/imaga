@@ -13,7 +13,7 @@ use IMAGA\Theme\Extras;
 <section>
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12 col-md-8 lead">
+      <div class="col-12 col-md-10 lead">
         <? the_content(); ?>
       </div>
     </div>

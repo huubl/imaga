@@ -2,11 +2,13 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12">
-        <h3 class="display-1"><span class="underline-green">Related posts</span></h3>
+        <h3 class="display-1 mb-5">
+          <span class="underline-green">Related posts</span>
+        </h3>
       </div>
     </div>
     <div class="row">
-      <? $args = array( 'post_type' => 'reviews', 'orderby' => 'post_date', 'order' => 'desc', 'posts_per_page' => 3 ); ?>
+      <? $args = array( 'post_type' => 'reviews', 'orderby' => 'post_date', 'order' => 'desc', 'posts_per_page' => 4 ); ?>
       <? $query = new wp_query( $args ); ?>
       <? $i = 0;?>
       <div class="card-deck">
@@ -33,7 +35,7 @@
               </a>
             </article>
 
-            <? if($i % 3 == 0): ?>
+            <? if($i % 4 == 0): ?>
           </div><div class="card-deck">
             <? endif; ?>
 
