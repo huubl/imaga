@@ -59,7 +59,6 @@
     "wiredep": "^4.0.0"
   },
   "dependencies": {
-    "hoek": "^5.0.4",
     "npm": "^6.4.0"
   }
 }
