@@ -25,6 +25,7 @@ add_shortcode( 'checkmark', function($atts){
 /**
  * Bootstrap Button shortcode
  */
-add_shortcode( 'button', function($atts){
-  return '<a class="btn btn-' . $atts['color'] . '" href="' . $atts['url'] . '">' . $atts['title'] . '</a>';
+add_shortcode( 'button', function($atts, $content = null){
+  return '<a class="btn btn-' . $atts['color'] . ' ' . $atts['extra'] . '" href="' . $atts['url'] . '">' . do_shortcode($content) . '</a>';
+});
 });
