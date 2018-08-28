@@ -28,4 +28,18 @@ add_shortcode( 'checkmark', function($atts){
 add_shortcode( 'button', function($atts, $content = null){
   return '<a class="btn btn-' . $atts['color'] . ' ' . $atts['extra'] . '" href="' . $atts['url'] . '">' . do_shortcode($content) . '</a>';
 });
+
+/**
+ * Bootstrap List shortcode
+ */
+add_shortcode( 'list-unstyled', function($atts, $content = null){
+  return '<ul class="list-unstyled">' . do_shortcode($content) . '</ul>';
+});
+
+/**
+ * Bootstrap List-item shortcode
+ */
+add_shortcode( 'list-item', function($atts, $content = null){
+  return '<li class="display-2">' . do_shortcode($content) . '</li>';
+});
 });
