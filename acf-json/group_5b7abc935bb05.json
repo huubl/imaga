@@ -24,19 +24,29 @@
         {
             "key": "field_5b7abc9a9b853",
             "label": "Reviews",
-            "name": "",
-            "type": "message",
-            "instructions": "",
-            "required": 0,
+            "name": "reviews",
+            "type": "relationship",
+            "instructions": "Kies reviews die getoond moeten worden op deze pagina.",
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "message": "De layout geeft alle items uit de post type 'reviews' weer.",
-            "new_lines": "wpautop",
-            "esc_html": 0
+            "post_type": [
+                "reviews"
+            ],
+            "taxonomy": [],
+            "filters": [
+                "search"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "min": 3,
+            "max": "",
+            "return_format": "object"
         }
     ],
     "location": [
@@ -56,5 +66,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1535449108
+    "modified": 1535451684
 }

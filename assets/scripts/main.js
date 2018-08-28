@@ -33,6 +33,8 @@
           slidesToScroll: 1,
           dots: false,
           arrows: true,
+          centerMode: true,
+          centerPadding: 0,
           responsive: [{
             breakpoint: 512,
             settings: {

@@ -1,6 +1,6 @@
 <? use IMAGA\Theme\Extras; ?>
 
-<section id="section-<?= get_row_index(); ?>" class="reviews">
+<section id="section-<?= get_row_index(); ?>" class="layout-reviews">
   <div class="container py-4">
     <div class="row">
       <div class="col-12 text-center py-4">
@@ -12,7 +12,33 @@
   <div class="container-fluid pb-5">
     <div class="row">
 
-      <? Extras\recent_reviews(); ?>
+      <? $posts = get_sub_field('reviews'); ?>
+
+      <? if( $posts ): ?>
+        <div class="review-slider w-100">
+          <?php foreach( $posts as $post): setup_postdata($post); ?>
+            <div class="review">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-3 text-right">
+                    <img class="img-fluid img-circle" src="<?= get_the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
+                  </div>
+                  <div class="col-9">
+                    <? the_title(); ?>, <? the_field('company'); ?> <? the_field('location'); ?>
+                    <span class="review-stars text-orange">
+                      <? the_field('stars'); ?>
+                    </span>
+                    <small>
+                      <?= (strlen( get_the_content() ) > 360) ? mb_substr( get_the_content() , 0, 360) . '... <a href="'.get_the_permalink().'">Verder lezen <i class="fa fa-chevron-right"></i></a>' : get_the_content() ; ?>
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <? endforeach; ?>
+        </div>
+        <? wp_reset_postdata(); ?>
+      <? endif; ?>
 
     </div>
   </div>
