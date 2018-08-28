@@ -33,7 +33,7 @@ add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 * Selecting Display heading based on length of string
 * TODO: find a better function name
 */
-function heading_based_on_length( $string , $wrapper = "h2"){
+function heading_based_on_length( $string , $wrapper = "h2", $alignment = null){
 
   $count = mb_strlen( $string );
 
@@ -47,7 +47,7 @@ function heading_based_on_length( $string , $wrapper = "h2"){
     break;
   endswitch;
 
-  return '<'.$wrapper.' class="'.$size.'">'.$string.'</'.$wrapper.'>';
+  return '<'.$wrapper.' class="'.$size.' '.$alignment.'">'.$string.'</'.$wrapper.'>';
 
 }
 

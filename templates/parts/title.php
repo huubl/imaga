@@ -1,5 +1,7 @@
 <? use IMAGA\Theme\Extras; ?>
 
+<? $alignment = get_sub_field('title_alignment') ?? ''; ?>
+
 <? if( get_sub_field('title') or get_sub_field('lead') ): ?>
 
   <div class="row">
@@ -8,7 +10,7 @@
 
       <? if( get_sub_field('title') ): ?>
 
-        <?= Extras\heading_based_on_length( get_sub_field('title') ); ?>
+        <?= Extras\heading_based_on_length( get_sub_field('title'), 'h2', $alignment ); ?>
 
       <? endif; ?>
 
