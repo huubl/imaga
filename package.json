@@ -57,5 +57,8 @@
     "semver": "^5.5.0",
     "traverse": "^0.6.6",
     "wiredep": "^4.0.0"
+  },
+  "dependencies": {
+    "npm": "^6.4.0"
   }
 }
