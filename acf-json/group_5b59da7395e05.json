@@ -78,13 +78,6 @@
             {
                 "param": "post_template",
                 "operator": "==",
-                "value": "default"
-            }
-        ],
-        [
-            {
-                "param": "post_template",
-                "operator": "==",
                 "value": "template-contact.php"
             }
         ]
@@ -109,5 +102,5 @@
     ],
     "active": 1,
     "description": "Custom velden voor Default Template, About Us en Contact",
-    "modified": 1535018070
+    "modified": 1535449054
 }
