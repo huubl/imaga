@@ -16,6 +16,14 @@
     color: theme-color('dark');
   }
 }
+.btn-white{
+  &:hover{
+    color: #fff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #fff;
+  }
+}
 @include media-breakpoint-down(sm) {}
 @include media-breakpoint-down(md) {
   .btn-lg{
