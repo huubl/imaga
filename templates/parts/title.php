@@ -2,6 +2,8 @@
 
 <? $alignment = get_sub_field('title_alignment') ?? ''; ?>
 
+<? $lead_color = ( get_sub_field('text_color') == "text-white" ) ? 'text-white' : 'text-muted'; ?>
+
 <? if( get_sub_field('title') or get_sub_field('lead') ): ?>
 
   <div class="row">
@@ -16,7 +18,7 @@
 
       <? if( get_sub_field('lead') ): ?>
 
-        <p class="lead text-muted">
+        <p class="lead <?= $lead_color; ?>">
           <? the_sub_field('lead'); ?>
         </p>
 
