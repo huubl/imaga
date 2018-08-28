@@ -4,7 +4,7 @@
 
 <? if( get_sub_field('image_toggle') == FALSE ): ?>
 
-  <section class="layout-content <? the_sub_field('background_color'); ?> <? the_sub_field('text_color'); ?> <? the_sub_field('text_alignment'); ?>">
+  <section id="section-<?= get_row_index(); ?>" class="layout-content <? the_sub_field('background_color'); ?> <? the_sub_field('text_color'); ?> <? the_sub_field('text_alignment'); ?>">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 lead">
@@ -28,7 +28,7 @@
   <? $order = (  $image_alignment == 'bg-right' ) ? "order-1" : "order-3"; ?>
 
 
-  <section class="layout-content <? the_sub_field('background_color'); ?> <? the_sub_field('text_alignment'); ?> <? the_sub_field('text_color'); ?>">
+  <section id="section-<?= get_row_index(); ?>" class="layout-content <? the_sub_field('background_color'); ?> <? the_sub_field('text_color'); ?> <? the_sub_field('text_alignment'); ?>">
     <div class="container">
       <div class="row align-items-center">
 

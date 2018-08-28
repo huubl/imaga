@@ -1,6 +1,6 @@
 <? use IMAGA\Theme\Extras; ?>
 
-<section class="layout-lists <? the_sub_field('background_color'); ?> <? the_sub_field('text_color'); ?>">
+<section id="section-<?= get_row_index(); ?>" class="layout-lists <? the_sub_field('background_color'); ?> <? the_sub_field('text_color'); ?>">
   <div class="container">
     <div class="row">
       <div class="col-12 text-md-center">

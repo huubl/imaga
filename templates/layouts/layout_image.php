@@ -5,7 +5,7 @@ $image = get_sub_field('image'); ?>
 
 <? if( !empty($image) ): ?>
 
-  <section class="layout-image <? the_sub_field('background_color'); ?>">
+  <section id="section-<?= get_row_index(); ?>" class="layout-image <? the_sub_field('background_color'); ?>">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">

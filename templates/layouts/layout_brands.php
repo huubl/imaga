@@ -1,6 +1,6 @@
 <? use IMAGA\Theme\Extras; ?>
 
-<section>
+<section id="section-<?= get_row_index(); ?>">
   <div class="container">
     <div class="row">
       <div class="col-12 text-md-center">

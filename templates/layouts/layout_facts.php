@@ -1,4 +1,4 @@
-<section class="layout-facts <? the_sub_field('background_color'); ?> <? the_sub_field('text_color'); ?>">
+<section id="section-<?= get_row_index(); ?>" class="layout-facts <? the_sub_field('background_color'); ?> <? the_sub_field('text_color'); ?>">
   <div class="container">
     <div class="row text-center">
       <? if( have_rows('facts') ): ?>
