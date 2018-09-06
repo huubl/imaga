@@ -5,8 +5,8 @@ namespace IMAGA\Theme\Setup;
 use IMAGA\Theme\Assets;
 
 /**
- * Theme setup
- */
+* Theme setup
+*/
 function setup() {
 
   // Make theme available for translation
@@ -40,8 +40,8 @@ function setup() {
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 
 /**
- * Theme assets
- */
+* Theme assets
+*/
 function assets() {
   wp_enqueue_style('imaga/css', Assets\asset_path('styles/main.css'), false, null);
 
@@ -55,8 +55,8 @@ function assets() {
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
 
 /**
- * Login assets
- */
+* Login assets
+*/
 function add_login_stylesheet() {
   wp_register_style('imaga/login', Assets\asset_path('styles/login.css') );
   wp_enqueue_style( 'imaga/login');
@@ -64,8 +64,8 @@ function add_login_stylesheet() {
 add_action( 'login_enqueue_scripts', __NAMESPACE__ . '\\add_login_stylesheet' );
 
 /*
- * ACF Google Maps API Key
- */
+* ACF Google Maps API Key
+*/
 function add_acf_google_maps_key() {
 
   if( ! defined( 'GOOGLE_MAPS_API' ) ) return;
@@ -76,57 +76,67 @@ function add_acf_google_maps_key() {
 add_action('acf/init', __NAMESPACE__ . '\\add_acf_google_maps_key');
 
 /**
- * Add Google Fonts
- */
+* Add Google Fonts
+*/
 function add_google_fonts() {
 
   // Defined in functions.php
   if( ! defined( 'GOOGLE_FONTS' ) ) return;
-    wp_register_style('imaga/google-fonts', 'http://fonts.googleapis.com/css?family=' . GOOGLE_FONTS );
-    wp_enqueue_style( 'imaga/google-fonts');
+
+  wp_register_style('imaga/google-fonts', 'http://fonts.googleapis.com/css?family=' . GOOGLE_FONTS );
+  wp_enqueue_style( 'imaga/google-fonts');
 }
 add_action( 'wp_head', __NAMESPACE__ . '\\add_google_fonts' , 1);
 
 /**
- * Remove acf-post2post nag
- */
+* Remove acf-post2post nag
+*/
 add_filter('remove_hube2_nag', '__return_true');
 
 /**
- * Remove 'page-template' from body class on pages with custom templates
- */
+* Remove 'page-template' from body class on pages with custom templates
+*/
 function prefix_remove_body_class($wp_classes) {
-    if ( is_page_template() ):
-      foreach ($wp_classes as $key => $value) {
-        $wp_classes[$key] = str_replace('page-template-template-', '', $value);
-      }
-    endif;
-    return $wp_classes;
+
+  if ( is_page_template() ):
+    foreach ($wp_classes as $key => $value) {
+      $wp_classes[$key] = str_replace('page-template-template-', '', $value);
+    }
+  endif;
+
+  return $wp_classes;
 }
 add_filter('body_class', __NAMESPACE__ . '\\prefix_remove_body_class', 20, 2);
 
 /**
- * Remove from admin menu
- */
+* Remove from admin menu
+*/
 function remove_admin_menus() {
-    remove_menu_page( 'edit-comments.php' );
+  remove_menu_page( 'edit-comments.php' );
 }
 add_action( 'admin_menu', __NAMESPACE__ . '\\remove_admin_menus' );
 
 /**
- *Remove from post and pages
- */
+*Remove from post and pages
+*/
 function remove_comment_support() {
-    remove_post_type_support( 'post', 'comments' );
-    remove_post_type_support( 'page', 'comments' );
+  remove_post_type_support( 'post', 'comments' );
+  remove_post_type_support( 'page', 'comments' );
 }
 add_action('init', __NAMESPACE__ . '\\remove_comment_support', 100);
 
 /**
- * Remove from admin bar
- */
+* Remove from admin bar
+*/
 function admin_bar_render() {
-    global $wp_admin_bar;
-    $wp_admin_bar->remove_menu('comments');
+  global $wp_admin_bar;
+  $wp_admin_bar->remove_menu('comments');
 }
 add_action( 'wp_before_admin_bar_render', __NAMESPACE__ . '\\admin_bar_render' );
+
+
+function registerCustomAdminCss(){
+  wp_register_script('imaga/admin-styles', Assets\asset_path('styles/admin.css') );
+  wp_enqueue_style('imaga/admin-styles');
+}
+add_action('admin_head', 'registerCustomAdminCss');

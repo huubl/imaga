@@ -1,10 +1,16 @@
+
 <? use IMAGA\Theme\Extras; ?>
+
+<? get_template_part('templates/header','reviews'); ?>
+
 <? while (have_posts()) : the_post(); ?>
   <article <? post_class(); ?>>
 
-    <div class="review">
-      <div class="col-12">
+    <div class="row">
+      <div class="col-6">
 
+      </div>
+      <div class="col-6 box-shadow bg-white">
         <div class="row">
           <div class="col-3 text-right">
             <img class="img-fluid img-circle" src="<?= get_the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
