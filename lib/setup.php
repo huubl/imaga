@@ -135,8 +135,8 @@ function admin_bar_render() {
 add_action( 'wp_before_admin_bar_render', __NAMESPACE__ . '\\admin_bar_render' );
 
 
-function registerCustomAdminCss(){
+function register_admin_styles(){
   wp_register_script('imaga/admin-styles', Assets\asset_path('styles/admin.css') );
   wp_enqueue_style('imaga/admin-styles');
 }
-add_action('admin_head', 'registerCustomAdminCss');
+add_action('admin_head', __NAMESPACE__ . '\\register_admin_styles');

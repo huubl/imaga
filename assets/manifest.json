@@ -27,13 +27,6 @@
         "scripts/customizer.js"
       ]
     },
-    "devices.js": {
-      "files": [
-        "scripts/AnticipateEase.min.js",
-        "scripts/TweenMax.min.js",
-        "scripts/AllDevices.js"
-      ]
-    },
     "tinymce.js": {
       "files": [
         "scripts/tinymce.js"

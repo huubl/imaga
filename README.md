@@ -4,9 +4,21 @@
 # IMAGA2018 Thema
 Het WordPress theme voor IMAGA.
 
+## Info
+
+| Software        | Version
+| --------------- | --------- |
+| PHP             | 7.1.0     |
+| Composer        | All       |
+| Node.js         | 4.5.0     |
+| gulp CLI        | 3.9.1     |
+| gulp Local      | 3.9.0     |
+| Bower           | 1.4.2     |
+
+
 
 #### Server
- * PHP 7 of hoger
+ * PHP 7.1 of hoger
  * WordPress 4.9 of hoger
 
 #### Bower Packages
