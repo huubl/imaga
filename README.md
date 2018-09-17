@@ -11,6 +11,7 @@ Het WordPress theme voor IMAGA.
 | PHP             | 7.1.0     |
 | Composer        | All       |
 | Node.js         | 4.5.0     |
+| NPM             | 2.15.9    |
 | gulp CLI        | 3.9.1     |
 | gulp Local      | 3.9.0     |
 | Bower           | 1.4.2     |
