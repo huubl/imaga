@@ -13,30 +13,15 @@ add_action( 'after_setup_theme', function() {
         'force_activation'   => true,
       ),
       array(
-			'name'   => 'Advanced Custom Fields: Star Rating',
-			'slug'   => 'acf-star-rating',
-			'source' => 'https://github.com/kevdotbadger/acf-star-rating/archive/master.zip',
-      'required'           => true,
-		),
-      // array(
-      //   'name'               => 'Yoast SEO',
-      //   'slug'               => 'wordpress-seo',
-      //   'required'           => false,
-      //   'force_activation'   => false,
-      //   'force_deactivation' => false,
-      // ),
-      // array(
-      //   'name'               => 'Duplicate Post',
-      //   'slug'               => 'duplicate-post',
-      // ),
-      // array(
-      //   'name'               => 'Smush Image Compression and Optimization',
-      //   'slug'               => 'wp-smushit',
-      // ),
-      // array(
-      //   'name'               => 'WordPress Backup & Security Plugin – BlogVault',
-      //   'slug'               => 'blogvault-real-time-backup',
-      // ),
+  			'name'   => 'Advanced Custom Fields: Star Rating',
+  			'slug'   => 'acf-star-rating',
+  			'source' => 'https://github.com/kevdotbadger/acf-star-rating/archive/master.zip',
+        'required'           => true,
+		  ),
+      array(
+        'name'               => 'Duplicate Post',
+        'slug'               => 'duplicate-post',
+      ),
     );
 
     $config = array(
