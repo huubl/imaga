@@ -94,7 +94,11 @@
 .jumbotron{
   min-height: 450px;
 }
-
+.success-stories{
+  .jumbotron{
+    min-height: auto;
+  }
+}
 .scroll-arrow{
   position: absolute;
   left: calc(50% - 25px);
