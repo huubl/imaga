@@ -164,6 +164,18 @@
   }
 }
 
+.conversion-category-item,
+.conversion-service-item{
+  opacity: .6;
+  transition: opacity 150ms ease;
+  text-decoration: none;
+
+  &-active,
+  &:hover{
+    opacity: 1;
+    text-decoration: none !important;
+  }
+}
 
 @include media-breakpoint-down(sm){
   .jumbotron{
