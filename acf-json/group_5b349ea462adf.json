@@ -321,7 +321,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 2,
     "position": "normal",
     "style": "seamless",
     "label_placement": "top",
@@ -341,5 +341,5 @@
     ],
     "active": 1,
     "description": "Toevoeging voor custom secties",
-    "modified": 1537193185
+    "modified": 1537282327
 }
