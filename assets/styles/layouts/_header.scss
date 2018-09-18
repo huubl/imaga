@@ -167,17 +167,23 @@
     left: calc(50% - 40px);
   }
 }
-
-.conversion-category-item,
-.conversion-service-item{
-  opacity: .6;
-  transition: opacity 150ms ease;
-  text-decoration: none;
-
-  &-active,
-  &:hover{
-    opacity: 1;
+.conversion-summary{
+  .conversion-category-item{
     text-decoration: none !important;
+  }
+}
+.conversion-category{
+  .conversion-category-item,
+  .conversion-service-item{
+    opacity: .6;
+    transition: opacity 150ms ease;
+    text-decoration: none;
+
+    &-active,
+    &:hover{
+      opacity: 1;
+      text-decoration: none !important;
+    }
   }
 }
 
