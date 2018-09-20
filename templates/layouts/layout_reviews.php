@@ -13,7 +13,7 @@
 
       <? $posts = get_sub_field('reviews'); ?>
 
-      <? if( $posts ): ?>
+      <? if( count($posts) > 0 ): ?>
         <div class="review-slider w-100">
           <?php foreach( $posts as $post): setup_postdata($post); ?>
             <div class="review">
@@ -37,6 +37,12 @@
           <? endforeach; ?>
         </div>
         <? wp_reset_postdata(); ?>
+      <? else: ?>
+      <div class="col-12">
+        <div class="alert alert-info text-center">
+          <span>Please select atleast 3 Reviews. <a href="<?= get_edit_post_link(); ?>">Edit page <i class="fa fa-arrow-circle-right"></i></a></span>
+        </div>
+      </div>
       <? endif; ?>
 
     </div>
