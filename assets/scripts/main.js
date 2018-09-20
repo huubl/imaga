@@ -50,6 +50,26 @@
           updateURL: false,
           offset: -2,
         });
+
+        function getScrollPercentage() {
+          var h = document.documentElement,
+          b = document.body,
+          st = 'scrollTop',
+          sh = 'scrollHeight';
+          return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
+        }
+
+        document.addEventListener('scroll', function(){
+
+          var percentage = Math.floor( getScrollPercentage() );
+
+          if( percentage >= 40){
+            document.getElementById("scroll-to-top").classList.add('show');
+          }else{
+            document.getElementById("scroll-to-top").classList.remove('show');
+          }
+        });
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
