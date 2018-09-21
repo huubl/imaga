@@ -76,3 +76,16 @@ add_shortcode( 'conversion_types', function(){
     </div>
   </div>';
 });
+
+add_shortcode( 'icon_research', function($atts){
+  return '<img class="img-fluid" src="'.Assets\asset_path('images/icons/conversion-research-light.svg').'" alt="Conversion Strategy">';
+});
+add_shortcode( 'icon_strategy', function($atts){
+  return '<img class="img-fluid" src="'.Assets\asset_path('images/icons/conversion-strategy-light.svg').'" alt="Conversion Strategy">';
+});
+add_shortcode( 'icon_design', function($atts){
+  return '<img class="img-fluid" src="'.Assets\asset_path('images/icons/conversion-design-light.svg').'" alt="Conversion Strategy">';
+});
+add_shortcode( 'icon_build', function($atts){
+  return '<img class="img-fluid" src="'.Assets\asset_path('images/icons/conversion-build-light.svg').'" alt="Conversion Strategy">';
+});
