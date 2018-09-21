@@ -9,7 +9,7 @@
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 lead">
           <? get_template_part('templates/parts/title'); ?>
-          <? the_sub_field('content'); ?>
+          <?= do_shortcode( get_sub_field('content') ); ?>
         </div>
       </div>
     </div>
@@ -38,7 +38,7 @@
 
         <div class="col-12 col-md-6 <?= $order; ?> <?= $padding; ?> lead">
           <? get_template_part('templates/parts/title'); ?>
-          <? the_sub_field('content'); ?>
+          <?= do_shortcode( get_sub_field('content') ); ?>
         </div>
 
         <? if( $image_sizing == 'contain' ): ?>

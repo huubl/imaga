@@ -47,7 +47,7 @@ function heading_based_on_length( $string , $wrapper = "h2", $alignment = null){
     break;
   endswitch;
 
-  return '<'.$wrapper.' class="'.$size.' '.$alignment.'">'.$string.'</'.$wrapper.'>';
+  return '<'.$wrapper.' class="'.$size.' '.$alignment.'">'.do_shortcode($string).'</'.$wrapper.'>';
 
 }
 

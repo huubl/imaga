@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1 class="display-2 mb-4"><? the_sub_field('title'); ?></h1>
+        <h1 class="display-2 mb-4"><?= do_shortcode( get_sub_field('title') ); ?></h1>
       </div>
     </div>
 
@@ -14,7 +14,7 @@
               <b><? the_sub_field('title'); ?></b>
             </div>
             <div class="lead">
-              <? the_sub_field('content'); ?>
+              <?= do_shortcode( get_sub_field('content') ); ?>
             </div>
           </div>
         <? endwhile; ?>
