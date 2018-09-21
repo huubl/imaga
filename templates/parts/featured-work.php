@@ -35,7 +35,7 @@
               </a>
             </article>
 
-            <? if($i % 4 == 0): ?>
+            <? if($i % 3 == 0): ?>
           </div><div class="card-deck mb-4">
             <? endif; ?>
 
