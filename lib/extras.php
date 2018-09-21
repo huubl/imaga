@@ -78,7 +78,7 @@ function recent_posts( $post_per_page = 4 ){
 
       <li class="list-item py-1">
 
-        <a href="#article" class="text-gray-500">
+        <a href="<?= get_permalink(); ?>" class="text-gray-500">
           <? the_title(); ?>
         </a>
 
