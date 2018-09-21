@@ -82,9 +82,7 @@ function add_google_fonts() {
 
   // Defined in functions.php
   if( ! defined( 'GOOGLE_FONTS' ) ) return;
-
-  wp_register_style('imaga/google-fonts', 'http://fonts.googleapis.com/css?family=' . GOOGLE_FONTS );
-  wp_enqueue_style( 'imaga/google-fonts');
+  wp_enqueue_style( 'imaga/google-fonts', 'http://fonts.googleapis.com/css?family=' . GOOGLE_FONTS );
 }
 add_action( 'wp_head', __NAMESPACE__ . '\\add_google_fonts' , 1);
 
@@ -123,7 +121,7 @@ function remove_comment_support() {
   remove_post_type_support( 'post', 'comments' );
   remove_post_type_support( 'page', 'comments' );
 }
-add_action('init', __NAMESPACE__ . '\\remove_comment_support', 100);
+add_action( 'init', __NAMESPACE__ . '\\remove_comment_support', 100);
 
 /**
 * Remove from admin bar
@@ -134,9 +132,10 @@ function admin_bar_render() {
 }
 add_action( 'wp_before_admin_bar_render', __NAMESPACE__ . '\\admin_bar_render' );
 
-
+/**
+ * Add custom styling for Layout Columns in ACF
+ */
 function register_admin_styles(){
-  wp_register_script('imaga/admin-styles', Assets\asset_path('styles/admin.css') );
-  wp_enqueue_style('imaga/admin-styles');
+  wp_enqueue_style( 'imaga/admin-styles', Assets\asset_path('styles/admin.css') );
 }
-add_action('admin_head', __NAMESPACE__ . '\\register_admin_styles');
+add_action( 'admin_enqueue_scripts', __NAMESPACE__ . '\\register_admin_styles');

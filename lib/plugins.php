@@ -13,9 +13,9 @@ add_action( 'after_setup_theme', function() {
         'force_activation'   => true,
       ),
       array(
-  			'name'   => 'Advanced Custom Fields: Star Rating',
-  			'slug'   => 'acf-star-rating',
-  			'source' => 'https://github.com/kevdotbadger/acf-star-rating/archive/master.zip',
+  			'name'               => 'Advanced Custom Fields: Star Rating',
+  			'slug'               => 'acf-star-rating',
+  			'source'             => 'https://github.com/kevdotbadger/acf-star-rating/archive/master.zip',
         'required'           => true,
 		  ),
       array(
