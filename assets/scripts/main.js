@@ -64,9 +64,11 @@
           var percentage = Math.floor( getScrollPercentage() );
 
           if( percentage >= 40){
-            document.getElementById("scroll-to-top").classList.add('show');
+            document.getElementById("scroll-to-top").classList.add('showing');
+            document.getElementById("scroll-to-top").classList.remove('hidden');
           }else{
-            document.getElementById("scroll-to-top").classList.remove('show');
+            document.getElementById("scroll-to-top").classList.add('hidden');
+            document.getElementById("scroll-to-top").classList.remove('showing');
           }
         });
 
