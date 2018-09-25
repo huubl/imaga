@@ -18,7 +18,7 @@
             <article <? post_class('card box-shadow overflow-hidden'); ?>>
               <a class="text-body" href="<? the_permalink(); ?>">
                 <? if( has_post_thumbnail() ): ?>
-                  <img class="card-img-top" src="<? the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
+                  <img class="card-img-top" src="<? the_post_thumbnail_url('post-thumbnail-related'); ?>" alt="<? the_title(); ?>">
                 <? endif; ?>
                 <div class="card-body">
                   <div class="card-title">

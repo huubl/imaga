@@ -55,3 +55,18 @@ function navigation_inline( $theme_location = "theme_location", $menu_id = "menu
     )
 	);
 }
+
+function navigation_list( $theme_location = "theme_location", $menu_id = "menu_id", $menu_class = "menu_class"){
+  return wp_nav_menu(
+    array(
+      'theme_location'    => $theme_location,
+      'container'         => FALSE,
+      'container_class'   => FALSE,
+      'container_id'      => FALSE,
+      'menu_class'        => 'nav flex-column '.$menu_class,
+      'menu_id'           => $menu_id,
+      'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+      'walker'            => new Bootstrap_Walker\WP_Bootstrap_Navwalker()
+    )
+	);
+}

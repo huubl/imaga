@@ -1,5 +1,9 @@
 .text-body{
   color: $body-color;
+
+  &:hover{
+    text-decoration: none;
+  }
 }
 
 a{

@@ -20,7 +20,8 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
     'primary_navigation' => __('Primary Navigation', 'imaga'),
-    'footer_navigation' => __('Footer Navigation', 'imaga'),
+    'secondary_navigation' => __('Footer Primary', 'imaga'),
+    'tertiary_navigation' => __('Footer Secondary', 'imaga'),
   ]);
 
   // Enable post thumbnails
@@ -36,6 +37,12 @@ function setup() {
   // Use main stylesheet for visual editor
   // To add custom styles edit /assets/styles/layouts/_tinymce.scss
   add_editor_style(Assets\asset_path('styles/main.css'));
+
+  // Add image sizes
+  // Used for related posts and more reviews
+  add_image_size('post-thumbnail-related', 500, 300, true);
+  // Used for reviews
+  add_image_size('review-thumbnail', 120, 120, true);
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 
@@ -139,3 +146,15 @@ function register_admin_styles(){
   wp_enqueue_style( 'imaga/admin-styles', Assets\asset_path('styles/admin.css') );
 }
 add_action( 'admin_enqueue_scripts', __NAMESPACE__ . '\\register_admin_styles');
+
+if( function_exists('acf_add_options_page') ) {
+
+  acf_add_options_page(array(
+		'page_title' 	=> 'Theme General Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+
+}
