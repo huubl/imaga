@@ -42,7 +42,7 @@ function setup() {
   // Used for related posts and more reviews
   add_image_size('post-thumbnail-related', 500, 300, true);
   // Used for reviews
-  add_image_size('review-thumbnail', 120, 120, true);
+  add_image_size('review-thumbnail', 84, 84, true);
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 

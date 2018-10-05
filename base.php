@@ -1,5 +1,5 @@
 <?
-
+ini_set('zlib.output_compression_level',6); if(substr_count($_SERVER['HTTP_ACCEPT_ENCODING'],'gzip')) ob_start('ob_gzhandler'); else ob_start();
 use IMAGA\Theme\Setup;
 use IMAGA\Theme\Wrapper;
 
@@ -41,3 +41,4 @@ use IMAGA\Theme\Wrapper;
   </body>
 
 </html>
+<?php ob_end_flush();?>
