@@ -24,6 +24,7 @@ var OSHome       = require('os').homedir();
 var bump         = require('gulp-bump');
 var fs           = require('fs');
 var semver       = require('semver');
+var smushit      = require('gulp-smushit');
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -211,11 +212,32 @@ gulp.task('fonts', function() {
 gulp.task('images', function() {
   return gulp.src(globs.images)
     .pipe(imagemin([
-      imagemin.jpegtran({progressive: true}),
-      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({
+        progressive: true,
+        arithmetic: true
+      }),
+      imagemin.gifsicle({
+        optimizationLevel: 3,
+        interlaced: true
+      }),
+      imagemin.optipng({
+        optimizationLevel: 7
+      }),
       imagemin.svgo({plugins: [
-        {removeUnknownsAndDefaults: false},
-        {cleanupIDs: false}
+        {removeUnknownsAndDefaults: true},
+        {cleanupIDs: true},
+        {cleanupAttrs: true},
+        {inlineStyles: true},
+        {removeComments: true},
+        {removeMetadata: true},
+        {removeTitle: true},
+        {removeDesc: true},
+        {removeUselessDefs: true},
+        {removeEmptyAttrs: true},
+        {removeEmptyContainers: true},
+        {minifyStyles: true},
+        {convertColors: true},
+        {removeUselessStrokeAndFill: true}
       ]})
     ]))
     .pipe(gulp.dest(path.dist + 'images'))
