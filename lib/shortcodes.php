@@ -25,6 +25,13 @@ add_shortcode( 'checkmark', function($atts){
 });
 
 /**
+ * Font Awesome Cross shortcode
+ */
+add_shortcode( 'times', function($atts){
+  return '<i class="fa fa-times"></i>';
+});
+
+/**
  * Bootstrap Button shortcode
  */
 add_shortcode( 'button', function($atts, $content = null){
