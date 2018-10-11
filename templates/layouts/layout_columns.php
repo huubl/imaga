@@ -1,4 +1,4 @@
-<section id="section-<?= get_row_index(); ?>" class="Layout-columns <? the_sub_field('background_color'); ?> <? the_sub_field('text_color'); ?> text-center">
+<section id="section-<?= get_row_index(); ?>" class="layout-columns <? the_sub_field('background_color'); ?> <? the_sub_field('text_color'); ?> text-center">
   <div class="container">
     <div class="row">
       <div class="col-12">

@@ -1,6 +1,6 @@
 <? use IMAGA\Theme\Extras; ?>
 
-<section id="section-<?= get_row_index(); ?>" class="<? the_sub_field('background_color'); ?> <? the_sub_field('text_color'); ?>">
+<section id="section-<?= get_row_index(); ?>" class="layout-quote <? the_sub_field('background_color'); ?> <? the_sub_field('text_color'); ?>">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8">
