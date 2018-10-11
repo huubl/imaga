@@ -62,6 +62,22 @@
   }
 }
 
+// Create underlines for each color in theme-colors()
+@each $color, $value in $theme-colors {
+  .bg-semi-#{$color}, .bg-semi-#{$color}-1{
+    background-color: rgba($value, .1);
+  }
+  .bg-semi-#{$color}-2{
+    background-color: rgba($value, .2);
+  }
+  .bg-semi-#{$color}-3{
+    background-color: rgba($value, .25);
+  }
+  .bg-semi-#{$color}-4{
+    background-color: rgba($value, .3);
+  }
+}
+
 @include media-breakpoint-down(xl) {}
 @include media-breakpoint-down(lg) {}
 @include media-breakpoint-down(sm) {
