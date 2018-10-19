@@ -7,20 +7,23 @@ add_action( 'after_setup_theme', function() {
 
     $plugins = array(
       array(
-        'name'               => 'WordPress Version Info',
-        'slug'               => 'version-info',
-        'required'           => true,
-        'force_activation'   => true,
-      ),
-      array(
   			'name'               => 'Advanced Custom Fields: Star Rating',
   			'slug'               => 'acf-star-rating',
   			'source'             => 'https://github.com/kevdotbadger/acf-star-rating/archive/master.zip',
         'required'           => true,
 		  ),
       array(
-        'name'               => 'Duplicate Post',
-        'slug'               => 'duplicate-post',
+        'name'               => 'Post Type Order',
+        'slug'               => 'post-types-order',
+        'required'           => true,
+      ),
+      array(
+        'name'               => 'Duplicate Page',
+        'slug'               => 'duplicate-page',
+      ),
+      array(
+        'name'               => 'Regenerate Thumbnails',
+        'slug'               => 'regenerate-thumbnails',
       ),
     );
 
