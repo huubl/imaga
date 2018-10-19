@@ -64,17 +64,62 @@
 
 // Create underlines for each color in theme-colors()
 @each $color, $value in $theme-colors {
-  .bg-semi-#{$color}, .bg-semi-#{$color}-1{
+  .bg-#{$color}-5{
+    background-color: rgba($value, .05);
+  }
+  .bg-#{$color}-10{
     background-color: rgba($value, .1);
   }
-  .bg-semi-#{$color}-2{
+  .bg-#{$color}-15{
+    background-color: rgba($value, .15);
+  }
+  .bg-#{$color}-20{
     background-color: rgba($value, .2);
   }
-  .bg-semi-#{$color}-3{
+  .bg-#{$color}-25{
     background-color: rgba($value, .25);
   }
-  .bg-semi-#{$color}-4{
+  .bg-#{$color}-30{
     background-color: rgba($value, .3);
+  }
+  .bg-#{$color}-35{
+    background-color: rgba($value, .35);
+  }
+  .bg-#{$color}-40{
+    background-color: rgba($value, .4);
+  }
+  .bg-#{$color}-45{
+    background-color: rgba($value, .45);
+  }
+  .bg-#{$color}-50{
+    background-color: rgba($value, .5);
+  }
+  .bg-#{$color}-55{
+    background-color: rgba($value, .55);
+  }
+  .bg-#{$color}-60{
+    background-color: rgba($value, .6);
+  }
+  .bg-#{$color}-65{
+    background-color: rgba($value, .65);
+  }
+  .bg-#{$color}-70{
+    background-color: rgba($value, .7);
+  }
+  .bg-#{$color}-75{
+    background-color: rgba($value, .75);
+  }
+  .bg-#{$color}-80{
+    background-color: rgba($value, .8);
+  }
+  .bg-#{$color}-85{
+    background-color: rgba($value, .85);
+  }
+  .bg-#{$color}-90{
+    background-color: rgba($value, .9);
+  }
+  .bg-#{$color}-95{
+    background-color: rgba($value, .95);
   }
 }
 
