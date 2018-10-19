@@ -1,0 +1,108 @@
+{
+    "key": "group_5bc9af83c6abc",
+    "title": "Options: 'Bundles'",
+    "fields": [
+        {
+            "key": "field_5bc9af8b02f1e",
+            "label": "Bundle S Korting",
+            "name": "bundle_one_discount",
+            "type": "number",
+            "instructions": "Dit bedrag wordt van de berekend totaal prijs af gehaald.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": 1
+        },
+        {
+            "key": "field_5bc9b1f302f1f",
+            "label": "Bundle M Korting",
+            "name": "bundle_two_discount",
+            "type": "number",
+            "instructions": "Dit bedrag wordt van de berekend totaal prijs af gehaald.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": 1
+        },
+        {
+            "key": "field_5bc9b1fe02f20",
+            "label": "Bundle L Korting",
+            "name": "bundle_three_discount",
+            "type": "number",
+            "instructions": "Dit bedrag wordt van de berekend totaal prijs af gehaald.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": 1
+        },
+        {
+            "key": "field_5bc9b21202f21",
+            "label": "Bundle XL Korting",
+            "name": "bundle_four_discount_copy",
+            "type": "number",
+            "instructions": "Dit bedrag wordt van de berekend totaal prijs af gehaald.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1539945395
+}

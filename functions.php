@@ -27,8 +27,9 @@ $files = [
   'lib/posttypes/employees.php',          // Custom Post Type Employees
   'lib/posttypes/reviews.php',            // Custom Post Type Reviews
   'lib/posttypes/work.php',               // Custom Post Type Cases/Work
+  'lib/posttypes/products.php',           // Custom Post Type Products
   'lib/taxonomies/employees-skills.php',  // Custom Taxonomy Skills
-  'lib/taxonomies/work-categories.php',   // Custom Taxonomy Skills
+  'lib/taxonomies/work-categories.php',   // Custom Taxonomy Categories
 ];
 
 foreach ($files as $file):
