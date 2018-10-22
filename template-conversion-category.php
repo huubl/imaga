@@ -18,10 +18,6 @@ use IMAGA\Theme\Extras;
     <? endwhile; ?>
   <? endif; ?>
 
-  <section class="bg-gray-800">
-    <? get_template_part('templates/parts/conversion','footer'); ?>
-  </section>
-
   <section class="bg-light">
     <? get_template_part('templates/sections/brands','banner'); ?>
   </section>
