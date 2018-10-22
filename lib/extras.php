@@ -38,12 +38,12 @@ function heading_based_on_length( $string , $wrapper = "h2", $alignment = null){
   $count = mb_strlen( $string );
 
   switch ($count):
-    case $count < 10: $size = "display-4 mb-4"; break;
-    case $count < 15: $size = "display-3 mb-4"; break;
-    case $count < 30: $size = "display-2 mb-4"; break;
-    case $count < 40: $size = "display-1 mb-4"; break;
+    case $count < 10: $size = "display-4 mb-3"; break;
+    case $count < 15: $size = "display-3 mb-3"; break;
+    case $count < 30: $size = "display-2 mb-3"; break;
+    case $count < 40: $size = "display-1 mb-3"; break;
     default:
-    $size = "display-3 mb-4";
+    $size = "display-3 mb-3";
     break;
   endswitch;
 
