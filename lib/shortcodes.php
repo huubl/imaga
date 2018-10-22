@@ -32,6 +32,13 @@ add_shortcode( 'times', function($atts){
 });
 
 /**
+ * Font Awesome External link shortcode
+ */
+add_shortcode( 'external-link', function($atts){
+  return '<i class="fa fa-external-link"></i>';
+});
+
+/**
  * Bootstrap Button shortcode
  */
 add_shortcode( 'button', function($atts, $content = null){
