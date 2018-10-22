@@ -9,7 +9,7 @@
     <div class="row justify-content-center">
       <? if( have_rows('columns') ): ?>
         <? while ( have_rows('columns') ) : the_row(); ?>
-          <div class="col-4">
+          <div class="col-12 col-md-4">
             <div class="lead mb-3">
               <b><? the_sub_field('title'); ?></b>
             </div>
