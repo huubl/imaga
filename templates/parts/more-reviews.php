@@ -3,7 +3,7 @@
     <div class="row justify-content-center">
       <div class="col-12">
         <h3 class="display-1 mb-5">
-          <span class="underline-green">Related posts</span>
+          <span class="underline-green">Related reviews</span>
         </h3>
       </div>
     </div>

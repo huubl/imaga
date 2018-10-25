@@ -19,8 +19,8 @@
             <div class="review">
               <div class="col-12">
                 <div class="row">
-                  <div class="col-3 text-right">
-                    <img class="img-fluid img-circle" src="<?= get_the_post_thumbnail_url($post, 'review-thumbnail'); ?>" alt="<? the_title(); ?>">
+                  <div class="col-3 text-right pr-0">
+                    <img class="img-fluid img-circle float-right" src="<?= get_the_post_thumbnail_url($post, 'review-thumbnail'); ?>" alt="<? the_title(); ?>">
                   </div>
                   <div class="col-9">
                     <? the_title(); ?>, <? the_field('company'); ?> <? the_field('location'); ?>

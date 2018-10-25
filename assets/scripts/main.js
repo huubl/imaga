@@ -35,14 +35,26 @@
           arrows: true,
           centerMode: true,
           centerPadding: 0,
-          responsive: [{
-            breakpoint: 512,
+          draggable: true,
+          mobileFirst: true,
+          responsive: [
+            {
+            breakpoint: 768px,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              arrows: true
+            }
+          },
+          {
+            breakpoint: 576,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
               arrows: true
             }
-          }]
+          }
+        ]
         });
 
         // init Smooth Scroll
