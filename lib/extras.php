@@ -295,3 +295,20 @@ add_action('save_post', function() {
   $args = ['blocking' => false];
   wp_remote_get('http://'.$_SERVER['SERVER_ADDR'].':3000/__browser_sync__?method=reload', $args);
 } );
+/**
+ * Shorten $text by $limit amount of words
+ */
+function limit_text($text, $limit, $prepend) {
+
+  $text = strip_tags($text);
+
+  if (str_word_count($text, 0) > $limit):
+
+    $words = str_word_count($text, 2);
+    $pos = array_keys($words);
+    $text = substr($text, 0, $pos[$limit]) . $prepend;
+
+  endif;
+
+  return $text;
+}

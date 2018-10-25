@@ -28,7 +28,7 @@
                       <? the_field('stars'); ?>
                     </span>
                     <small>
-                      <?= (strlen( get_the_content() ) > 360) ? mb_substr( get_the_content() , 0, 360) . '... <a href="'.get_the_permalink().'">Verder lezen <i class="fa fa-chevron-right"></i></a>' : get_the_content() ; ?>
+                      <?= Extras\limit_text( get_the_content(), 30, '... <a class="read-more" href="'.get_the_permalink().'">Verder lezen <i class="fa fa-chevron-right"></i></a>'); ?>
                     </small>
                   </div>
                 </div>

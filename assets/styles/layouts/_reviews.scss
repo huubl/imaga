@@ -4,6 +4,9 @@
 }
 
 .layout-reviews{
+  .read-more{
+    display: inline-block;
+  }
   .review-slider{
     overflow: hidden;
     transition: all .15s ease;
