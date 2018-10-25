@@ -1,7 +1,7 @@
 <section id="section-<?= get_row_index(); ?>" class="layout-pricing">
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-10">
+      <div class="col-12 col-lg-10">
 
         <? $args = array('post_type' => 'products'); ?>
         <? $query = new wp_query( $args );?>

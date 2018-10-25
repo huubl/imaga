@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-12 col-md-7">
+      <div class="col-12 col-md-10 col-lg-7">
         <? if( have_rows('list') ): ?>
           <? while ( have_rows('list') ) : the_row(); ?>
             <h4 class="display-2"><i class="fa <? the_sub_field('icon'); ?>"></i> <? the_sub_field('title'); ?></h4>

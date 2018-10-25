@@ -9,6 +9,7 @@ array (size=1)
   'header_image_toggle' => string 'bg-left' (length=7)
 
 */
+
 if( get_field('header_toggle') ):
   foreach ( get_field('header_toggle') as $key => $value):
     $image_alignment = $value;
@@ -23,9 +24,9 @@ endif;
 
       <? if( $image_alignment == 'bg-left' ): ?>
         <div class="col-6"></div>
-        <? $padding = "pl-md-5"; ?>
+        <? $padding = "pl-md-4 pl-lg-5"; ?>
       <? else: ?>
-        <? $padding = "pr-md-5"; ?>
+        <? $padding = "pr-md-4 pr-lg-5"; ?>
       <? endif; ?>
 
       <div class="col-12 col-md-6 <?= $padding; ?> pb-4 pb-md-0">

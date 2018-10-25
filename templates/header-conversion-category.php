@@ -29,9 +29,9 @@ $color = str_replace('bg', '', $first_row['background_color']);
 
       <? if( $image_alignment == 'bg-left' ): ?>
         <div class="col-6"></div>
-        <? $padding = "pl-md-5"; ?>
+        <? $padding = "pl-md-4 pl-lg-5"; ?>
       <? else: ?>
-        <? $padding = "pr-md-5"; ?>
+        <? $padding = "pl-md-4 pl-lg-5"; ?>
       <? endif; ?>
 
       <div class="col-12 col-md-6 <?= $padding; ?> pb-4 pb-md-0">
