@@ -39,7 +39,7 @@
           mobileFirst: true,
           responsive: [
             {
-            breakpoint: 768px,
+            breakpoint: 768,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
