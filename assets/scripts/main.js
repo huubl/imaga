@@ -30,7 +30,7 @@
         $(".review-slider").slick({
           infinite: true,
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 3,
           dots: false,
           arrows: true,
           centerMode: true,
@@ -38,6 +38,14 @@
           draggable: true,
           mobileFirst: true,
           responsive: [
+            {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              arrows: true
+            }
+          },
             {
             breakpoint: 768,
             settings: {
@@ -61,6 +69,7 @@
         var scroll = new SmoothScroll('a[href*="#"]', {
           updateURL: false,
           offset: -2,
+          topOnEmptyHash: true
         });
 
         function getScrollPercentage() {
