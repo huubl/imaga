@@ -3,7 +3,7 @@
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
 
-        <? $args = array('post_type' => 'products'); ?>
+        <? $args = array('post_type' => 'products', 'posts_per_page' => -1); ?>
         <? $query = new wp_query( $args );?>
         <? $total_price_bundle_one; ?>
         <? $total_price_bundle_two; ?>
