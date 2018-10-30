@@ -56,7 +56,7 @@ add_shortcode( 'list-unstyled', function($atts, $content = null){
  * Bootstrap List-item shortcode
  */
 add_shortcode( 'list-item', function($atts, $content = null){
-  return '<li class="display-2">' . do_shortcode($content) . '</li>';
+  return '<li>' . do_shortcode($content) . '</li>';
 });
 
 /**
