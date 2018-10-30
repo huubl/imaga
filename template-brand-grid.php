@@ -16,7 +16,7 @@ use IMAGA\Theme\Extras;
   <? if($query->have_posts()): ?>
     <section class="layout-brands-grid">
       <div class="container pt-1">
-        <div class="row">
+        <div class="row justify-content-center">
 
         <? while( $query->have_posts() ) : $query->the_post(); ?>
 
