@@ -8,7 +8,7 @@ use IMAGA\Theme\Wrapper;
 <!doctype html>
 <html <? language_attributes(); ?>>
   <? get_template_part('templates/head'); ?>
-  <body <? body_class(); ?> >
+  <body id="top" <? body_class(); ?> >
 
     <!--[if IE]>
       <div class="alert alert-warning">
