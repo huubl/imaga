@@ -5,32 +5,39 @@
         <h1 class="mb-4"><?= do_shortcode( get_sub_field('title') ); ?></h1>
       </div>
     </div>
-    <div class="row justify-content-center">
-      <? if( have_rows('columns') ): ?>
-        <? while ( have_rows('columns') ) : the_row(); ?>
-          <? $image = get_sub_field('image'); ?>
-          <? $image = image_downsize($image['id'], 'thumbnail'); ?>
-          <div class="col-12 col-md-8 col-lg-4 <? the_sub_field('text_alignment'); ?>">
-            <? if( !empty($image) ): ?>
-              <div class="row justify-content-center">
-                <div class="col-12 col-md-10">
-                  <img class="img-fluid" src="<?= $image['0'] ?>"/>
+    <div class="row">
+      <div class="col-12">
+        <? if( have_rows('columns') ): ?>
+          <? $box_shadow = (get_sub_field('box_shadow') == true)?'box-shadow':''; ?>
+          <div class="card-deck">
+            <? while ( have_rows('columns') ) : the_row(); ?>
+              <? $image = get_sub_field('image'); ?>
+              <div class="card <?= $box_shadow; ?>">
+                <div class="card-body">
+                  <? if( !empty($image) ): ?>
+                    <div class="text-center">
+                      <img class="img-fluid" src="<?= $image['url'] ?>" alt="<? the_sub_field('title'); ?>">
+                    </div>
+                  <? endif; ?>
+                  <div class="card-text <? the_sub_field('text_alignment'); ?> <? the_sub_field('text_color'); ?>">
+                    <div class="lead mb-3">
+                      <b><? the_sub_field('title'); ?></b>
+                    </div>
+                    <div class="lead">
+                      <?= do_shortcode( get_sub_field('content') ); ?>
+                    </div>
+                  </div>
                 </div>
+                <? if( get_sub_field('footer') ): ?>
+                <div class="card-footer">
+                  <?= do_shortcode( get_sub_field('footer') ); ?>
+                </div>
+              <? endif; ?>
               </div>
-            <? endif; ?>
-            <div class="row justify-content-center">
-              <div class="col-12">
-                <div class="lead mb-3">
-                  <b><? the_sub_field('title'); ?></b>
-                </div>
-                <div class="lead">
-                  <?= do_shortcode( get_sub_field('content') ); ?>
-                </div>
-              </div>
-            </div>
+            <? endwhile; ?>
           </div>
-        <? endwhile; ?>
-      <? endif;?>
+        <? endif;?>
+      </div>
     </div>
   </div>
 </section>

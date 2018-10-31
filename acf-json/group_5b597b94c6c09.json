@@ -54,8 +54,8 @@
                 "id": ""
             },
             "choices": {
-                "bg-left": "Afbeelding links",
-                "bg-right": "Afbeelding rechts"
+                "bg-left": "Header Links",
+                "bg-right": "Header Rechts"
             },
             "allow_null": 0,
             "default_value": "bg-right",
@@ -88,17 +88,18 @@
             "key": "field_5b597b5ff72a0",
             "label": "Achtergrond Kleur",
             "name": "background_color",
-            "type": "button_group",
+            "type": "select",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "100",
+                "width": "30",
                 "class": "",
                 "id": ""
             },
             "choices": {
                 "bg-none": "Geen kleur",
+                "bg-white": "Wit",
                 "bg-light": "Getint",
                 "bg-red": "Rood",
                 "bg-green": "Groen",
@@ -108,10 +109,13 @@
                 "bg-gray-800": "Darker",
                 "bg-gray-900": "Darkest"
             },
+            "default_value": [],
             "allow_null": 0,
-            "default_value": "bg-none",
-            "layout": "horizontal",
-            "return_format": "value"
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
         }
     ],
     "location": [
@@ -131,5 +135,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "Opslag voor verschillende custom velden",
-    "modified": 1537193202
+    "modified": 1540992998
 }
