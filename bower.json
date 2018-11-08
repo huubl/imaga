@@ -7,7 +7,7 @@
   "license": "GPL",
   "private": true,
   "dependencies": {
-    "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-beta",
+    "bootstrap": "git://github.com/twbs/bootstrap.git#v4.1.0",
     "popper.js": "1.12.3",
     "aos": "2.2.0",
     "smooth-scroll.js": "12.1.5",
@@ -15,6 +15,11 @@
     "slick-carousel": "1.7.1"
   },
   "overrides": {
+    "bootstrap": {
+      "main": [
+        "./scss/bootstrap.scss"
+      ]
+    },
     "font-awesome": {
       "main": [
         "./scss/font-awesome.scss",
