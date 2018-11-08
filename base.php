@@ -30,7 +30,7 @@ use IMAGA\Theme\Wrapper;
 
     </div>
 
-    <a id="scroll-to-top" href="#"><i class="fa fa-chevron-up"></i></a>
+    <a id="scroll-to-top" href="#top"><i class="fa fa-chevron-up"></i></a>
 
     <? do_action('get_footer');?>
 
