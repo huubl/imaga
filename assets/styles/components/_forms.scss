@@ -1,15 +1,22 @@
 // Search form
-.search-form {
+.searchs-form{
   @extend .form-inline;
+
+  label {
+    font-weight: normal;
+    @extend .form-group;
+  }
+
+  .search-field {
+    @extend .form-control;
+  }
+
+  .search-submit {
+    @extend .btn;
+    @extend .btn-secondary;
+  }
 }
-.search-form label {
-  font-weight: normal;
-  @extend .form-group;
-}
-.search-form .search-field {
-  @extend .form-control;
-}
-.search-form .search-submit {
-  @extend .btn;
-  @extend .btn-secondary;
+.ajax-loader{
+  position: absolute;
+  display: none;
 }
