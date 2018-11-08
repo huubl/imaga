@@ -11,8 +11,6 @@
   <? endwhile; ?>
 <? endif; ?>
 
-<? get_template_part('templates/layouts/layout_brands'); ?>
-
 <? get_template_part('templates/parts/frontpage', 'steps'); ?>
 
 <? get_template_part('templates/parts/frontpage', 'certifications'); ?>
