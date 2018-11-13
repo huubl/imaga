@@ -4,7 +4,7 @@
       <? if( have_rows('facts') ): ?>
         <? while ( have_rows('facts') ) : the_row(); ?>
           <div class="col-12 col-md">
-            <h2 class="display-2"><?= ( get_sub_field('change') == 'none' ) ?: get_sub_field('change') ; ?><? the_sub_field('amount'); ?></h2>
+            <h2 class="display-2"><?= ( get_sub_field('change') == 'none' )?'':get_sub_field('change'); ?><? the_sub_field('amount'); ?></h2>
             <p class="lead"><?= do_shortcode( get_sub_field('subject') ); ?></p>
           </div>
         <? endwhile; ?>
