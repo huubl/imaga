@@ -8,8 +8,8 @@ use IMAGA\Theme\Wrapper;
 <!doctype html>
 <html <? language_attributes(); ?>>
   <? get_template_part('templates/head'); ?>
-  <body id="top" <? body_class(); ?> >
-
+  <body <? body_class(); ?> >
+    <div id="top"></div>
     <!--[if IE]>
       <div class="alert alert-warning">
         <? _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'imaga'); ?>
