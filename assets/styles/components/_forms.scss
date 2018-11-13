@@ -20,3 +20,23 @@
   position: absolute;
   display: none;
 }
+.wpcf7-form{
+
+  .wpcf7-response-output{
+    margin-top: 0px;
+    @extend .alert;
+  }
+  .wpcf7-response-output{
+    &.wpcf7-validation-errors,
+    &.wpcf7-mail-sent-ng{
+      border: none !important;
+      @extend .alert-danger;
+    }
+    &.wpcf7-validation-missing{
+      @extend .alert-warning;
+    }
+    &.wpcf7-mail-sent-ok{
+      @extend .alert-success;
+    }
+  }
+}
