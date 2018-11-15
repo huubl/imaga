@@ -12,6 +12,7 @@ define('ACF_EARLY_ACCESS', '5');
 
 $files = [
   'lib/setup.php',                        // Theme setup
+  'lib/integrations/wpsvg.php',           // WPSVG
   'lib/shortcodes.php',                   // Theme shortcodes
   'lib/navigation.php',                   // Navigation Functions
   'lib/navigation/bootstrap_walker.php',  // Navigation Bootstrap Walker
