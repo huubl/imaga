@@ -133,12 +133,6 @@
   }
 }
 
-.category-service{
-  margin-top: -80px;
-  border-radius: 900px;
-  padding: .3rem;
-}
-
 .conversion-arrow-none:after{
   position: absolute;
   content: '';
@@ -180,9 +174,34 @@
     text-decoration: none;
 
     &-active,
+    &-active:hover,
     &:hover{
       opacity: 1;
       text-decoration: none !important;
+    }
+  }
+}
+
+.category-service{
+  margin-top: -80px;
+  border-radius: 900px;
+  padding: .3rem;
+}
+
+.conversion-service{
+  .conversion-service-item,
+  .conversion-service-item-active{
+    text-decoration: none;
+
+    img{
+      transition: all 150ms ease;
+    }
+
+    &:hover{
+      text-decoration: none;
+      img{
+        transform: translateY(-6px);
+      }
     }
   }
 }

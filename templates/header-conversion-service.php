@@ -89,8 +89,10 @@ $color = str_replace('bg', '', $first_row['background_color']);
           <? if( have_rows('services') ): ?>
             <? while ( have_rows('services') ) : the_row(); ?>
 
+              <? $icon = get_sub_field('icon'); ?>
+
               <a class="col <?= get_sub_field('current') == TRUE ? "conversion-arrow$color conversion-service-item-active" : 'conversion-service-item' ; ?>" href="<? the_sub_field('url'); ?>">
-                <img class="img-fluid" src="<?= Assets\asset_path('images/icons/'.get_sub_field('icon') );?>" alt="<? the_sub_field('title'); ?>">
+                <img class="img-fluid" src="<?= $icon['url']; ?>" alt="<?= $icon['alt']; ?>" width="72" height="72">
                 <p class="d-none d-md-block lead text-white"><? the_sub_field('title'); ?></p>
               </a>
 
