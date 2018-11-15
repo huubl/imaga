@@ -21,9 +21,10 @@
   display: none;
 }
 .wpcf7-form{
-
   .wpcf7-response-output{
     margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     @extend .alert;
   }
   .wpcf7-response-output{
@@ -37,6 +38,26 @@
     }
     &.wpcf7-mail-sent-ok{
       @extend .alert-success;
+    }
+  }
+}
+@include media-breakpoint-down(sm){
+  .wpcf7-form{
+    .input-group{
+      flex-direction: column;
+
+      .wpcf7-form-control{
+        width: 100%;
+        border-radius: $input-border-radius !important;
+        margin-bottom: 1rem;
+      }
+      .input-group-append{
+        .btn{
+          border-radius: $input-border-radius !important;
+          display: block;
+          width: 100%;
+        }
+      }
     }
   }
 }
