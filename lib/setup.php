@@ -47,6 +47,9 @@ function setup() {
 
   // Used for the brands layout
   add_image_size('brand-thumbnail', 250, 120, true);
+
+  // Used for the thumbnail in the services repeater field
+  add_image_size('template-service-thumbnail', 100, 100, true);
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 
