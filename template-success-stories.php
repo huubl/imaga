@@ -39,8 +39,8 @@ use IMAGA\Theme\Extras;
 <? endwhile; ?>
 
 <section>
-  <div class="container pb-8">
-    <div class="row">
+  <div class="container-fluid">
+    <div class="row px-xs-2 px-md-4">
       <? $args = array( 'post_type' => 'work', 'orderby' => 'post_date', 'order' => 'desc' ); ?>
       <? $query = new wp_query( $args ); ?>
       <? $i = 0;?>
@@ -48,10 +48,12 @@ use IMAGA\Theme\Extras;
         <? if($query->have_posts()): ?>
           <? while( $query->have_posts() ) :  $query->the_post(); $i++; ?>
 
-            <article <? post_class('card box-shadow overflow-hidden'); ?>>
+            <article <? post_class('card box-shadow mb-4'); ?>>
               <a class="text-body" href="<? the_permalink(); ?>">
                 <? if( has_post_thumbnail() ): ?>
-                  <img class="card-img-top" src="<? the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
+                <div class="card-img-top">
+                  <img class="img-fluid" src="<? the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
+                </div>
                 <? endif; ?>
                 <div class="card-body">
                   <div class="card-title">

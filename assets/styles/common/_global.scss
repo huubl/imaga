@@ -21,29 +21,6 @@
   }
 }
 
-.card{
-  border-radius: 0px;
-  border: 0px;
-
-  &:hover{
-    .card-img-top{
-      transform: scale(1.03);
-    }
-  }
-
-  a.text-body{
-    text-decoration: none !important;
-  }
-  .card-img-top{
-    border-radius: 0px;
-    transition: all 150ms ease-in-out;
-  }
-}
-
-b, strong{
-  font-weight: 600;
-}
-
 #scroll-to-top{
   position: fixed;
   right: 48px;
