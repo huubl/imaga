@@ -31,6 +31,25 @@ b, strong{
   }
 }
 
+ul.list-checkmark{
+  list-style: none;
+  padding: 0;
+
+  li{
+    padding-left: 1.8rem;
+
+    &:before{
+      content: $fa-var-check;
+      font-family: FontAwesome;
+      font-size: 1.8rem;
+      display: inline-block;
+      margin-left: -1.8rem;
+      width: 2.4rem;
+      vertical-align: middle;
+    }
+  }
+}
+
 @include media-breakpoint-down(lg) {
   .display-1{
     font-size: 2.1rem;
