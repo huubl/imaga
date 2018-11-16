@@ -40,7 +40,7 @@ use IMAGA\Theme\Extras;
 
 <section>
   <div class="container-fluid">
-    <div class="row px-xs-2 px-md-4">
+    <div class="row px-2 px-md-4 px-lg-6 px-xl-8">
       <? $args = array( 'post_type' => 'work', 'orderby' => 'post_date', 'order' => 'desc' ); ?>
       <? $query = new wp_query( $args ); ?>
       <? $i = 0;?>
