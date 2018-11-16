@@ -69,9 +69,11 @@
         var scroll = new SmoothScroll('a[href*="#"]', {
           updateURL: false,
           offset: -2,
-          topOnEmptyHash: true
+          topOnEmptyHash: true,
+          durationMax: 1000
         });
 
+        // Get scroll percentage
         function getScrollPercentage() {
           var h = document.documentElement,
           b = document.body,
@@ -80,6 +82,7 @@
           return (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
         }
 
+        // Toggle scroll-to-top anchor
         document.addEventListener('scroll', function(){
 
           var percentage = Math.floor( getScrollPercentage() );
