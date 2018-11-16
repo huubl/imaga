@@ -9,7 +9,6 @@ use IMAGA\Theme\Wrapper;
 <html <? language_attributes(); ?>>
   <? get_template_part('templates/head'); ?>
   <body <? body_class(); ?> >
-    <div id="top"></div>
     <!--[if IE]>
       <div class="alert alert-warning">
         <? _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'imaga'); ?>
@@ -30,7 +29,7 @@ use IMAGA\Theme\Wrapper;
 
     </div>
 
-    <a id="scroll-to-top" href="#top"><i class="fa fa-chevron-up"></i></a>
+    <a id="scroll-to-top" href="#"><i class="fa fa-chevron-up"></i></a>
 
     <? do_action('get_footer');?>
 
