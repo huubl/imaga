@@ -32,6 +32,9 @@
         "scripts/tinymce.js"
       ]
     },
+    "popper.js": {
+      "bower": ["popper.js"]
+    },
     "jquery.js": {
       "bower": ["jquery"]
     }
