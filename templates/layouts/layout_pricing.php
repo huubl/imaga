@@ -21,7 +21,7 @@
                       <div><? the_title(); ?></div>
                       <div><small class="text-muted"><?= strip_tags(get_the_content()); ?></small></div>
                     </td>
-                    <td>&euro; <span class="lead"><? the_field('price'); ?></span></td>
+                    <td class="product-price">&euro; <span class="lead"><? the_field('price'); ?></span></td>
                   </tr>
                 <? endif;?>
               <? endwhile; ?>

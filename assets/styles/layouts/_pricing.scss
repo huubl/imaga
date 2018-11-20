@@ -5,9 +5,6 @@
   .not-included{
     color: rgba($gray-800, .1);
   }
-  .product-title{
-    font-weight: lighter;
-  }
   table{
     th{
       border-top: none;
@@ -17,7 +14,14 @@
       td{
         padding-top: .6rem;
         padding-bottom: .6rem;
-        vertical-align: middle
+        vertical-align: middle;
+
+        &.product-title{
+          font-weight: lighter;
+        }
+        &.product-price{
+          white-space: nowrap;
+        }
       }
     }
   }

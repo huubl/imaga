@@ -43,29 +43,17 @@ function products_page_columns($columns) {
         'cb'          => '<input type="checkbox" />',
         'title'       => _x('Product', 'imaga'),
         'price'       => _x('Price', 'imaga'),
-        'bundle_one'    => _x('Bundle S', 'imaga'),
-        'bundle_two'    => _x('Bundle M', 'imaga'),
-        'bundle_three'    => _x('Bundle L', 'imaga'),
-        'bundle_four'   => _x('Bundle XL', 'imaga'),
         'date'        => _x('Date', 'imaga'),
     );
     return $columns;
 }
 add_filter('manage_products_posts_columns', __NAMESPACE__ . '\\products_page_columns');
 
-// Add visual feedback
+// Display price value
 function products_columns($column) {
     global $post;
 
-    if ($column == 'bundle_one') {
-        echo (get_field( "bundle_one", $post->ID ) == TRUE)?'&check;':'';
-    }elseif($column == 'bundle_two'){
-      echo (get_field( "bundle_two", $post->ID ) == TRUE)?'&check;':'';
-    }elseif($column == 'bundle_three'){
-      echo (get_field( "bundle_three", $post->ID ) == TRUE)?'&check;':'';
-    }elseif($column == 'bundle_four'){
-      echo (get_field( "bundle_four", $post->ID ) == TRUE)?'&check;':'';
-    }elseif($column == 'price'){
+    if($column == 'price'){
       echo '&euro; '.get_field('price');
     }
 }
