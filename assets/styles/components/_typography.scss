@@ -19,9 +19,10 @@ a{
     }
   }
 }
-
-b, strong{
-  font-weight: 600;
+small,
+.small{
+  font-weight: 400;
+}
 }
 
 // Create underlines for each color in theme-colors()
