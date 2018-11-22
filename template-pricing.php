@@ -13,21 +13,18 @@ use IMAGA\Theme\Extras;
   <section>
     <div class="container">
       <div class="row">
-        <div class="col-6">
-          <h1 class="display-1">Introduction Package</h1>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+        <div class="col-12 col-md-6">
+          <h1 class="display-1">CRO Starter Pack</h1>
+          <p class="lead">The CRO Starter Pack is absolutely the fastest way to find conversion and usability problems on your website. The <strong>Usability Expert Review</strong> works as an Instant Sanity Check and provides a clear set of your website’s specific pain points. (We also call it the ‘Hygiene Factor”).</p>
+          <p class="lead">We’ll combine this with the <strong>SEO-Audit with Google Search Insights</strong> to find out how you’re doing in Google Search and to discover your websites problems. Finally we’ll perform a <strong>Google Analytics Quick Win</strong> to see if there are any low hanging fruits hiding in your Analytic data. </p>
         </div>
-        <div class="col-6">
-          <h2><sup class="text-red"><small><s>€4994,-</s></small></sup> &euro; 1999,-</h2>
-          <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+        <div class="col-12 col-md-6">
+          <h2><sup class="text-red"><small><s>€2797,-</s></small></sup> &euro; 1999,-</h2>
+          <p>The CRO Starter Pack is a great way to run a usability report, see how your SEO is doing and find out if your Google Analytics is hiding opportunities. (Since no website is the same the exact price might vary, depending on your website and wishes).</p>
           <ul class="list-checkmark">
-            <li>Google Analytics Audit & Health Check <sup class="text-muted">€299,-</sup></li>
-            <li>Conversion Formula Session <sup class="text-muted">€799,-</sup></li>
-            <li><abbr title="Search Engine Optimization">SEO</abbr>-Audit with Google Search Insights <sup class="text-muted">€499,-</sup></li>
-            <li>Brandkey and Archetype Branding Strategy (2 Sessions) <sup class="text-muted">€1199,-</sup></li>
-            <li>Web Analytics Research (Google Analytics) <sup class="text-muted">€600,-</sup></li>
-            <li>Usability Expert Review <sup class="text-muted">€1099,-</sup></li>
-            <li>Technical Analysis and Speed Optimization <sup class="text-muted">€499,-</sup></li>
+            <li>Usability Expert Review</li>
+            <li>SEO-Audit with Google Search Insights</li>
+            <li>Google Analytics Quick Win</li>
           </ul>
         </div>
       </div>
@@ -37,22 +34,20 @@ use IMAGA\Theme\Extras;
   <section class="bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-6">
-          <h2><sup class="text-red"><small><s>€4994,-</s></small></sup> &euro; 2999,-</h2>
-          <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
-          <ul class="list-checkmark">
-            <li>Google Analytics Audit & Health Check <sup class="text-muted">€299,-</sup></li>
-            <li>Conversion Formula Session <sup class="text-muted">€799,-</sup></li>
-            <li><abbr title="Search Engine Optimization">SEO</abbr>-Audit with Google Search Insights <sup class="text-muted">€499,-</sup></li>
-            <li>Brandkey and Archetype Branding Strategy (2 Sessions) <sup class="text-muted">€1199,-</sup></li>
-            <li>Web Analytics Research (Google Analytics) <sup class="text-muted">€600,-</sup></li>
-            <li>Usability Expert Review <sup class="text-muted">€1099,-</sup></li>
-            <li>Technical Analysis and Speed Optimization <sup class="text-muted">€499,-</sup></li>
-          </ul>
+        <div class="col-12 col-md-6">
+          <h1 class="display-1">CRO Starter Pack and Digital Analytics Done Right</h1>
+          <p class="lead">This package combines everything from the CRO Starter Pack and adds a proper <strong>Google Analytics Audit & Health Check</strong> to the <strong>Google Analytics Configuration</strong> to correctly measure your goals and Set-Up and track what you want and need to. </p>
         </div>
-        <div class="col-6">
-          <h1 class="display-1">I Want Comprehensive Insights</h1>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+        <div class="col-12 col-md-6">
+          <h2><sup class="text-red"><small><s>€3797,-</s></small></sup> &euro; 2999,-</h2>
+          <p>The CRO Starter Pack and Digital Analytics Done Right  gives you the insights fast will and we'll make sure your account is set up correct, linked to Google Search and are seeing the correct numbers in Google Analytics. (Since no website is the same the exact price might vary, depending on your website and wishes). </p>
+          <ul class="list-checkmark">
+            <li>Usability Expert Review</li>
+            <li>SEO-Audit with Google Search Insights</li>
+            <li>Google Analytics Quick Win</li>
+            <li>Google Analytics Audit & Health Check</li>
+            <li>Google Analytics Configuration</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -61,22 +56,14 @@ use IMAGA\Theme\Extras;
   <section>
     <div class="container">
       <div class="row">
-        <div class="col-6">
-          <h1 class="display-1">I Want It All</h1>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+        <div class="col-12 col-md-6">
+          <h1 class="display-1">CRO No Limits</h1>
+          <p class="lead">The CRO No Limits Service will unleash all of our best suited CRO services. We’ll gain maximum insight into your customer’s behavior and your website. Together we’ll discuss your business goals and make a custom CRO Research, Strategy & Design Plan.</p>
         </div>
-        <div class="col-6">
-          <h2><sup class="text-red"><small><s>€4994,-</s></small></sup> &euro; 3999,-</h2>
-          <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
-          <ul class="list-checkmark">
-            <li>Google Analytics Audit & Health Check <sup class="text-muted">€299,-</sup></li>
-            <li>Conversion Formula Session <sup class="text-muted">€799,-</sup></li>
-            <li><abbr title="Search Engine Optimization">SEO</abbr>-Audit with Google Search Insights <sup class="text-muted">€499,-</sup></li>
-            <li>Brandkey and Archetype Branding Strategy (2 Sessions) <sup class="text-muted">€1199,-</sup></li>
-            <li>Web Analytics Research (Google Analytics) <sup class="text-muted">€600,-</sup></li>
-            <li>Usability Expert Review <sup class="text-muted">€1099,-</sup></li>
-            <li>Technical Analysis and Speed Optimization <sup class="text-muted">€499,-</sup></li>
-          </ul>
+        <div class="col-12 col-md-6">
+          <sup class="text-muted">Starting at</sup>
+          <h2>&euro; 1500,- per month</h2>
+          <sup class="text-muted">(3 months minimum)</sup>
         </div>
       </div>
     </div>
