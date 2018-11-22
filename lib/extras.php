@@ -307,3 +307,16 @@ function limit_text($text, $limit, $prepend) {
 
   return $text;
 }
+
+/**
+ * Remove <p> and <br>. Used for shortcodes
+ */
+function rautop($content){
+    $array = array (
+        '<p>['      => '[', //replace "<p>[" with "["
+        ']</p>'     => ']', //replace "]</p>" with "]"
+        ']<br />'   => ']' //replace "]<br />" with "]"
+    );
+    $content = strtr($content, $array); //replaces instances of the keys in the array with their values
+    return $content;
+}

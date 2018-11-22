@@ -23,6 +23,11 @@ small,
 .small{
   font-weight: 400;
 }
+ul{
+  .fa-check,
+  .fa-chevron-right{
+    color: $green;
+  }
 }
 
 // Create underlines for each color in theme-colors()
@@ -36,15 +41,29 @@ ul.list-checkmark{
   list-style: none;
   padding: 0;
 
+  @each $color, $value in $theme-colors {
+    &.checkmark-#{$color}{
+      li:before{
+        color: $value;
+      }
+    }
+  }
+
+  @each $color, $value in $theme-colors {
+    li.list-item-#{$color}:before{
+      color: $value;
+    }
+  }
+
   li{
-    padding-left: 1.8rem;
+    padding-left: 2.4rem;
 
     &:before{
       content: $fa-var-check;
       font-family: FontAwesome;
       font-size: 1.8rem;
       display: inline-block;
-      margin-left: -1.8rem;
+      margin-left: -2.4rem;
       width: 2.4rem;
       vertical-align: middle;
     }

@@ -3,6 +3,7 @@
 namespace IMAGA\Theme\Shortcodes;
 
 use IMAGA\Theme\Assets;
+use IMAGA\Theme\Extras;
 
 /**
  * Font Awesome Chevron Circle shortcodes
@@ -21,7 +22,8 @@ add_shortcode( 'chevron-right', function($atts){
  * Font Awesome Checkmark shortcode
  */
 add_shortcode( 'checkmark', function($atts){
-  return '<i class="fa fa-check"></i>';
+  $color = isset($atts['color'])?'text-'.$atts['color']:'';
+  return '<i class="fa fa-check '.$color.'"></i>';
 });
 
 /**
@@ -49,14 +51,27 @@ add_shortcode( 'button', function($atts, $content = null){
  * Bootstrap List shortcode
  */
 add_shortcode( 'list-unstyled', function($atts, $content = null){
+  $content = Extras\rautop($content);
   return '<ul class="list-unstyled">' . do_shortcode($content) . '</ul>';
+});
+
+/**
+ * Bootstrap Checkmark List shortcode
+ */
+add_shortcode( 'list-checkmark', function($atts, $content = null){
+  $color = isset($atts['color']) ? 'checkmark-'.$atts['color'] : '';
+  $size = isset($atts['size']) ? $atts['size'] : '';
+  $content = Extras\rautop($content);
+  return '<ul class="list-checkmark '.$color.' '.$size.'">' . do_shortcode($content) . '</ul>';
 });
 
 /**
  * Bootstrap List-item shortcode
  */
 add_shortcode( 'list-item', function($atts, $content = null){
-  return '<li>' . do_shortcode($content) . '</li>';
+  $color = isset($atts['color'])?'class="list-item-'.$atts['color'].'"':'';
+  $content = Extras\rautop($content);
+  return '<li '.$color.'>' . do_shortcode($content) . '</li>';
 });
 
 /**
