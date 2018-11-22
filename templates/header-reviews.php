@@ -3,7 +3,7 @@
     <div class="row justify-content-center">
       <div class="col-12 col-md-5">
         <h1 class="display-1">Meet our customers.</h1>
-        <p class="lead">See what small business owners have to say about how IMAGA improves their sales and reaches new customers.</p>
+        <p class="lead">See what business owners have to say about how IMAGA improves their sales and reaches new customers.</p>
       </div>
       <div class="col-11 col-md-6 review">
         <div class="row box-shadow bg-white text-body p-2">
