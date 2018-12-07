@@ -62,7 +62,7 @@ use IMAGA\Theme\Extras;
         </div>
         <div class="col-12 col-md-6">
           <sup class="text-muted">Starting at</sup>
-          <h2>&euro; 1500,- per month</h2>
+          <h2>&euro; 1900,- per month</h2>
           <sup class="text-muted">(3 months minimum)</sup>
         </div>
       </div>
