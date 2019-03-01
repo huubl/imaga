@@ -180,3 +180,16 @@ add_filter('wpcf7_form_elements', function($content) {
 
     return $content;
 });
+
+/*
+ * Disable REST/JSON API
+ * Source: https://www.wpbeginner.com/wp-tutorials/how-to-disable-json-rest-api-in-wordpress/#comment-364346
+ */
+add_filter('rest_enabled', '_return_false');
+add_filter('rest_jsonp_enabled', '_return_false');
+
+/*
+ * Disable XMLRPC
+ * Source: https://www.wpbeginner.com/plugins/how-to-disable-xml-rpc-in-wordpress/
+ */
+add_filter('xmlrpc_enabled', '__return_false');
