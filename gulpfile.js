@@ -163,7 +163,7 @@ var writeToManifest = function(directory) {
 // `gulp styles` - Compiles, combines, and optimizes Bower CSS and project CSS.
 // By default this task will only log a warning if a precompiler error is
 // raised. If the `--production` flag is set: this task will fail outright.
-gulp.task('styles', ['wiredep'], function() {
+gulp.task('styles', function() {
   var merged = merge();
   manifest.forEachDependency('css', function(dep) {
     var cssTasksInstance = cssTasks(dep.name);
@@ -204,7 +204,7 @@ gulp.task('fonts', function() {
   return gulp.src(globs.fonts)
     .pipe(flatten())
     .pipe(gulp.dest(path.dist + 'fonts'))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.reload(({stream:true})));
 });
 
 // ### Images
@@ -302,19 +302,6 @@ gulp.task('build', function(callback) {
   );
 });
 
-// ### Wiredep
-// `gulp wiredep` - Automatically inject Less and Sass Bower dependencies. See
-// https://github.com/taptapship/wiredep
-gulp.task('wiredep', function() {
-  var wiredep = require('wiredep').stream;
-  return gulp.src(project.css)
-    .pipe(wiredep())
-    .pipe(changed(path.source + 'styles', {
-      hasChanged: changed.compareSha1Digest
-    }))
-    .pipe(gulp.dest(path.source + 'styles'));
-});
-
 // ### Gulp
 // `gulp` - Run a complete build. To compile for production run `gulp --production`.
 gulp.task('default', ['clean'], function() {
@@ -325,7 +312,6 @@ gulp.task('default', ['clean'], function() {
 //`gulp zip` - Zip up a distribution of the compiled WordPress theme.
 gulp.task('zip', function(callback) {
   var pkg = getPackageJSON();
-
   return gulp.src([
     'dist/**/*',
     'acf-json/*',
@@ -342,7 +328,7 @@ gulp.task('zip', function(callback) {
    base: '.'
   })
   .pipe(loadplugins.zip(pkg.name +'.zip'))
-  .pipe(gulp.dest( OSHome + '/Documents/Releases'));
+  .pipe(gulp.dest( OSHome + '/Documents/Themes'));
 });
 
 

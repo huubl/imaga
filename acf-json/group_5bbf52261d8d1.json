@@ -3,10 +3,10 @@
     "title": "Layout Pricing",
     "fields": [
         {
-            "key": "field_5bbf59f587679",
-            "label": "Content",
-            "name": "",
-            "type": "tab",
+            "key": "field_5cc80baf96dc3",
+            "label": "Achtergrond Kleur",
+            "name": "background_color",
+            "type": "clone",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,8 +15,13 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
-            "endpoint": 0
+            "clone": [
+                "field_5b597b5ff72a0"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
         },
         {
             "key": "field_5bbf522f54117",
@@ -41,7 +46,7 @@
             "key": "field_5bbf523554118",
             "label": "Lead",
             "name": "lead",
-            "type": "text",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -51,10 +56,67 @@
                 "id": ""
             },
             "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_5cc807adc7543",
+            "label": "Price Before",
+            "name": "price_before",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
+            "prepend": "€",
+            "append": ",-",
             "maxlength": ""
+        },
+        {
+            "key": "field_5cc807d6c7544",
+            "label": "Price Current",
+            "name": "price",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "€",
+            "append": ",-",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5cc807f9c7545",
+            "label": "Summary",
+            "name": "summary",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
         }
     ],
     "location": [
@@ -74,5 +136,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1539856599
+    "modified": 1556618099
 }
