@@ -295,6 +295,37 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_5cc852a5796f9": {
+                    "key": "layout_5cc852a5796f9",
+                    "name": "layout_product",
+                    "label": "Layout Product",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5cc852a5796fa",
+                            "label": "Clone: Layout Product",
+                            "name": "clone_layout_product",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5cc852746fe19"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_5bd9c0c8fcd15": {
                     "key": "layout_5bd9c0c8fcd15",
                     "name": "layout_brands",
@@ -388,6 +419,13 @@
                 "operator": "==",
                 "value": "template-pricing.php"
             }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template-pricing-v2.php"
+            }
         ]
     ],
     "menu_order": 2,
@@ -410,5 +448,5 @@
     ],
     "active": 1,
     "description": "Toevoeging voor custom secties",
-    "modified": 1542360857
+    "modified": 1556632262
 }

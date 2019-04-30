@@ -8,7 +8,22 @@
         </div>
       </div>
       <div class="col-12 col-md-6">
-        <h2><sup class="text-red"><small><s>&euro;<? the_sub_field('price_before'); ?>,-</s></small></sup> &euro; <? the_sub_field('price'); ?>,-</h2>
+
+        <? if( get_sub_field('price_prepend') ): ?>
+          <sup class="text-muted"><? the_sub_field('price_prepend'); ?></sup>
+        <? endif; ?>
+
+        <h2>
+          <? if( get_sub_field('price_before') ): ?>
+            <sup class="text-red"><small><s>&euro;<? the_sub_field('price_before'); ?>,-</s></small></sup>
+          <? endif; ?>
+          &euro; <? the_sub_field('price'); ?>,-
+        </h2>
+
+        <? if( get_sub_field('price_append') ): ?>
+          <sup class="text-muted"><? the_sub_field('price_append'); ?></sup>
+        <? endif; ?>
+
         <div><? the_sub_field('summary'); ?></div>
       </div>
     </div>
