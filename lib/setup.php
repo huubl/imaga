@@ -28,8 +28,8 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
 
-  // Enable post formats
-  //add_theme_support('post-formats', ['aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio']);
+  // Remove post type support
+  remove_post_type_support( 'post', 'editor' )
 
   // Enable HTML5 markup support
   add_theme_support('html5', ['caption', 'comment-form', 'comment-list', 'gallery', 'search-form']);
@@ -58,16 +58,9 @@ add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
 */
 function assets() {
   wp_enqueue_style('imaga/css', Assets\asset_path('styles/main.css'), false, null);
-
-  // if (is_single() && comments_open() && get_option('thread_comments')) {
-  //   wp_enqueue_script('comment-reply');
-  // }
-
   wp_deregister_script( 'jquery' );
   wp_enqueue_script('jquery', Assets\asset_path('scripts/jquery.js'), null, null, true);
-
   wp_enqueue_script('popper/js', Assets\asset_path('scripts/popper.js'), ['jquery'], null, true);
-
   wp_enqueue_script('imaga/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);

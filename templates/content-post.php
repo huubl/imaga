@@ -13,7 +13,6 @@
               <? the_title(); ?>
             </h1>
           </header>
-
         </div>
         <div class="card-text text-muted">
           <? the_field('excerpt'); ?>
