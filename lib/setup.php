@@ -29,7 +29,7 @@ function setup() {
   add_theme_support('post-thumbnails');
 
   // Remove post type support
-  remove_post_type_support( 'post', 'editor' )
+  remove_post_type_support( 'post', 'editor' );
 
   // Enable HTML5 markup support
   add_theme_support('html5', ['caption', 'comment-form', 'comment-list', 'gallery', 'search-form']);
