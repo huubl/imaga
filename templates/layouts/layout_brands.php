@@ -4,7 +4,9 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-md-center">
-        <h4><? the_sub_field('title'); ?></h4>
+        <? if(get_sub_field('title')): ?>
+          <div class="h4"><? the_sub_field('title'); ?></div>
+        <? endif; ?>
       </div>
     </div>
     <div class="row justify-content-center">
