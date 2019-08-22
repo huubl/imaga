@@ -9,7 +9,7 @@
       <div class="col-12 col-md-8 pt-4 pb-5  px-4 text-center bg-white box-shadow">
         <h1 class="display-2 mb-3"><? the_field('title'); ?></h1>
         <div class="lead"><? the_field('lead'); ?></div>
-        <a class="scroll-arrow bg-yellow" href="#content"><i class="fa fa-chevron-down"></i></a>
+        <a class="scroll-arrow bg-yellow" href="#content" title="Scroll to content"><i class="fa fa-chevron-down"></i></a>
       </div>
     </div>
   </div>

@@ -14,7 +14,7 @@
             <small><a class="" href="<? the_field('site_url'); ?>" target="_blank">Visit the website</a></small>
           </div>
         <? endif; ?>
-        <a class="scroll-arrow bg-yellow" href="#content"><i class="fa fa-chevron-down"></i></a>
+        <a class="scroll-arrow bg-yellow" href="#content" title="Scroll to content"><i class="fa fa-chevron-down"></i></a>
       </div>
     </div>
   </div>

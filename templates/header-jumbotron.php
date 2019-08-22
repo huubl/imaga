@@ -34,7 +34,7 @@ endif;
         <div class="lead mb-5"><? the_field('lead'); ?></div>
       </div>
 
-      <a class="scroll-arrow bg-yellow" href="#content"><i class="fa fa-chevron-down"></i></a>
+      <a class="scroll-arrow bg-yellow" href="#content" title="Scroll to content"><i class="fa fa-chevron-down"></i></a>
 
     </div>
   </div>
