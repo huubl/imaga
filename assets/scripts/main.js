@@ -19,6 +19,17 @@
     'common': {
       init: function() {
 
+        if ($(window).width() > 769) {
+          $('.navbar .dropdown').hover(function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(50).slideDown(100);
+          }, function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(600).slideUp(50);
+          });
+          $('.navbar .dropdown > a').click(function() {
+            location.href = this.href;
+          });
+        }
+
         // init Animate On Scroll
         AOS.init({
            offset: 220,

@@ -140,6 +140,20 @@ $nav-link-padding-y:              .4rem; //.5rem
 $navbar-padding-y:                0rem; //($spacer / 2)
 $navbar-nav-link-padding-x:       .8rem;
 
+$dropdown-bg:                     $gray-150;
+$dropdown-link-hover-bg:          transparent;
+$dropdown-link-active-bg:         transparent;
+$dropdown-link-color:             rgba($black, .6);
+$dropdown-link-hover-color:       $black;
+$dropdown-link-active-color:      $black;
+$dropdown-border-width:           0px;
+$dropdown-font-size:              $font-size-base;
+$dropdown-min-width:              100%;
+$dropdown-spacer:                 0px;
+$dropdown-padding-y:              0px;
+$dropdown-item-padding-y:         .5rem;
+$dropdown-item-padding-x:         1rem;
+
 $table-border-color:              rgba( $gray-800, .2);
 $table-hover-bg:                  rgba($gray-100, .3);
 

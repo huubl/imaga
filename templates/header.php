@@ -10,14 +10,8 @@
 
       <?= Navigation\toggler( '.navbar-toggle' ); ?>
 
-      <?= Navigation\navigation( 'primary_navigation', 'primary_navigation' , 0, 1, "mr-auto nav navbar-nav"); ?>
+      <?= Navigation\navigation( 'primary_navigation', 'primary_navigation' , 0, 2, "mr-auto nav navbar-nav"); ?>
 
-    </div>
-  </nav>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <?= Navigation\navigation( 'primary_navigation', 'secondary_navigation', 1, 0, "mr-auto nav navbar-nav"); ?>
     </div>
   </nav>
 

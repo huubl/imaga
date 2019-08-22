@@ -13,9 +13,19 @@
         padding-bottom: 1rem;
       }
     }
+    .dropdown{
+      position:static !important;
+
+      .dropdown-menu{
+        @extend .box-shadow;
+
+        .nav-item{
+          display: inline-block;
+        }
+      }
+    }
   }
   #secondary_navigation{
-
     &.collapsing{
       transition-delay: .2s;
     }
