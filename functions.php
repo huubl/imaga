@@ -32,7 +32,6 @@ foreach ($files as $file):
 endforeach;
 unset($file, $filepath);
 
-
 // Init updater
 $puc = Puc_v4_Factory::buildUpdateChecker( 'https://github.com/STUDIO-IMAGA/imaga', __FILE__, 'imaga' );
 

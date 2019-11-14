@@ -11,7 +11,7 @@ use IMAGA\Theme\Wrapper;
   <body <? body_class(); ?> >
     <!--[if IE]>
       <div class="alert alert-warning">
-        <? _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'imaga'); ?>
+        <?php _e('Je gebruikt een <strong>verouderde</strong> browser. Installeer <a href="http://browsehappy.com/">een moderne browser</a> voor de beste ervaring.', 'imaga'); ?>
       </div>
     <![endif]-->
 

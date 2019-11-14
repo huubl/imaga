@@ -38,6 +38,7 @@
     "gulp-if": "2.0.1",
     "gulp-imagemin": "3.0.3",
     "imagemin-mozjpeg": "7.0.0",
+    "gulp-github-release": "^1.2.1",
     "gulp-jshint": "2.0.1",
     "gulp-less": "3.0.3",
     "gulp-load-plugins": "0.10.0",
