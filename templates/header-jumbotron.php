@@ -22,16 +22,16 @@ endif;
   <div class="container">
     <div class="row">
 
-      <? if( $image_alignment == 'bg-left' ): ?>
+      <?php if( $image_alignment == 'bg-left' ): ?>
         <div class="col-6"></div>
-        <? $padding = "pl-md-4 pl-lg-5"; ?>
-      <? else: ?>
-        <? $padding = "pr-md-4 pr-lg-5"; ?>
-      <? endif; ?>
+        <?php $padding = "pl-md-4 pl-lg-5"; ?>
+      <?php else: ?>
+        <?php $padding = "pr-md-4 pr-lg-5"; ?>
+      <?php endif; ?>
 
-      <div class="col-12 col-md-6 <?= $padding; ?> pb-4 pb-md-0">
-        <h1 class="display-1 mb-3"><? the_field('title'); ?></h1>
-        <div class="lead mb-5"><? the_field('lead'); ?></div>
+      <div class="col-12 col-md-6 <?php echo $padding; ?> pb-4 pb-md-0">
+        <h1 class="display-1 mb-3"><?php the_field('title'); ?></h1>
+        <div class="lead mb-5"><?php the_field('lead'); ?></div>
       </div>
 
       <a class="scroll-arrow bg-yellow" href="#content" title="Scroll to content"><i class="fa fa-chevron-down"></i></a>
@@ -39,7 +39,7 @@ endif;
     </div>
   </div>
 
-  <div class="bg-container <? the_field('header_toggle'); ?> bg-cover bg-center" style="background-image: url('<? the_post_thumbnail_url(); ?>');"></div>
+  <div class="bg-container <?php the_field('header_toggle'); ?> bg-cover bg-center" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
 
 </div>
 

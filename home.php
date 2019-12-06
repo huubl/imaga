@@ -1,19 +1,19 @@
-<? if (!have_posts()) : ?>
+<?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
-    <? _e('Sorry, no results were found.', 'imaga'); ?>
+    <?php_e('Sorry, no results were found.', 'imaga'); ?>
   </div>
-  <? get_search_form(); ?>
-<? endif; ?>
+  <?php get_search_form(); ?>
+<?php endif; ?>
 
 <section class="bg-gray-100">
   <div class="container">
     <div class="row">
 
-      <? while (have_posts()) : the_post(); ?>
+      <?php while (have_posts()) : the_post(); ?>
 
-        <? get_template_part('templates/content', get_post_type() ); ?>
+        <?php get_template_part('templates/content', get_post_type() ); ?>
 
-      <? endwhile; ?>
+      <?php endwhile; ?>
     </div>
   </div>
 </section>

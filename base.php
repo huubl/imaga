@@ -6,24 +6,24 @@ use IMAGA\Theme\Wrapper;
 ?>
 
 <!doctype html>
-<html <? language_attributes(); ?>>
-  <? get_template_part('templates/head'); ?>
-  <body <? body_class(); ?> >
+<html <?php language_attributes(); ?>>
+  <?php get_template_part('templates/head'); ?>
+  <body <?php body_class(); ?> >
     <!--[if IE]>
       <div class="alert alert-warning">
         <?php _e('Je gebruikt een <strong>verouderde</strong> browser. Installeer <a href="http://browsehappy.com/">een moderne browser</a> voor de beste ervaring.', 'imaga'); ?>
       </div>
     <![endif]-->
 
-    <? do_action('get_header'); ?>
+    <?php do_action('get_header'); ?>
 
-    <? get_template_part('templates/header'); ?>
+    <?php get_template_part('templates/header'); ?>
 
     <div class="wrap" role="document">
 
       <main>
 
-        <? include Wrapper\template_path(); ?>
+        <?php include Wrapper\template_path(); ?>
 
       </main>
 
@@ -31,11 +31,11 @@ use IMAGA\Theme\Wrapper;
 
     <a id="scroll-to-top" href="#" title="Scroll to top"><i class="fa fa-chevron-up"></i></a>
 
-    <? do_action('get_footer');?>
+    <?php do_action('get_footer');?>
 
-    <? get_template_part('templates/footer'); ?>
+    <?php get_template_part('templates/footer'); ?>
 
-    <? wp_footer(); ?>
+    <?php wp_footer(); ?>
 
   </body>
 

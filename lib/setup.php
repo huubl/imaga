@@ -93,7 +93,7 @@ function add_google_fonts() {
 
   // Defined in functions.php
   if( ! defined( 'GOOGLE_FONTS' ) ) return;
-  wp_enqueue_style( 'imaga/google-fonts', 'http://fonts.googleapis.com/css?family=' . GOOGLE_FONTS );
+  wp_enqueue_style( 'imaga/google-fonts', '//fonts.googleapis.com/css?family=' . GOOGLE_FONTS );
 }
 add_action( 'wp_head', __NAMESPACE__ . '\\add_google_fonts' , 1);
 

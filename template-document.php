@@ -6,18 +6,18 @@
 use IMAGA\Theme\Extras;
 ?>
 
-<? while (have_posts()) : the_post(); ?>
+<?php while (have_posts()) : the_post(); ?>
 
-  <? get_template_part('templates/header','document'); ?>
+  <?php get_template_part('templates/header','document'); ?>
 
   <section>
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-10 lead">
-          <? the_content(); ?>
+          <?php the_content(); ?>
         </div>
       </div>
     </div>
   </section>
 
-<? endwhile; ?>
+<?php endwhile; ?>

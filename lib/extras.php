@@ -78,13 +78,13 @@ function recent_posts( $post_per_page = 4 ){
 
       <li class="list-item py-1">
 
-        <a href="<?= get_permalink(); ?>" class="text-gray-500">
-          <? the_title(); ?>
+        <a href="<?php echo get_permalink(); ?>" class="text-gray-500">
+          <?php the_title(); ?>
         </a>
 
-        <? if( $seconds < 172800 ): ?>
+        <?php if( $seconds < 172800 ): ?>
           <span class="badge badge-info">NEW</span>
-        <? endif; ?>
+        <?php endif; ?>
 
       </li>
 
@@ -117,55 +117,55 @@ function the_employees(){
         $switch_bg = '';
       endif;
       ?>
-      <section id="<?= strtolower( str_replace(' ','', get_the_title() ) ); ?>" class="pt-6 <?= $switch_bg; ?>">
+      <section id="<?php echo strtolower( str_replace(' ','', get_the_title() ) ); ?>" class="pt-6 <?php echo $switch_bg; ?>">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 col-md-10">
               <div class="row">
                 <div class="col-4 col-md-2">
-                  <img class="img-fluid img-circle box-shadow" src="<? the_post_thumbnail_url('thumbnail'); ?>" alt="<? the_title(); ?>">
+                  <img class="img-fluid img-circle box-shadow" src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="<?php the_title(); ?>">
                 </div>
                 <div class="col-8 d-block d-md-none">
-                  <h1 class="display-1"><? the_title(); ?></h1>
+                  <h1 class="display-1"><?php the_title(); ?></h1>
                 </div>
                 <div class="col-12 col-md-10 pt-3 pt-md-0 pb-3">
-                  <h1 class="display-2 d-none d-md-block"><? the_title(); ?></h1>
-                  <? if( $terms ): ?>
-                    <? foreach( $terms as $term ): ?>
-                      <span class="badge badge-blue mr-2"><?= $term->name; ?></span>
-                    <? endforeach; ?>
-                  <? endif; ?>
+                  <h1 class="display-2 d-none d-md-block"><?php the_title(); ?></h1>
+                  <?php if( $terms ): ?>
+                    <?php foreach( $terms as $term ): ?>
+                      <span class="badge badge-blue mr-2"><?php echo $term->name; ?></span>
+                    <?php endforeach; ?>
+                  <?php endif; ?>
                 </div>
               </div>
 
               <div class="row justify-content-end">
                 <div class="col-12 col-md-10">
-                  <? the_content(); ?>
+                  <?php the_content(); ?>
                 </div>
               </div>
               <div class="row justify-content-end pt-3">
                 <div class="col-12 col-md-10">
-                  <? if( have_rows('content') ): ?>
-                    <? while( have_rows('content') ): the_row(); ?>
-                      <h1 class="display-1"><? the_sub_field('title'); ?></h1>
+                  <?php if( have_rows('content') ): ?>
+                    <?php while( have_rows('content') ): the_row(); ?>
+                      <h1 class="display-1"><?php the_sub_field('title'); ?></h1>
                       <div class="mb-4">
-                        <? the_sub_field('content'); ?>
+                        <?php the_sub_field('content'); ?>
                       </div>
-                    <? endwhile; ?>
-                  <? endif; ?>
+                    <?php endwhile; ?>
+                  <?php endif; ?>
                 </div>
               </div>
               <div class="row text-center py-4">
-                <? if( have_rows('badges') ): ?>
-                  <? while( have_rows('badges') ): the_row(); ?>
-                    <? $image = get_sub_field('image'); ?>
-                    <? if( !empty($image) ): ?>
+                <?php if( have_rows('badges') ): ?>
+                  <?php while( have_rows('badges') ): the_row(); ?>
+                    <?php $image = get_sub_field('image'); ?>
+                    <?php if( !empty($image) ): ?>
                       <div class="col">
-                        <img class="img-fluid" src="<?= $image['url']; ?>" alt="<? the_sub_field('title'); ?>">
+                        <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php the_sub_field('title'); ?>">
                       </div>
-                    <? endif; ?>
-                  <? endwhile; ?>
-                <? endif; ?>
+                    <?php endif; ?>
+                  <?php endwhile; ?>
+                <?php endif; ?>
               </div>
             </div>
           </div>
@@ -188,21 +188,21 @@ function the_brands( $post_objects ){
     ?>
     <div class="row">
 
-      <? foreach( $post_objects as $post_object): ?>
+      <?php foreach( $post_objects as $post_object): ?>
         <div class="col-6 col-md-2-4 p-md-3">
 
-          <? if( get_field('url' ,$post_object->ID) ):?>
-            <a href="<? the_field('url', $post_object->ID); ?>" target="_blank" alt="<?= get_the_title($post_object->ID); ?>">
-          <? endif;?>
+          <?php if( get_field('url' ,$post_object->ID) ):?>
+            <a href="<?php the_field('url', $post_object->ID); ?>" target="_blank" alt="<?php echo get_the_title($post_object->ID); ?>">
+          <?php endif;?>
 
-              <img class="img-fluid brands-img" src="<?= get_the_post_thumbnail_url($post_object->ID, 'brand-thumbnail'); ?>" title="<?= get_the_title($post_object->ID); ?>" alt="<?= get_the_title($post_object->ID); ?>"/>
+              <img class="img-fluid brands-img" src="<?php echo get_the_post_thumbnail_url($post_object->ID, 'brand-thumbnail'); ?>" title="<?php echo get_the_title($post_object->ID); ?>" alt="<?php echo get_the_title($post_object->ID); ?>"/>
 
-          <? if( get_field('url', $post_object->ID) ):?>
+          <?php if( get_field('url', $post_object->ID) ):?>
             </a>
-          <? endif;?>
+          <?php endif;?>
 
         </div>
-      <? endforeach; ?>
+      <?php endforeach; ?>
     </div>
     <?
   endif;
@@ -228,16 +228,16 @@ function recent_reviews( $post_per_page = 4 ){
 
             <div class="row">
               <div class="col-3 text-right">
-                <img class="img-fluid img-circle" src="<?= get_the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
+                <img class="img-fluid img-circle" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
               </div>
               <div class="col-9">
-                <? the_title(); ?>, <? the_field('company'); ?> <? the_field('location'); ?>
+                <?php the_title(); ?>, <?php the_field('company'); ?> <?php the_field('location'); ?>
                 <span class="review-stars text-orange">
-                  <? the_field('stars'); ?>
+                  <?php the_field('stars'); ?>
                 </span>
                 <p>
                   <small>
-                    <? the_content(); ?>
+                    <?php the_content(); ?>
                   </small>
                 </p>
               </div>

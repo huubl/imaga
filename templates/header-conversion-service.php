@@ -27,57 +27,57 @@ $color = str_replace('bg', '', $first_row['background_color']);
   <div class="container">
     <div class="row">
 
-      <? if( $image_alignment == 'bg-left' ): ?>
+      <?php if( $image_alignment == 'bg-left' ): ?>
         <div class="col-6"></div>
-        <? $padding = "pl-md-4 pl-lg-5"; ?>
-      <? else: ?>
-        <? $padding = "pl-md-4 pl-lg-5"; ?>
-      <? endif; ?>
+        <?php $padding = "pl-md-4 pl-lg-5"; ?>
+      <?php else: ?>
+        <?php $padding = "pl-md-4 pl-lg-5"; ?>
+      <?php endif; ?>
 
-      <div class="col-12 col-md-6 <?= $padding; ?> pb-4 pb-md-0">
-        <h1 class="display-1 mb-3"><? the_field('title'); ?></h1>
-        <div class="lead mb-5"><? the_field('lead'); ?></div>
+      <div class="col-12 col-md-6 <?php echo $padding; ?> pb-4 pb-md-0">
+        <h1 class="display-1 mb-3"><?php the_field('title'); ?></h1>
+        <div class="lead mb-5"><?php the_field('lead'); ?></div>
       </div>
 
     </div>
 
   </div>
 
-  <div class="bg-container <? the_field('header_toggle'); ?> bg-cover bg-center" style="background-image: url('<? the_post_thumbnail_url(); ?>');"></div>
+  <div class="bg-container <?php the_field('header_toggle'); ?> bg-cover bg-center" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
 
 </div>
 
 <div id="content"></div>
 
-<section class="<? the_field('conversion_bg');?>">
+<section class="<?php the_field('conversion_bg');?>">
   <div class="container py-4">
 
     <div class="row text-center">
       <div class="col-12 mb-4">
 
-        <? if( get_field('conversion_category') == 'conversion-research' ): ?>
+        <?php if( get_field('conversion_category') == 'conversion-research' ): ?>
           <a href="/conversion-research">
-            <img class="img-fluid category-service box-shadow bg-white" src="<?= Assets\asset_path('images/icons/conversion-research-color.svg');?>" alt="Conversion Research">
+            <img class="img-fluid category-service box-shadow bg-white" src="<?php echo Assets\asset_path('images/icons/conversion-research-color.svg');?>" alt="Conversion Research">
           </a>
-        <? endif; ?>
+        <?php endif; ?>
 
-        <? if( get_field('conversion_category') == 'conversion-strategy' ): ?>
+        <?php if( get_field('conversion_category') == 'conversion-strategy' ): ?>
           <a href="/conversion-strategy">
-            <img class="img-fluid category-service box-shadow bg-white" src="<?= Assets\asset_path('images/icons/conversion-strategy-color.svg');?>" alt="Conversion Strategy">
+            <img class="img-fluid category-service box-shadow bg-white" src="<?php echo Assets\asset_path('images/icons/conversion-strategy-color.svg');?>" alt="Conversion Strategy">
           </a>
-        <? endif; ?>
+        <?php endif; ?>
 
-        <? if( get_field('conversion_category') == 'conversion-design' ): ?>
+        <?php if( get_field('conversion_category') == 'conversion-design' ): ?>
           <a href="/conversion-design">
-            <img class="img-fluid category-service box-shadow bg-white" src="<?= Assets\asset_path('images/icons/conversion-design-color.svg');?>" alt="Conversion Design">
+            <img class="img-fluid category-service box-shadow bg-white" src="<?php echo Assets\asset_path('images/icons/conversion-design-color.svg');?>" alt="Conversion Design">
           </a>
-        <? endif; ?>
+        <?php endif; ?>
 
-        <? if( get_field('conversion_category') == 'conversion-build' ): ?>
+        <?php if( get_field('conversion_category') == 'conversion-build' ): ?>
           <a href="/conversion-build">
-            <img class="img-fluid category-service box-shadow bg-white" src="<?= Assets\asset_path('images/icons/conversion-build-color.svg');?>" alt="Conversion Build">
+            <img class="img-fluid category-service box-shadow bg-white" src="<?php echo Assets\asset_path('images/icons/conversion-build-color.svg');?>" alt="Conversion Build">
           </a>
-        <? endif; ?>
+        <?php endif; ?>
 
       </div>
     </div>
@@ -86,18 +86,18 @@ $color = str_replace('bg', '', $first_row['background_color']);
       <div class="col-10">
         <div class="row">
 
-          <? if( have_rows('services') ): ?>
-            <? while ( have_rows('services') ) : the_row(); ?>
+          <?php if( have_rows('services') ): ?>
+            <?php while ( have_rows('services') ) : the_row(); ?>
 
-              <? $icon = get_sub_field('icon'); ?>
+              <?php $icon = get_sub_field('icon'); ?>
 
-              <a class="col <?= get_sub_field('current') == TRUE ? "conversion-arrow$color conversion-service-item-active" : 'conversion-service-item' ; ?>" href="<? the_sub_field('url'); ?>">
-                <img class="img-fluid" src="<?= $icon['url']; ?>" alt="<?= $icon['alt']; ?>" width="72" height="72">
-                <p class="d-none d-md-block lead text-white"><? the_sub_field('title'); ?></p>
+              <a class="col <?php echo get_sub_field('current') == TRUE ? "conversion-arrow$color conversion-service-item-active" : 'conversion-service-item' ; ?>" href="<?php the_sub_field('url'); ?>">
+                <img class="img-fluid" src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>" width="72" height="72">
+                <p class="d-none d-md-block lead text-white"><?php the_sub_field('title'); ?></p>
               </a>
 
-            <? endwhile; ?>
-          <? endif; ?>
+            <?php endwhile; ?>
+          <?php endif; ?>
         </div>
       </div>
     </div>

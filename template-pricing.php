@@ -6,9 +6,9 @@
 use IMAGA\Theme\Extras;
 ?>
 
-<? while (have_posts()) : the_post(); ?>
+<?php while (have_posts()) : the_post(); ?>
 
-  <? get_template_part('templates/header','pricing'); ?>
+  <?php get_template_part('templates/header','pricing'); ?>
 
   <section>
     <div class="container">
@@ -69,12 +69,12 @@ use IMAGA\Theme\Extras;
     </div>
   </section>
 
-  <? if( have_rows('layouts') ): ?>
-    <? while( have_rows('layouts') ): the_row(); ?>
+  <?php if( have_rows('layouts') ): ?>
+    <?php while( have_rows('layouts') ): the_row(); ?>
 
-      <? Extras\get_layout( get_row_layout() ); ?>
+      <?php Extras\get_layout( get_row_layout() ); ?>
 
-    <? endwhile; ?>
-  <? endif; ?>
+    <?php endwhile; ?>
+  <?php endif; ?>
 
-<? endwhile; ?>
+<?php endwhile; ?>
