@@ -25,6 +25,7 @@ var fs            = require('fs');
 var semver        = require('semver');
 var smushit       = require('gulp-smushit');
 var release       = require('gulp-github-release');
+var phplint       = require('gulp-phplint');
 
 var manifest      = require('asset-builder')('./assets/manifest.json');
 var path          = manifest.paths;
@@ -204,6 +205,11 @@ gulp.task('jshint', function() {
     .pipe(gulpif(enabled.failJSHint, jshint.reporter('fail')));
 });
 
+gulp.task('phplint', function() {
+  gulp.src('./*.php')
+    .pipe(phplint());
+});
+
 gulp.task('clean', require('del').bind(null, [path.dist, 'temp/**']));
 
 gulp.task('watch', function() {
@@ -292,7 +298,7 @@ gulp.task('move', ['version'], function() {
   ], {
    base: '.'
   })
-  .pipe(gulp.dest( './' + pkg.name ));
+  .pipe(gulp.dest( './temp'));
 });
 
 gulp.task('zip', ['move'], function() {

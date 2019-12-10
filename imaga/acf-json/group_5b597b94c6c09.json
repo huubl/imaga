@@ -1,0 +1,139 @@
+{
+    "key": "group_5b597b94c6c09",
+    "title": "Fields Container",
+    "fields": [
+        {
+            "key": "field_5b55d4584a3b7",
+            "label": "Title",
+            "name": "header_title",
+            "type": "text",
+            "instructions": "Titel voor de pagina in de header.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b55d4584e0bd",
+            "label": "Lead",
+            "name": "header_lead",
+            "type": "wysiwyg",
+            "instructions": "Intro tekst voor de pagina in de header.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_5b59da73b45dc",
+            "label": "Header Toggle",
+            "name": "header_image_toggle",
+            "type": "button_group",
+            "instructions": "Kies een kant voor de header afbeelding.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "bg-left": "Header Links",
+                "bg-right": "Header Rechts"
+            },
+            "allow_null": 0,
+            "default_value": "bg-right",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5b3df41bd8899",
+            "label": "Tekst Kleur",
+            "name": "text_color",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "text-body": "Donker",
+                "text-white": "Light"
+            },
+            "allow_null": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5b597b5ff72a0",
+            "label": "Achtergrond Kleur",
+            "name": "background_color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "bg-none": "Geen kleur",
+                "bg-white": "Wit",
+                "bg-light": "Getint",
+                "bg-red": "Rood",
+                "bg-green": "Groen",
+                "bg-blue": "Blauw",
+                "bg-cyan": "Cyaan",
+                "bg-yellow": "Geel",
+                "bg-gray-800": "Darker",
+                "bg-gray-900": "Darkest"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "Opslag voor verschillende custom velden",
+    "modified": 1540992998
+}

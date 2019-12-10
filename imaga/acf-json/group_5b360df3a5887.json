@@ -1,0 +1,167 @@
+{
+    "key": "group_5b360df3a5887",
+    "title": "Layout Facts",
+    "fields": [
+        {
+            "key": "field_5b597bba255dd",
+            "label": "Background Color",
+            "name": "background_color",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_5b597b5ff72a0"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_5b597d453897a",
+            "label": "Tekst kleur",
+            "name": "text_color",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_5b3df41bd8899"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_5b360dfbd68bd",
+            "label": "Onderzoeks feiten",
+            "name": "facts",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "variable-items",
+                "id": ""
+            },
+            "collapsed": "field_5b360e37d68bf",
+            "min": 3,
+            "max": 4,
+            "layout": "table",
+            "button_label": "Voeg feit toe",
+            "sub_fields": [
+                {
+                    "key": "field_5b360e66d68c0",
+                    "label": "Verandering",
+                    "name": "change",
+                    "type": "button_group",
+                    "instructions": "Voer hier in om wat voor verandering het gaat.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "none": "Geen",
+                        "+": "Meer (+)",
+                        "-": "Minder (-)"
+                    },
+                    "allow_null": 0,
+                    "default_value": "none",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5b360e19d68be",
+                    "label": "Hoeveelheid",
+                    "name": "amount",
+                    "type": "text",
+                    "instructions": "Voer hier het aantal in",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5b360e37d68bf",
+                    "label": "Onderwerp",
+                    "name": "subject",
+                    "type": "text",
+                    "instructions": "Voer hier een korte omschrijving betreft welke data het gaat.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Aantal bezoekers per dag",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5b597a30774a2",
+            "label": "Ondertitel",
+            "name": "lead",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1537193243
+}
