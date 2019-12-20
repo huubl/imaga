@@ -88,7 +88,7 @@ function recent_posts( $post_per_page = 4 ){
 
       </li>
 
-      <?
+      <?php
     endwhile;
     wp_reset_postdata();
     wp_reset_query();
@@ -171,7 +171,7 @@ function the_employees(){
           </div>
         </div>
       </section>
-      <?
+      <?php
     endwhile;
     wp_reset_postdata();
     wp_reset_query();
@@ -204,7 +204,7 @@ function the_brands( $post_objects ){
         </div>
       <?php endforeach; ?>
     </div>
-    <?
+    <?php
   endif;
 }
 
@@ -218,7 +218,7 @@ function recent_reviews( $post_per_page = 4 ){
   if($query->have_posts()):
     ?>
     <div class="review-slider w-100">
-    <?
+    <?php
       while( $query->have_posts() ) :
         $query->the_post();
         ?>
@@ -245,7 +245,7 @@ function recent_reviews( $post_per_page = 4 ){
           </div>
         </div>
 
-        <?
+        <?php
       endwhile;
     ?>
     </div>

@@ -760,7 +760,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				<h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
 				<?php $plugin_table->prepare_items(); ?>
 
-				<?
+				<?php
 				if ( ! empty( $this->message ) && is_string( $this->message ) ) {
 					echo wp_kses_post( $this->message );
 				}
@@ -773,7 +773,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 					<?php $plugin_table->display(); ?>
 				</form>
 			</div>
-			<?
+			<?php
 		}
 
 		/**
