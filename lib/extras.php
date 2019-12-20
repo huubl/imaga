@@ -192,7 +192,7 @@ function the_brands( $post_objects ){
         <div class="col-6 col-md-2-4 p-md-3">
 
           <?php if( get_field('url' ,$post_object->ID) ):?>
-            <a href="<?php the_field('url', $post_object->ID); ?>" target="_blank" alt="<?php echo get_the_title($post_object->ID); ?>">
+            <a class="text-dark" href="<?php the_field('url', $post_object->ID); ?>" target="_blank" alt="<?php echo get_the_title($post_object->ID); ?>">
           <?php endif;?>
 
               <img class="img-fluid brands-img" src="<?php echo get_the_post_thumbnail_url($post_object->ID, 'brand-thumbnail'); ?>" title="<?php echo get_the_title($post_object->ID); ?>" alt="<?php echo get_the_title($post_object->ID); ?>"/>
