@@ -27,22 +27,22 @@
         <h5 class="lead text-light mb-3">Conversion Optimization</h5>
         <ul class="list-unstyled m-0">
           <li class="list-item py-1">
-            <a href="/conversion-optimization/conversion-research" class="text-gray-500">
+            <a href="/conversion-research" class="text-gray-500">
               Conversion Research
             </a>
           </li>
           <li class="list-item py-1">
-            <a href="/conversion-optimization/conversion-strategy" class="text-gray-500">
+            <a href="/conversion-strategy" class="text-gray-500">
               Conversion Strategy
             </a>
           </li>
           <li class="list-item py-1">
-            <a href="/conversion-optimization/conversion-design" class="text-gray-500">
+            <a href="/conversion-design" class="text-gray-500">
               Conversion Design
             </a>
           </li>
           <li class="list-item py-1">
-            <a href="/conversion-optimization/conversion-build" class="text-gray-500">
+            <a href="/conversion-build" class="text-gray-500">
               Conversion Build
             </a>
           </li>

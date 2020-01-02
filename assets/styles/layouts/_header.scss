@@ -6,6 +6,11 @@
   transition: height .2s ease;
 }
 .navbar{
+  .nav-item{
+    .nav-link{
+      text-decoration: none !important;
+    }
+  }
   #primary_navigation{
     .nav-item{
       .nav-link{

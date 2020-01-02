@@ -210,7 +210,7 @@ gulp.task('phplint', function() {
     .pipe(phplint());
 });
 
-gulp.task('clean', require('del').bind(null, [path.dist, 'temp/**']));
+gulp.task('clean', require('del').bind(null, [path.dist, 'imaga/**']));
 
 gulp.task('watch', function() {
   browserSync.init({
@@ -298,13 +298,13 @@ gulp.task('move', ['version'], function() {
   ], {
    base: '.'
   })
-  .pipe(gulp.dest( './temp'));
+  .pipe(gulp.dest( './imaga'));
 });
 
 gulp.task('zip', ['move'], function() {
   var pkg = getPackageJSON();
   return gulp.src([
-    'temp/**',
+    'imaga/**',
   ], {
    base: '.'
   })

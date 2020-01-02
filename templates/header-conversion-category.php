@@ -55,22 +55,22 @@ $color = str_replace('bg', '', $first_row['background_color']);
 
     <div class="row text-center">
 
-      <a class="col-3 <?php echo get_field('conversion_category') == 'conversion-research' ? "conversion-arrow$color conversion-category-item-active" : 'conversion-category-item' ; ?>" href="/conversion-optimization/conversion-research">
+      <a class="col-3 <?php echo get_field('conversion_category') == 'conversion-research' ? "conversion-arrow$color conversion-category-item-active" : 'conversion-category-item' ; ?>" href="/conversion-research">
         <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-research-light.svg');?>" alt="Conversion Research">
         <h4 class="d-none d-md-block text-white">Conversion<br>Research</h4>
       </a>
 
-      <a class="col-3 <?php echo get_field('conversion_category') == 'conversion-strategy' ? "conversion-arrow$color conversion-category-item-active" : 'conversion-category-item' ; ?>" href="/conversion-optimization/conversion-strategy">
+      <a class="col-3 <?php echo get_field('conversion_category') == 'conversion-strategy' ? "conversion-arrow$color conversion-category-item-active" : 'conversion-category-item' ; ?>" href="/conversion-strategy">
         <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-strategy-light.svg');?>" alt="Conversion Strategy">
         <h4 class="d-none d-md-block text-white">Conversion<br>Strategy</h4>
       </a>
 
-      <a class="col-3 <?php echo get_field('conversion_category') == 'conversion-design' ? "conversion-arrow$color conversion-category-item-active" : 'conversion-category-item' ; ?>" href="/conversion-optimization/conversion-design">
+      <a class="col-3 <?php echo get_field('conversion_category') == 'conversion-design' ? "conversion-arrow$color conversion-category-item-active" : 'conversion-category-item' ; ?>" href="/conversion-design">
         <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-design-light.svg');?>" alt="Conversion Design">
         <h4 class="d-none d-md-block text-white">Conversion<br>Design</h4>
       </a>
 
-      <a class="col-3 <?php echo get_field('conversion_category') == 'conversion-build' ? "conversion-arrow$color conversion-category-item-active" : 'conversion-category-item' ; ?>" href="/conversion-optimization/conversion-build">
+      <a class="col-3 <?php echo get_field('conversion_category') == 'conversion-build' ? "conversion-arrow$color conversion-category-item-active" : 'conversion-category-item' ; ?>" href="/conversion-build">
         <img class="img-fluid mb-2" src="<?php echo Assets\asset_path('images/icons/conversion-build-light.svg');?>" alt="Conversion Build">
         <h4 class="d-none d-md-block text-white">Conversion<br>Build</h4>
       </a>

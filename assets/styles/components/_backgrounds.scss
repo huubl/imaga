@@ -62,6 +62,11 @@
   }
 }
 
+.bg-red{
+  a{
+    @extend .text-white;
+  }
+}
 $max: 105;
 $step: 5;
 

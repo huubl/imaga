@@ -12,7 +12,7 @@
       <div class="col-12 col-md-10">
         <div class="row text-center">
           <div class="col-12 col-md mb-4 mb-lg-0">
-            <a class="text-dark" href="/conversion-optimization/conversion-research">
+            <a class="text-dark" href="/conversion-research">
               <img class="img-fluid mb-3" src="<?php echo Assets\asset_path('images/icons/conversion-research-dark.svg');?>" alt="Conversion Research">
               <h4>
                 <div class="d-inline d-md-block">Conversion</div> <div class="d-inline d-md-block">Research</div>
@@ -20,7 +20,7 @@
             </a>
           </div>
           <div class="col-12 col-md mb-4 mb-lg-0">
-            <a class="text-dark" href="/conversion-optimization/conversion-strategy">
+            <a class="text-dark" href="/conversion-strategy">
               <img class="img-fluid mb-3" src="<?php echo Assets\asset_path('images/icons/conversion-strategy-dark.svg');?>" alt="Conversion Strategy">
               <h4>
                 <div class="d-inline d-md-block">Conversion</div> <div class="d-inline d-md-block">Strategy</div>
@@ -28,7 +28,7 @@
             </a>
           </div>
           <div class="col-12 col-md mb-4 mb-lg-0">
-            <a class="text-dark" href="/conversion-optimization/conversion-design">
+            <a class="text-dark" href="/conversion-design">
               <img class="img-fluid mb-3" src="<?php echo Assets\asset_path('images/icons/pencil-dark.svg');?>" alt="Conversion Design">
               <h4>
                 <div class="d-inline d-md-block">Conversion</div> <div class="d-inline d-md-block">Design</div>

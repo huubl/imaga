@@ -249,7 +249,7 @@ function recent_reviews( $post_per_page = 4 ){
       endwhile;
     ?>
     </div>
-    <?
+    <?php
     wp_reset_postdata();
     wp_reset_query();
   endif;
