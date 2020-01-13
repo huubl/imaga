@@ -12,8 +12,8 @@
 
       <?php echo Navigation\navigation( 'primary_navigation', 'primary_navigation' , 0, 2, "mr-auto nav navbar-nav"); ?>
 
-      <button id="contrast-switch" aria-label="Enable high contrast mode" tabindex="1" title="Enable high-Contrast mode">
-        <small>Enable high contrast mode</small>
+      <button id="contrast-switch" class="order-3 ml-auto mr-3" aria-label="Enable high contrast mode" tabindex="1" title="Enable high-Contrast mode">
+        <small class="d-none d-sm-inline">Enable high contrast mode</small>
         <svg version="1.1" baseProfile="basic"
            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
            viewBox="0 0 48 48" xml:space="preserve">
