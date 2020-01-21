@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="row">
-      <?php $args = array( 'post_type' => 'post', 'orderby' => 'post_date', 'order' => 'desc', 'posts_per_page' => 4 ); ?>
+      <?php $args = array( 'post_type' => 'post', 'orderby' => 'post_date', 'order' => 'desc', 'posts_per_page' => 4, 'post__not_in' => array($post->ID) ); ?>
       <?php $query = new wp_query( $args ); ?>
       <?php $i = 0;?>
       <div class="card-deck">

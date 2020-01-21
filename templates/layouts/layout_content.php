@@ -41,7 +41,7 @@
 
         <?php if( $image_sizing == 'contain' ): ?>
 
-          <div class="col-12 col-md-6 order-2">
+          <div class="col-12 col-md-6 order-2 p-3 p-md-0">
             <img class="img-fluid <?php the_sub_field('image_styling'); ?>" src="<?php echo $image['url']; ?>" title="<?php echo $image['alt']; ?>" alt="<?php echo $image['alt']; ?>">
           </div>
 
