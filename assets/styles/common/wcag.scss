@@ -1,0 +1,131 @@
+#contrast-switch{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  svg{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+body.high-contrast{
+  .navbar{
+    #primary_navigation{
+      .nav-item{
+        .nav-link{
+          color: $black !important;
+        }
+      }
+    }
+  }
+  a{
+    color: $black !important;
+    text-decoration: underline !important;
+  }
+  p,h1, h2, h3, h4, h5, h6{
+    color: $black !important;
+  }
+  ul.list-checkmark{
+    li{
+      color: $black !important;
+    }
+    @each $color, $value in $theme-colors {
+      &.checkmark-#{$color}{
+        li:before{
+          color: $black;
+        }
+      }
+    }
+    @each $color, $value in $theme-colors {
+      li.list-item-#{$color}:before{
+        color: $black;
+      }
+    }
+  }
+  ul{
+    .fa-check,
+    .fa-chevron-right{
+      color: $black !important;
+    }
+  }
+  .scroll-arrow.bg-yellow,
+  #scroll-to-top{
+    background-color: $black !important;
+  }
+  section{
+    @each $color, $value in $theme-colors {
+      &.bg-#{$color}{
+        background-color: $white !important;
+      }
+    }
+    &.layout-content{
+      &.bg-red{
+        a{
+          color: $black !important;
+        }
+      }
+    }
+  }
+  .btn{
+    background-color: $white !important;
+    color: $black !important;
+    border: 1px solid $black !important;
+    text-decoration: none !important;
+
+    @each $color, $value in $theme-colors {
+      &.btn-#{$color}{
+        background-color: $white !important;
+        color: $black !important;
+        border: 1px solid $black !important;
+      }
+    }
+  }
+  .form-control{
+    border-color: $black !important;
+  }
+  .review{
+    font-weight: 400 !important;
+    .star-rating{
+      .fa{
+        color: $black !important;
+      }
+    }
+  }
+  .img-thumbnail{
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0px !important;
+  }
+  footer:not(.blockquote-footer){
+    background-color: $black !important;
+    color: $white !important;
+    #footer_primary_navigation .nav-item .nav-link,
+    .lead,
+    .text-gray-500,
+    .text-gray-400{
+      color: $white !important;
+    }
+  }
+  .badge{
+    color: $black !important;
+    background-color: $white !important;
+    border: 1px solid $black !important;
+  }
+  #conversion-category,
+  #conversion-service{
+    background-color: $black !important;
+    .conversion-category-item,
+    .conversion-category-item-active,
+    .conversion-service-item,
+    .conversion-service-item-active{
+      h4,
+      p.lead{
+        color:$white !important;
+      }
+    }
+    .conversion-category-item-active:after{
+      border-bottom-color: $white !important;
+    }
+  }
+}

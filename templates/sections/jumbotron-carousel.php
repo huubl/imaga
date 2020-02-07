@@ -1,4 +1,4 @@
-<?
+<?php
 $background = function($has_post_thumbnail){
     if($has_post_thumbnail):
         $url = get_the_post_thumbnail_url();
@@ -10,9 +10,9 @@ $background = function($has_post_thumbnail){
 $jumbotron = get_field('jumbotron');
 ?>
 
-<section class="jumbotron jumbotron-fluid m-0 p-0 bg-center" <?= $background( has_post_thumbnail() ); ?>>
+<section class="jumbotron jumbotron-fluid m-0 p-0 bg-center" <?php echo $background( has_post_thumbnail() ); ?>>
 
-	<? if( $jumbotron['title'] or $jumbotron['lead'] or $jumbotron['cta']): ?>
+	<?php if( $jumbotron['title'] or $jumbotron['lead'] or $jumbotron['cta']): ?>
 
     <div class="container">
 
@@ -20,39 +20,39 @@ $jumbotron = get_field('jumbotron');
 
   			<div class="col-12 py-5">
 
-  				<? if( $jumbotron['title'] ): ?>
+  				<?php if( $jumbotron['title'] ): ?>
 
   					<h1 class="jumbotron-heading display-3 text-white">
-  						<?= $jumbotron['title']; ?>
+  						<?php echo $jumbotron['title']; ?>
   					</h1>
 
-  				<? endif; ?>
+  				<?php endif; ?>
 
-  				<? if( $jumbotron['lead'] ): ?>
+  				<?php if( $jumbotron['lead'] ): ?>
 
   					<div class="lead text-white">
-  						<?= $jumbotron['lead'];?>
+  						<?php echo $jumbotron['lead'];?>
   					</div>
 
-  				<? endif; ?>
+  				<?php endif; ?>
 
-  				<? if( $jumbotron['cta'] ): ?>
+  				<?php if( $jumbotron['cta'] ): ?>
 
   					<div>
-  						<? foreach($jumbotron["cta"] as $cta ) :?>
+  						<?php foreach($jumbotron["cta"] as $cta ) :?>
 
-  							<? $color = ($cta['color']) ? "btn-" . $cta['color'] : "btn-primary"; ?>
+  							<?php $color = ($cta['color']) ? "btn-" . $cta['color'] : "btn-primary"; ?>
 
-  							<a href="<?= $cta['url']; ?>" class="btn <?= $color; ?>"><?= $cta['label'] ?></a>
+  							<a href="<?php echo $cta['url']; ?>" class="btn <?php echo $color; ?>"><?php echo $cta['label'] ?></a>
 
-  						<? endforeach; ?>
+  						<?php endforeach; ?>
   					</div>
 
-  				<? endif; ?>
+  				<?php endif; ?>
 
   			</div>
 
-  		<? endif; ?>
+  		<?php endif; ?>
 
   	</div>
 
@@ -70,9 +70,9 @@ $jumbotron = get_field('jumbotron');
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <? foreach($obj as $item): ?>
-          <? get_template_part('templates/sections/jumbotron','carousel-item'); ?>
-        <? endforeach; ?>
+        <?php foreach($obj as $item): ?>
+          <?php get_template_part('templates/sections/jumbotron','carousel-item'); ?>
+        <?php endforeach; ?>
       </div>
     </div>
 

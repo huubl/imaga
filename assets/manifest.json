@@ -43,6 +43,16 @@
       "files": [
         "./../node_modules/jquery/dist/jquery.js"
       ]
+    },
+    "popper.js": {
+      "files": [
+        "scripts/popper.js"
+      ]
+    },
+    "js.cookie-2.2.1.min.js": {
+      "files": [
+        "scripts/js.cookie-2.2.1.min.js"
+      ]
     }
   },
   "config": {

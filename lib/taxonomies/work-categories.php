@@ -1,4 +1,4 @@
-<?
+<?php
 
 namespace IMAGA\Theme\Taxonomies\Cases\Categories;
 

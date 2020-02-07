@@ -8,16 +8,16 @@
       <div class="col-11 col-md-6 review">
         <div class="row box-shadow bg-white text-body p-2">
           <div class="col-3 text-right">
-            <img class="img-fluid img-circle" src="<?= get_the_post_thumbnail_url(); ?>" alt="<? the_title(); ?>">
+            <img class="img-fluid img-circle" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
           </div>
           <div class="col-9">
-            <? the_title(); ?>, <? the_field('company'); ?> <? the_field('location'); ?>
+            <?php the_title(); ?>, <?php the_field('company'); ?> <?php the_field('location'); ?>
             <span class="review-stars text-orange">
-              <? the_field('stars'); ?>
+              <?php the_field('stars'); ?>
             </span>
             <p>
               <small>
-                <? the_content(); ?>
+                <?php the_content(); ?>
               </small>
             </p>
           </div>

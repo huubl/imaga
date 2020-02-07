@@ -1,16 +1,16 @@
 
-<? use IMAGA\Theme\Extras; ?>
+<?php use IMAGA\Theme\Extras; ?>
 
-<? get_template_part('templates/header','jumbotron'); ?>
+<?php get_template_part('templates/header','jumbotron'); ?>
 
-<? if( have_rows('layouts') ): ?>
-  <? while( have_rows('layouts') ): the_row(); ?>
+<?php if( have_rows('layouts') ): ?>
+  <?php while( have_rows('layouts') ): the_row(); ?>
 
-    <? Extras\get_layout( get_row_layout() ); ?>
+    <?php Extras\get_layout( get_row_layout() ); ?>
 
-  <? endwhile; ?>
-<? endif; ?>
+  <?php endwhile; ?>
+<?php endif; ?>
 
-<? get_template_part('templates/parts/frontpage', 'steps'); ?>
+<?php get_template_part('templates/parts/frontpage', 'steps'); ?>
 
-<? get_template_part('templates/parts/frontpage', 'certifications'); ?>
+<?php get_template_part('templates/parts/frontpage', 'certifications'); ?>

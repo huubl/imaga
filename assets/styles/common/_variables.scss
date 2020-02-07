@@ -10,7 +10,7 @@ $gray-200:      #e7e7e7;
 $gray-300:      #E0E0E0;
 $gray-400:      #BDBDBD;
 $gray-500:      #9E9E9E;
-$gray-600:      #757575;
+$gray-600:      #6E6E6E;
 $gray-700:      #616161;
 $gray-800:      #123340; //#424242;
 $gray-900:      #0B1E26; //#212121;
@@ -29,11 +29,11 @@ $grays: (
   900: $gray-900
 );
 
-$blue:          #00b0ff; //#5980ec;
+$blue:          #007DB8; //#5980ec;
 $indigo:        #00A0D2; //#651FFF;
 $purple:        #6f42c1;
 $pink:          #e83e8c;
-$red:           #EF4836;
+$red:           #E22712; //#EF4836;
 $orange:        #f4701f;
 $yellow:        #ffbc00;
 $green:         #0BDA51;
@@ -139,6 +139,20 @@ $lead-font-size:                  1.28rem; //1.25rem
 $nav-link-padding-y:              .4rem; //.5rem
 $navbar-padding-y:                0rem; //($spacer / 2)
 $navbar-nav-link-padding-x:       .8rem;
+
+$dropdown-bg:                     $gray-150;
+$dropdown-link-hover-bg:          transparent;
+$dropdown-link-active-bg:         transparent;
+$dropdown-link-color:             rgba($black, .6);
+$dropdown-link-hover-color:       $black;
+$dropdown-link-active-color:      $black;
+$dropdown-border-width:           0px;
+$dropdown-font-size:              $font-size-base;
+$dropdown-min-width:              100%;
+$dropdown-spacer:                 0px;
+$dropdown-padding-y:              0px;
+$dropdown-item-padding-y:         .5rem;
+$dropdown-item-padding-x:         1rem;
 
 $table-border-color:              rgba( $gray-800, .2);
 $table-hover-bg:                  rgba($gray-100, .3);

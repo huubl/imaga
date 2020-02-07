@@ -1,13 +1,13 @@
 
-<? use IMAGA\Theme\Extras; ?>
+<?php use IMAGA\Theme\Extras; ?>
 
 
-<? while (have_posts()) : the_post(); ?>
+<?php while (have_posts()) : the_post(); ?>
 
-  <article <? post_class(); ?>>
-    <? get_template_part('templates/header','reviews'); ?>
+  <article <?php post_class(); ?>>
+    <?php get_template_part('templates/header','reviews'); ?>
   </article>
   
-<? endwhile; ?>
+<?php endwhile; ?>
 
-<? get_template_part('templates/parts/related-posts'); ?>
+<?php get_template_part('templates/parts/related-posts'); ?>

@@ -1,18 +1,18 @@
-<? use IMAGA\Theme\Extras; ?>
-<? while (have_posts()) : the_post(); ?>
-  <article <? post_class(); ?>>
+<?php use IMAGA\Theme\Extras; ?>
+<?php while (have_posts()) : the_post(); ?>
+  <article <?php post_class(); ?>>
 
-    <? get_template_part('templates/header','single'); ?>
+    <?php get_template_part('templates/header','single'); ?>
 
-    <? if( have_rows('layouts') ): ?>
-      <? while( have_rows('layouts') ): the_row(); ?>
+    <?php if( have_rows('layouts') ): ?>
+      <?php while( have_rows('layouts') ): the_row(); ?>
 
-        <? Extras\get_layout( get_row_layout() ); ?>
+        <?php Extras\get_layout( get_row_layout() ); ?>
 
-      <? endwhile; ?>
-    <? endif; ?>
+      <?php endwhile; ?>
+    <?php endif; ?>
 
   </article>
-<? endwhile; ?>
+<?php endwhile; ?>
 
-<? get_template_part('templates/parts/related-posts'); ?>
+<?php get_template_part('templates/parts/related-posts'); ?>

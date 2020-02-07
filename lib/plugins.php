@@ -1,4 +1,4 @@
-<?
+<?php
 /**
  * Theme Plugins
  */
@@ -23,8 +23,8 @@ add_action( 'after_setup_theme', function() {
         'required'           => true,
 		  ),
       array(
-        'name'               => 'Fast Velocity Minify',
-        'slug'               => 'fast-velocity-minify',
+        'name'               => 'Autoptimize',
+        'slug'               => 'autoptimize',
         'required'           => true,
       ),
       array(

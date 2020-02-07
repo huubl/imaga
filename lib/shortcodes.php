@@ -1,4 +1,4 @@
-<?
+<?php
 
 namespace IMAGA\Theme\Shortcodes;
 
@@ -80,19 +80,19 @@ add_shortcode( 'list-item', function($atts, $content = null){
 add_shortcode( 'conversion_types', function(){
   return '<div class="row text-center mt-2 conversion-brands">
     <div class="col mb-3 mb-md-0 conversion-arrow">
-      <a href="/conversion-optimization/conversion-research">
+      <a href="/conversion-research">
         <img class="img-fluid mb-3" src="'.Assets\asset_path('images/icons/conversion-research-color.svg').'" alt="Conversion Research">
         <h4 class="text-dark">Conversion <br>Research</h4>
       </a>
     </div>
     <div class="col mb-3 mb-md-0">
-      <a href="/conversion-optimization/conversion-strategy">
+      <a href="/conversion-strategy">
         <img class="img-fluid mb-3" src="'.Assets\asset_path('images/icons/conversion-strategy-color.svg').'" alt="Conversion Strategy">
         <h4 class="text-dark">Conversion <br>Strategy</h4>
       </a>
     </div>
     <div class="col mb-3 mb-md-0">
-      <a href="/conversion-optimization/conversion-design">
+      <a href="/conversion-design">
         <img class="img-fluid mb-3" src="'.Assets\asset_path('images/icons/conversion-design-color.svg').'" alt="Conversion Design">
         <h4 class="text-dark">Conversion <br>Design</h4>
       </a>

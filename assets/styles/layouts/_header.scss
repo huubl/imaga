@@ -6,16 +6,32 @@
   transition: height .2s ease;
 }
 .navbar{
+  .nav-item{
+    .nav-link{
+      text-decoration: none !important;
+    }
+  }
   #primary_navigation{
     .nav-item{
       .nav-link{
         padding-top: 1rem;
         padding-bottom: 1rem;
+        color: $gray-600;
+      }
+    }
+    .dropdown{
+      position:static !important;
+
+      .dropdown-menu{
+        @extend .box-shadow;
+
+        .nav-item{
+          display: inline-block;
+        }
       }
     }
   }
   #secondary_navigation{
-
     &.collapsing{
       transition-delay: .2s;
     }

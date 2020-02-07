@@ -19,6 +19,47 @@
     'common': {
       init: function() {
 
+        // Toggle High Contrast mode on click or touch
+        $('#contrast-switch').on('click touch', function(){
+
+          // Check if <body> does not have .high-contrast
+          if( !$('body').hasClass('high-contrast') ){
+
+            // Enable High Contrast
+            $('body').addClass('high-contrast');
+
+            // Set cookie to remember choice
+            Cookies.set('high-contrast', 'active');
+          }else{
+            // Can only happen if <body> has class .high-contrast
+
+            // Disable High Contrast
+            $('body').removeClass('high-contrast');
+
+            // Unset cookie to remember choice
+            Cookies.remove('high-contrast');
+          }
+        });
+
+        // Check if High Contrast is already enabled
+        if( Cookies.get('high-contrast') == 'active' ){
+          // Cookie is set, check if the user didn't manually enabled High Contrast
+          if( !$('body').hasClass('high-contrast') ){
+            $('body').addClass('high-contrast');
+          }
+        }
+
+        if ($(window).width() > 769) {
+          $('.navbar .dropdown').hover(function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(50).slideDown(100);
+          }, function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).delay(600).slideUp(50);
+          });
+          $('.navbar .dropdown > a').on('click touch' , function() {
+            location.href = this.href;
+          });
+        }
+
         // init Animate On Scroll
         AOS.init({
            offset: 220,
